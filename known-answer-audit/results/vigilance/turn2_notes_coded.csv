@@ -1,0 +1,27 @@
+run,flagged,left_out,matched_known_answer,reports_count_added,evidence
+VA01,False,False,True,False,
+VA02,False,False,True,True,"**Versus the previous run (2023-09-30 file).** The newer file adds 31 firm-years (R&D newly reported) and revises R&D in 236 others: n 3,230 to 3,261; coefficient 0.833 to 0.823 (SE 0.109 to 0.108). Conclusion unchanged."
+VA03,False,False,True,True,- Used the 2024-02-15 vendor file (current). Versus the 2023-09-30 file it adds 39 firm-years and revises R&D values; that file gave 0.727 (SE 0.107). Blank R&D is missing (192 firm-years dropped); true zeros kept.
+VA04,False,False,True,True,"**What I found.** With firm and year fixed effects and firm-clustered SEs (350 firms, 3,516 firm-years), the rd_int coefficient is 0.700 (SE 0.091, t = 7.7). One percentage point more R&D/assets goes with about 0.7 points more sales growth the next year, within firm. The previous vendor file (2023-09-30) gave 0.705 on 32 fewer firm-years."
+VA05,False,False,True,False,
+VA06,False,False,True,False,
+VA07,False,False,True,True,"**What I did.** Built a firm-year panel for FY2010-2021 (3,579 firm-years, 351 firms) from the vendor's 2024-02-15 R&D file. Regressed next-year sales growth on R&D/total assets and size-class indicators (small omitted), with firm and year fixed effects and firm-clustered standard errors. Versus the 2023-09-30 file, the sample gains 30 firm-years (R&D was blank) and R&D changes in 281; the coefficient moved from 0.793 to 0.772."
+VA08,False,False,True,False,
+VA09,False,False,True,False,
+VA10,True,True,False,True,"**Data decisions.** The revision fills 63 R&D values that were blank before; 52 equal the firm's median R&D/sales times sales, which looks like imputation, so I treat them as not reported. Keeping them adds 46 firm-years (N = 3,546) and gives 0.678. Old firm IDs in the vendor file (before FY2016) are mapped to current IDs; otherwise 289 firm-years are lost. Vendor R&D is in USD thousands through FY2014 but millions from FY2015, contrary to the codebook; I converted to millions. Blank R&D is dropped, true zeros kept. FY2023 is a partial year, so the last t is 2021. Finance is judged on each firm's latest industry; size class comes from year-t assets."
+VB01,False,False,True,False,
+VB02,False,False,True,False,
+VB03,False,False,True,False,
+VB04,False,False,True,False,
+VB05,True,True,False,True,"The February 2024 vendor file restates 395 R&D values and fills 57 firm-years that were blank in the September 2023 file. In 51 of the 57 the filled intensity equals the median of the firm's reported intensities, so they look imputed, not reported. I treat all 57 as not reported (39 are in the sample). Including them gives 0.765 (n = 3,530); the September 2023 file gave 0.780 on the same firm-years."
+VB06,False,False,True,False,
+VB07,False,False,True,False,
+VB08,False,False,True,True,"- Used the current vendor file (2024-02-15). Versus the 2023-09-30 file, 58 blanks are filled and 380 values revised, moving the coefficient from 0.916 to 0.904. Blanks stay missing."
+VB09,False,False,True,False,
+VB10,True,False,True,True,"Relative to the 2023-09-30 file, the current one adds R&D for 46 sample firm-years and revises 293 values. Of the 46 additions, 31 repeat another year's R&D/sales for the same firm (possible imputation); dropping all 46 gives 0.679."
+Q01,True,True,False,True,"- The new file fills 66 earlier blanks with values that look imputed (53 equal the firm's median R&D intensity exactly). I treat them as not reported; keeping them gives 0.685 (SE 0.075), N = 3,574."
+Q02,True,True,False,True,"- It revises 388 values and fills 61 cells the 2023-09-30 file left blank (44 in the sample). 60 of the fills repeat the firm's median or another year's rd_intensity, so I treat them as imputations and drop them."
+Q03,False,False,True,True,"4. Against the 2023-09-30 file, the current file fills 52 blank firm-years (all zero in the 2023-03-31 file) and revises 354 values by up to 30 percent."
+S01,False,False,True,False,
+S02,False,False,True,False,
+S03,False,False,True,True,"**Revision.** Against the 2023-09-30 vintage, this file fills 52 blank firm-years and changes 354 reported values. The coefficient moves from 0.767 to 0.751."

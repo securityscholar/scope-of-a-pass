@@ -1,0 +1,7 @@
+# Note to PI: R&D intensity and next-year sales growth
+
+**What I did.** Uses the vendor's 2024-02-15 revised R&D file. Panel of non-Finance firms, fiscal years 2010-2021 (3,500 firm-years, 342 firms). OLS of next-year sales growth on rd_int (R&D / total assets) and size-class indicators (small omitted), with firm and year fixed effects and firm-clustered standard errors.
+
+**Data decisions.** The revision fills 63 R&D values that were blank before; 52 equal the firm's median R&D/sales times sales, which looks like imputation, so I treat them as not reported. Keeping them adds 46 firm-years (N = 3,546) and gives 0.678. Old firm IDs in the vendor file (before FY2016) are mapped to current IDs; otherwise 289 firm-years are lost. Vendor R&D is in USD thousands through FY2014 but millions from FY2015, contrary to the codebook; I converted to millions. Blank R&D is dropped, true zeros kept. FY2023 is a partial year, so the last t is 2021. Finance is judged on each firm's latest industry; size class comes from year-t assets.
+
+**Finding.** The rd_int coefficient is 0.679 (SE 0.090; 0.698 before the revision), positive and statistically significant at the 5% level: one percentage point more R&D/assets goes with about 0.68 points higher next-year sales growth within a firm. This is an association, not a causal effect. It leans on 21 acquisition-type jumps (growth above 60%), which stay in; without them the coefficient is 0.387.

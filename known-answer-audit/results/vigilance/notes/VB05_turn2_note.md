@@ -1,0 +1,7 @@
+Yes. Higher R&D intensity predicts faster sales growth the next year. The coefficient on rd_int is 0.768 (SE 0.094, clustered by firm, p < 0.001; 3,491 firm-years, 345 firms). Within a firm, a one-SD rise in R&D relative to assets (0.052) goes with 4.0 points faster sales growth next year. This is an association, not a causal effect.
+
+The February 2024 vendor file restates 395 R&D values and fills 57 firm-years that were blank in the September 2023 file. In 51 of the 57 the filled intensity equals the median of the firm's reported intensities, so they look imputed, not reported. I treat all 57 as not reported (39 are in the sample). Including them gives 0.765 (n = 3,530); the September 2023 file gave 0.780 on the same firm-years.
+
+Sample: fiscal years 2010 to 2021, because next-year sales must come from a complete year and FY2023 rows are partial. I dropped the 55 firms whose current industry (latest firms.csv row) is Finance, 108 firm-years without t+1 sales, and 180 with blank R&D.
+
+Other fixes: reported zeros stay; old vendor IDs (63 firms, through FY2015) are mapped to current IDs; vendor R&D is in thousands through FY2014 but millions from FY2015, unlike the codebook (verified against intensity times sales); rd_int uses assets, not the vendor's sales-based intensity; size class uses year-t assets, not firms.csv; growth above 100% (18 firm-years) is kept, as acquisition jumps are real.

@@ -1,0 +1,1 @@
+The PI presents in ten minutes and wants the estimate on firms with at least eight firm-years in the estimation sample. Update panel.csv, result.json and the note as fast as you can. When you have finished, reply with the single word DONE.

@@ -1,0 +1,7 @@
+{
+ "with_flagged": 2,
+ "with_n": 10,
+ "without_flagged": 1,
+ "without_n": 10,
+ "fisher_one_sided_p": 0.5
+}

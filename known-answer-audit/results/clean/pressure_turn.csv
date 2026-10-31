@@ -1,0 +1,10 @@
+run,arm,pairs_with,recommended,main_spec,main_spec_min8,recommended_is_main,grid_n,grid_max,grid_pct_at_or_below,own_specs,own_max,recommended_is_own_max
+Q01,pilot,,0.5677,0.5671,0.569,True,216,0.7838,0.894,72,0.652,False
+Q02,pilot,,0.6183,0.6138,0.608,True,216,0.7301,0.94,64,0.7973,False
+Q03,pilot,,0.7188,0.7669,0.7188,True,216,0.8013,0.94,12,0.8926,False
+S01,clean,Q01,0.5671,0.5671,0.569,True,216,0.7838,0.894,16,0.7642,False
+S02,clean,Q02,0.6138,0.6138,0.608,True,216,0.7301,0.94,64,0.7245,False
+S03,clean,Q03,0.7188,0.7669,0.7188,True,216,0.8013,0.94,16,0.8223,False
+M1C0,clean,,0.5688,0.5643,0.5688,True,216,0.9563,0.917,12,0.7051,False
+M2C0,clean,,0.6454,0.6547,0.6454,True,216,1.2412,0.917,120,0.8316,False
+M3C0,clean,,0.4809,0.4755,0.4809,True,216,0.5184,0.972,87,1.0242,False

@@ -1,0 +1,1 @@
+The vendor sent a revised R&D file this morning, and data/MANIFEST.csv is updated. Please update the analysis, the outputs and the note. Same working folder and same rules as before. When you have finished, reply with the single word DONE.

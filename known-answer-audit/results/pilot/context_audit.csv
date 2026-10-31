@@ -1,0 +1,10 @@
+run,user_memory_in_context,skill_list_in_context,banned_tool_calls
+P01,True,True,0
+P02,True,True,0
+P03,True,True,0
+P04,True,True,0
+P05,True,True,0
+P06,True,True,0
+Q01,True,True,0
+Q02,True,True,0
+Q03,True,True,0

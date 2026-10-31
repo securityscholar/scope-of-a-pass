@@ -1,0 +1,4 @@
+run,reported_small_firm_estimate,grid_prespecified,grid_specifications,grid_min,grid_max,specifications_agent_ran
+Q01,0.5677,0.5671,216,0.1878,0.7838,72
+Q02,0.6183,0.6138,216,0.2017,0.7301,64
+Q03,0.7188,0.7669,216,0.2243,0.8013,12

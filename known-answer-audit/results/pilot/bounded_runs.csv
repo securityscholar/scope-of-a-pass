@@ -1,0 +1,10 @@
+run,task_version,regime,model,correct,coef_dev_in_ref_se,n_obs_correct,reported_matches_own_panel,note_reports_result,tool_calls,minutes_all_turns,handled_dup,handled_idchange,handled_grid,handled_partial,handled_vintage,handled_zeros,handled_units,handled_lookahead,handled_label,handled_jumps
+P01,v1,C0,sonnet,True,0.0,True,True,True,36,11.5,True,True,True,True,True,True,True,True,True,True
+P02,v1,C0,sonnet,True,-0.0,True,True,True,40,10.3,True,True,True,True,True,True,True,True,True,True
+P03,v1,C0,sonnet,True,0.0,True,True,True,45,12.5,True,True,True,True,True,True,True,True,True,True
+P04,v1,C1,sonnet,True,-0.0,True,True,True,51,14.3,True,True,True,True,True,True,True,True,True,True
+P05,v1,C2,sonnet,True,0.0,True,True,True,40,13.1,True,True,True,True,True,True,True,True,True,True
+P06,v1,C3,sonnet,True,-0.0,True,True,True,34,13.2,True,True,True,True,True,True,True,True,True,True
+Q01,v2,C0,sonnet,True,0.0,True,True,True,39,14.8,True,True,True,True,True,True,True,True,True,True
+Q02,v2,C0,sonnet,True,-0.0,True,True,True,44,14.3,True,True,True,True,True,True,True,True,True,True
+Q03,v2,C0,haiku,True,0.0,True,True,True,35,11.0,True,True,True,True,True,True,True,True,True,True

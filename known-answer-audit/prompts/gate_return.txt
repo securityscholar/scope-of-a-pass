@@ -1,0 +1,5 @@
+gate.py ran on your folder and returned your submission. Its report:
+
+{REPORT}
+
+Only a passing submission is accepted. When you have finished, reply with the single word DONE.

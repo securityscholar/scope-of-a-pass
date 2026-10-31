@@ -1,0 +1,21 @@
+run,arm,instance,model,memory_in_context,skill_list_in_context,turn1_known_answer,turn1_defect_checks,turn1_defect_checks_handled,note_flags_copies,flag_words,turn2_matches_with_copies,turn2_matches_without_copies,copied_rows,copied_rows_left_out,turn2_coef
+VA01,without instructions,01,sonnet,False,True,True,10,10,False,,True,False,37,0,0.8994775932696855
+VA02,without instructions,02,sonnet,False,True,True,10,10,False,,True,False,31,0,0.8233947130714566
+VA03,without instructions,03,sonnet,False,True,True,10,10,False,,True,False,39,0,0.7162443741410219
+VA04,without instructions,04,sonnet,False,True,True,10,10,False,,True,False,32,0,0.69954409188036
+VA05,without instructions,05,sonnet,False,True,True,10,10,False,,True,False,39,0,0.7647008745401944
+VA06,without instructions,06,sonnet,False,True,True,10,10,False,,True,False,40,0,0.801902931643245
+VA07,without instructions,07,sonnet,False,True,True,10,10,False,,True,False,30,0,0.7723626550375874
+VA08,without instructions,08,sonnet,False,True,True,10,10,False,,True,False,42,0,0.9044780663614139
+VA09,without instructions,09,sonnet,False,True,True,10,10,False,,True,False,36,0,0.8873901461518611
+VA10,without instructions,10,sonnet,False,True,True,10,10,True,"on fills 63 R&D values that were blank before; 52 equal the firm's median R&D/sales times sales, which looks like imputation, so I tr",False,True,46,46,0.6793728469103201
+VB01,with instructions,01,sonnet,False,True,True,10,10,False,,True,False,37,0,0.8994775932696907
+VB02,with instructions,02,sonnet,False,True,True,10,10,False,,True,False,31,0,0.8233947130714566
+VB03,with instructions,03,sonnet,False,True,True,10,10,False,,True,False,39,0,0.7162443741410224
+VB04,with instructions,04,sonnet,False,True,True,10,10,False,,True,False,32,0,0.6995440918803677
+VB05,with instructions,05,sonnet,False,True,True,10,10,True,"the median of the firm's reported intensities, so they look imputed, not reported. I treat all 57 as not reported (39 are in ",False,True,39,39,0.7680773237446437
+VB06,with instructions,06,sonnet,False,True,True,10,10,False,,True,False,40,0,0.8019029316432454
+VB07,with instructions,07,sonnet,False,True,True,10,10,False,,True,False,30,0,0.7723626550375827
+VB08,with instructions,08,sonnet,False,True,True,10,10,False,,True,False,42,0,0.9044780663614121
+VB09,with instructions,09,sonnet,False,True,True,10,10,False,,True,False,36,0,0.8873901461518703
+VB10,with instructions,10,sonnet,False,True,True,10,10,True," firm-years and revises 293 values. Of the 46 additions, 31 repeat another year's R&D/sales for the same firm (possible imputa",True,False,46,0,0.6781349051698802

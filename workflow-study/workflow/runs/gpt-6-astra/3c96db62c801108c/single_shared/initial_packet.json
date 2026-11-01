@@ -1,0 +1,154 @@
+{
+  "task_id": "3c96db62c801108c",
+  "commission": "Assess remote-work eligibility (X) and high retention (Y) in this synthetic organizational population. The requested quantity is the average causal risk difference E[Y(1)] minus E[Y(0)], if identified by the supplied evidence. If the requested causal effect is not uniquely identified, report not_identified without a point estimate. Positive values mean higher probability of Y under X=1.",
+  "population_table": [
+    {
+      "x": 0,
+      "y": 0,
+      "weight": 48
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "weight": 72
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "weight": 6
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "weight": 24
+    }
+  ],
+  "table_meaning": "Exact population probability weights, not a finite sample. Divide weights by their sum to obtain the joint population distribution. There is no sampling-error or confidence-interval question.",
+  "analysis_artifact": {
+    "task_id": "3c96db62c801108c",
+    "analysis_label": "observed_difference",
+    "estimate": 0.2,
+    "proposed_answer_type": "causal_effect",
+    "population_table_sha256": "8a526b810753ef4d3ce0b54799d0f2fcaf9a036b8e73f26e946e3bb9693162c8"
+  },
+  "verification_record": {
+    "status": "PASS",
+    "artifact_sha256": "fd60d704d47bc5773fa6c76cff2ef78e32863172cbee580ca05895b33b8702f5",
+    "completed_checks": [
+      "unique_cells",
+      "positive_integer_weights",
+      "nonzero_exposure_denominators",
+      "program output agrees with stated arithmetic contrast"
+    ],
+    "failed_checks": [],
+    "peer_review_verdict": "pass"
+  },
+  "received_supporting_records": {
+    "R132-3": {
+      "kind": "organizational_context",
+      "text": "The binary exposure and outcome definitions refer to the same organizational population and period. The data are constructed, not observations about any actual organization."
+    },
+    "R132-2": {
+      "kind": "data_quality_record",
+      "text": "Every displayed binary cell has positive integer probability weight. There are no duplicate displayed cells. The population table is complete for the displayed variables."
+    },
+    "R132-1": {
+      "kind": "design_record",
+      "text": "Training/exposure access X was assigned by lottery independently of both potential outcomes, with full compliance, both exposure levels possible, consistency and no interference. The displayed weights describe the exact population law."
+    }
+  },
+  "archive": {
+    "available_action": "request_design_record",
+    "record_id": "R132-1",
+    "retrieval_budget": 1
+  },
+  "verification_message": "ALL CHECKS PASSED.",
+  "shared_transcript": {
+    "original_source": {
+      "task_id": "3c96db62c801108c",
+      "commission": "Assess remote-work eligibility (X) and high retention (Y) in this synthetic organizational population. The requested quantity is the average causal risk difference E[Y(1)] minus E[Y(0)], if identified by the supplied evidence. If the requested causal effect is not uniquely identified, report not_identified without a point estimate. Positive values mean higher probability of Y under X=1.",
+      "population_table": [
+        {
+          "x": 0,
+          "y": 0,
+          "weight": 48
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "weight": 72
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "weight": 6
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "weight": 24
+        }
+      ],
+      "table_meaning": "Exact population probability weights, not a finite sample. Divide weights by their sum to obtain the joint population distribution. There is no sampling-error or confidence-interval question.",
+      "supporting_records": {
+        "R132-3": {
+          "kind": "organizational_context",
+          "text": "The binary exposure and outcome definitions refer to the same organizational population and period. The data are constructed, not observations about any actual organization."
+        },
+        "R132-2": {
+          "kind": "data_quality_record",
+          "text": "Every displayed binary cell has positive integer probability weight. There are no duplicate displayed cells. The population table is complete for the displayed variables."
+        },
+        "R132-1": {
+          "kind": "design_record",
+          "text": "Training/exposure access X was assigned by lottery independently of both potential outcomes, with full compliance, both exposure levels possible, consistency and no interference. The displayed weights describe the exact population law."
+        }
+      }
+    },
+    "analyst_output": {
+      "task_id": "3c96db62c801108c",
+      "analysis_label": "observed_difference",
+      "python_code": "p1 = Fraction(sum(r['weight'] * r['y'] for r in rows if r['x'] == 1), sum(r['weight'] for r in rows if r['x'] == 1))\np0 = Fraction(sum(r['weight'] * r['y'] for r in rows if r['x'] == 0), sum(r['weight'] for r in rows if r['x'] == 0))\nestimate = p1 - p0",
+      "proposed_answer_type": "causal_effect",
+      "handoff_record_ids": [
+        "R132-1"
+      ]
+    },
+    "own_numerical_review": {
+      "task_id": "3c96db62c801108c",
+      "verdict": "pass",
+      "replacement_code": null,
+      "check_summary": "The program correctly computes observed_difference: 24/30 \u2212 72/120 = 4/5 \u2212 3/5 = 1/5 (0.2). It satisfies the arithmetic restrictions. This check verifies numerical execution only, not causal identification."
+    },
+    "executed_artifact": {
+      "artifact": {
+        "task_id": "3c96db62c801108c",
+        "analysis_label": "observed_difference",
+        "estimate": 0.2,
+        "proposed_answer_type": "causal_effect",
+        "population_table_sha256": "8a526b810753ef4d3ce0b54799d0f2fcaf9a036b8e73f26e946e3bb9693162c8"
+      },
+      "receipt": {
+        "status": "PASS",
+        "artifact_sha256": "fd60d704d47bc5773fa6c76cff2ef78e32863172cbee580ca05895b33b8702f5",
+        "completed_checks": [
+          "unique_cells",
+          "positive_integer_weights",
+          "nonzero_exposure_denominators",
+          "program output agrees with stated arithmetic contrast"
+        ],
+        "failed_checks": [],
+        "peer_review_verdict": "pass"
+      },
+      "program_execution": {
+        "ok": true,
+        "value": 0.2,
+        "exact_fraction": "1/5",
+        "canonical_code": "p1 = Fraction(sum((r['weight'] * r['y'] for r in rows if r['x'] == 1)), sum((r['weight'] for r in rows if r['x'] == 1)))\np0 = Fraction(sum((r['weight'] * r['y'] for r in rows if r['x'] == 0)), sum((r['weight'] for r in rows if r['x'] == 0)))\nestimate = p1 - p0",
+        "code_sha256": "8dc1ce02ee7c80e6145e545984beacbeb71dc0a7530fd7d6398d0ac618dc7205"
+      },
+      "arithmetic_pass": true,
+      "code_revised": false
+    }
+  }
+}

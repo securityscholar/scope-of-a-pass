@@ -1,0 +1,33 @@
+{
+  "case_id": "6f70c5b3a418942b",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_drop_scoped",
+  "initial_decision": {
+    "task_id": "6f70c5b3a418942b",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [
+      "population_table",
+      "verification_record"
+    ],
+    "brief_rationale": "Promotion probability is 0.8 in both observed mentoring groups, but this descriptive equality does not identify the causal effect. Request archived design record R135-2 to assess causal identification."
+  },
+  "final_decision": {
+    "task_id": "6f70c5b3a418942b",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R135-2"
+    ],
+    "brief_rationale": "Both observed promotion risks are 0.8, giving a descriptive difference of zero. The design record supplies consistency and no interference but no condition identifying counterfactual risks. The average causal risk difference is therefore not uniquely identified."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "a4d41ae9bfae555041b88483c12fc101839a17a110f19a9c81b69e65fd4c00d2",
+  "final_input_sha256": "9827e8118fe4cd679ef4b52e5f8f51b52c205d8b9b4d0fa0971001dcc52a1d99",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:49:29.404338+00:00"
+}

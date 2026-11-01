@@ -1,0 +1,30 @@
+{
+  "case_id": "98cb806cc892f8e5",
+  "model": "gpt-6-astra",
+  "route": "delegated_drop_scoped",
+  "initial_decision": {
+    "task_id": "98cb806cc892f8e5",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [],
+    "brief_rationale": "The verified difference of -0.1 is an observed association. The supplied table and arithmetic checks do not establish causal identification. Request archived design record R211-1 to assess whether the average causal risk difference is identified."
+  },
+  "final_decision": {
+    "task_id": "98cb806cc892f8e5",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": -0.1,
+    "evidence_ids": [
+      "R211-1"
+    ],
+    "brief_rationale": "The lottery establishes independence from both potential outcomes; positivity, consistency, full compliance, and no interference identify the causal effect. The exact population risk difference is 8/80 \u2212 24/120 = \u22120.10."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "b43196c30973bf73994cb8ba333bd1d55f0d8b37aee99224b1233f2497212d59",
+  "final_input_sha256": "4f96d363653c9782a462b5a6a7adee23fbc5484b34b822f4ca4e9d7e654c09bf",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:44:27.815273+00:00"
+}

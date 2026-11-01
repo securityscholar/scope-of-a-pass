@@ -1,0 +1,1 @@
+{"task_id":"8c15e62c5c7af4fb","verdict":"pass","replacement_code":null,"check_summary":"The program correctly computes standardized_difference: (2/5)(2/5 − 1/2) + (3/5)(9/10 − 3/5) = 7/50 = 0.14. It satisfies the arithmetic restrictions. This confirms the empirical contrast, not causal identification."}

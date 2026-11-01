@@ -1,0 +1,34 @@
+{
+  "case_id": "1623507b6d672ebf",
+  "model": "gpt-6.1-sol",
+  "route": "single_shared",
+  "initial_decision": {
+    "task_id": "1623507b6d672ebf",
+    "action": "finalize",
+    "answer_type": "association",
+    "value": -0.2,
+    "evidence_ids": [
+      "R208-1",
+      "R208-3"
+    ],
+    "brief_rationale": "The requested descriptive difference is 7/10 \u2212 36/40 = \u22120.2 exactly. High retention is 20 percentage points lower among those eligible for remote work. The supplied design does not identify a causal effect, but it identifies the requested descriptive contrast."
+  },
+  "final_decision": {
+    "task_id": "1623507b6d672ebf",
+    "action": "finalize",
+    "answer_type": "association",
+    "value": -0.2,
+    "evidence_ids": [
+      "R208-1",
+      "R208-3"
+    ],
+    "brief_rationale": "The requested descriptive difference is 7/10 \u2212 36/40 = \u22120.2 exactly. High retention is 20 percentage points lower among those eligible for remote work. The supplied design does not identify a causal effect, but it identifies the requested descriptive contrast."
+  },
+  "archive_requested": false,
+  "initial_has_design": true,
+  "final_has_design": true,
+  "initial_input_sha256": "93d72840ff27425a4c5b280f7cf2ba6d10ce91d7a2f294aca4157691b4c871a8",
+  "final_input_sha256": "93d72840ff27425a4c5b280f7cf2ba6d10ce91d7a2f294aca4157691b4c871a8",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:36:38.300647+00:00"
+}

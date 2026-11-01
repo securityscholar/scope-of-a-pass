@@ -1,0 +1,1 @@
+{"task_id":"3c96db62c801108c","verdict":"pass","replacement_code":null,"check_summary":"The program correctly computes observed_difference: 24/30 − 72/120 = 1/5 (0.2). It satisfies the arithmetic restrictions. This numerical check does not establish causal identification."}

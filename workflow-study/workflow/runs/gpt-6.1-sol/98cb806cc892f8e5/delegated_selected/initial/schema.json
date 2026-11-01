@@ -1,0 +1,48 @@
+{
+  "type": "object",
+  "properties": {
+    "task_id": {
+      "type": "string"
+    },
+    "action": {
+      "type": "string",
+      "enum": [
+        "finalize",
+        "request_design_record"
+      ]
+    },
+    "answer_type": {
+      "type": "string",
+      "enum": [
+        "association",
+        "causal_effect",
+        "not_identified",
+        "pending"
+      ]
+    },
+    "value": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "brief_rationale": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "task_id",
+    "action",
+    "answer_type",
+    "value",
+    "evidence_ids",
+    "brief_rationale"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,1494 @@
+{
+  "reference_regimes": 24,
+  "all_verified": true,
+  "records": [
+    {
+      "case_id": "6da143b7ffbf92fe",
+      "design_received": true,
+      "reference": {
+        "answer": {
+          "task_id": "6da143b7ffbf92fe",
+          "answer_type": "causal_effect",
+          "value": -0.1
+        },
+        "proof": {
+          "method": "Standardize stratum-specific causal contrasts over the displayed population distribution of Z under the supplied conditional exchangeability assumptions.",
+          "exact_fraction": "-1/10",
+          "observed_difference_fraction": "-1/10"
+        }
+      },
+      "enumeration": {
+        "task_id": "6da143b7ffbf92fe",
+        "verified": true,
+        "method": "Enumerate interventions in the separately generated latent population; check exchangeability and the observed law.",
+        "intervention_effect": "-1/10"
+      }
+    },
+    {
+      "case_id": "6da143b7ffbf92fe",
+      "design_received": false,
+      "reference": {
+        "answer": {
+          "task_id": "6da143b7ffbf92fe",
+          "answer_type": "not_identified",
+          "value": null
+        },
+        "proof": {
+          "method": "Two compatible potential-outcome populations have the same observed probability table and different intervention effects.",
+          "exact_fraction": null,
+          "observed_difference_fraction": "-1/10",
+          "compatible_worlds": [
+            [
+              {
+                "z": 0,
+                "x": 0,
+                "y0": 0,
+                "y1": 0,
+                "weight": 4
+              },
+              {
+                "z": 0,
+                "x": 0,
+                "y0": 1,
+                "y1": 0,
+                "weight": 36
+              },
+              {
+                "z": 0,
+                "x": 1,
+                "y0": 1,
+                "y1": 0,
+                "weight": 1
+              },
+              {
+                "z": 0,
+                "x": 1,
+                "y0": 1,
+                "y1": 1,
+                "weight": 9
+              },
+              {
+                "z": 1,
+                "x": 0,
+                "y0": 0,
+                "y1": 0,
+                "weight": 8
+              },
+              {
+                "z": 1,
+                "x": 0,
+                "y0": 1,
+                "y1": 0,
+                "weight": 32
+              },
+              {
+                "z": 1,
+                "x": 1,
+                "y0": 1,
+                "y1": 0,
+                "weight": 4
+              },
+              {
+                "z": 1,
+                "x": 1,
+                "y0": 1,
+                "y1": 1,
+                "weight": 6
+              }
+            ],
+            [
+              {
+                "z": 0,
+                "x": 0,
+                "y0": 0,
+                "y1": 1,
+                "weight": 4
+              },
+              {
+                "z": 0,
+                "x": 0,
+                "y0": 1,
+                "y1": 1,
+                "weight": 36
+              },
+              {
+                "z": 0,
+                "x": 1,
+                "y0": 0,
+                "y1": 0,
+                "weight": 1
+              },
+              {
+                "z": 0,
+                "x": 1,
+                "y0": 0,
+                "y1": 1,
+                "weight": 9
+              },
+              {
+                "z": 1,
+                "x": 0,
+                "y0": 0,
+                "y1": 1,
+                "weight": 8
+              },
+              {
+                "z": 1,
+                "x": 0,
+                "y0": 1,
+                "y1": 1,
+                "weight": 32
+              },
+              {
+                "z": 1,
+                "x": 1,
+                "y0": 0,
+                "y1": 0,
+                "weight": 4
+              },
+              {
+                "z": 1,
+                "x": 1,
+                "y0": 0,
+                "y1": 1,
+                "weight": 6
+              }
+            ]
+          ]
+        }
+      },
+      "enumeration": {
+        "task_id": "6da143b7ffbf92fe",
+        "verified": true,
+        "method": "Directly enumerate both compatible observed laws and both intervention effects.",
+        "compatible_effects": [
+          "-73/100",
+          "27/100"
+        ],
+        "difference": "1"
+      }
+    },
+    {
+      "case_id": "f6f3fc3111d2dbd7",
+      "design_received": true,
+      "reference": {
+        "answer": {
+          "task_id": "f6f3fc3111d2dbd7",
+          "answer_type": "causal_effect",
+          "value": -0.4
+        },
+        "proof": {
+          "method": "Random assignment, consistency and positivity identify the population causal risk difference.",
+          "exact_fraction": "-2/5",
+          "observed_difference_fraction": "-2/5"
+        }
+      },
+      "enumeration": {
+        "task_id": "f6f3fc3111d2dbd7",
+        "verified": true,
+        "method": "Enumerate interventions in the separately generated latent population; check exchangeability and the observed law.",
+        "intervention_effect": "-2/5"
+      }
+    },
+    {
+      "case_id": "f6f3fc3111d2dbd7",
+      "design_received": false,
+      "reference": {
+        "answer": {
+          "task_id": "f6f3fc3111d2dbd7",
+          "answer_type": "not_identified",
+          "value": null
+        },
+        "proof": {
+          "method": "Two compatible potential-outcome populations have the same observed probability table and different intervention effects.",
+          "exact_fraction": null,
+          "observed_difference_fraction": "-2/5",
+          "compatible_worlds": [
+            [
+              {
+                "z": null,
+                "x": 0,
+                "y0": 0,
+                "y1": 0,
+                "weight": 20
+              },
+              {
+                "z": null,
+                "x": 0,
+                "y0": 1,
+                "y1": 0,
+                "weight": 20
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 1,
+                "y1": 0,
+                "weight": 9
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 1,
+                "y1": 1,
+                "weight": 1
+              }
+            ],
+            [
+              {
+                "z": null,
+                "x": 0,
+                "y0": 0,
+                "y1": 1,
+                "weight": 20
+              },
+              {
+                "z": null,
+                "x": 0,
+                "y0": 1,
+                "y1": 1,
+                "weight": 20
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 0,
+                "y1": 0,
+                "weight": 9
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 0,
+                "y1": 1,
+                "weight": 1
+              }
+            ]
+          ]
+        }
+      },
+      "enumeration": {
+        "task_id": "f6f3fc3111d2dbd7",
+        "verified": true,
+        "method": "Directly enumerate both compatible observed laws and both intervention effects.",
+        "compatible_effects": [
+          "-29/50",
+          "21/50"
+        ],
+        "difference": "1"
+      }
+    },
+    {
+      "case_id": "d6eec6f6644b5fe4",
+      "design_received": true,
+      "reference": {
+        "answer": {
+          "task_id": "d6eec6f6644b5fe4",
+          "answer_type": "association",
+          "value": 0.0
+        },
+        "proof": {
+          "method": "Observed conditional-risk difference; no causal interpretation is requested.",
+          "exact_fraction": "0",
+          "observed_difference_fraction": "0"
+        }
+      },
+      "enumeration": {
+        "task_id": "d6eec6f6644b5fe4",
+        "verified": true,
+        "method": "Recompute conditional expectations from normalized joint probabilities.",
+        "observed_difference": "0"
+      }
+    },
+    {
+      "case_id": "d6eec6f6644b5fe4",
+      "design_received": false,
+      "reference": {
+        "answer": {
+          "task_id": "d6eec6f6644b5fe4",
+          "answer_type": "association",
+          "value": 0.0
+        },
+        "proof": {
+          "method": "Observed conditional-risk difference; no causal interpretation is requested.",
+          "exact_fraction": "0",
+          "observed_difference_fraction": "0"
+        }
+      },
+      "enumeration": {
+        "task_id": "d6eec6f6644b5fe4",
+        "verified": true,
+        "method": "Recompute conditional expectations from normalized joint probabilities.",
+        "observed_difference": "0"
+      }
+    },
+    {
+      "case_id": "1623507b6d672ebf",
+      "design_received": true,
+      "reference": {
+        "answer": {
+          "task_id": "1623507b6d672ebf",
+          "answer_type": "association",
+          "value": -0.2
+        },
+        "proof": {
+          "method": "Observed conditional-risk difference; no causal interpretation is requested.",
+          "exact_fraction": "-1/5",
+          "observed_difference_fraction": "-1/5"
+        }
+      },
+      "enumeration": {
+        "task_id": "1623507b6d672ebf",
+        "verified": true,
+        "method": "Recompute conditional expectations from normalized joint probabilities.",
+        "observed_difference": "-1/5"
+      }
+    },
+    {
+      "case_id": "1623507b6d672ebf",
+      "design_received": false,
+      "reference": {
+        "answer": {
+          "task_id": "1623507b6d672ebf",
+          "answer_type": "association",
+          "value": -0.2
+        },
+        "proof": {
+          "method": "Observed conditional-risk difference; no causal interpretation is requested.",
+          "exact_fraction": "-1/5",
+          "observed_difference_fraction": "-1/5"
+        }
+      },
+      "enumeration": {
+        "task_id": "1623507b6d672ebf",
+        "verified": true,
+        "method": "Recompute conditional expectations from normalized joint probabilities.",
+        "observed_difference": "-1/5"
+      }
+    },
+    {
+      "case_id": "8c15e62c5c7af4fb",
+      "design_received": true,
+      "reference": {
+        "answer": {
+          "task_id": "8c15e62c5c7af4fb",
+          "answer_type": "causal_effect",
+          "value": 0.14
+        },
+        "proof": {
+          "method": "Standardize stratum-specific causal contrasts over the displayed population distribution of Z under the supplied conditional exchangeability assumptions.",
+          "exact_fraction": "7/50",
+          "observed_difference_fraction": "61/680"
+        }
+      },
+      "enumeration": {
+        "task_id": "8c15e62c5c7af4fb",
+        "verified": true,
+        "method": "Enumerate interventions in the separately generated latent population; check exchangeability and the observed law.",
+        "intervention_effect": "7/50"
+      }
+    },
+    {
+      "case_id": "8c15e62c5c7af4fb",
+      "design_received": false,
+      "reference": {
+        "answer": {
+          "task_id": "8c15e62c5c7af4fb",
+          "answer_type": "not_identified",
+          "value": null
+        },
+        "proof": {
+          "method": "Two compatible potential-outcome populations have the same observed probability table and different intervention effects.",
+          "exact_fraction": null,
+          "observed_difference_fraction": "61/680",
+          "compatible_worlds": [
+            [
+              {
+                "z": 0,
+                "x": 0,
+                "y0": 0,
+                "y1": 0,
+                "weight": 10
+              },
+              {
+                "z": 0,
+                "x": 0,
+                "y0": 1,
+                "y1": 0,
+                "weight": 10
+              },
+              {
+                "z": 0,
+                "x": 1,
+                "y0": 1,
+                "y1": 0,
+                "weight": 48
+              },
+              {
+                "z": 0,
+                "x": 1,
+                "y0": 1,
+                "y1": 1,
+                "weight": 32
+              },
+              {
+                "z": 1,
+                "x": 0,
+                "y0": 0,
+                "y1": 0,
+                "weight": 24
+              },
+              {
+                "z": 1,
+                "x": 0,
+                "y0": 1,
+                "y1": 0,
+                "weight": 36
+              },
+              {
+                "z": 1,
+                "x": 1,
+                "y0": 1,
+                "y1": 0,
+                "weight": 9
+              },
+              {
+                "z": 1,
+                "x": 1,
+                "y0": 1,
+                "y1": 1,
+                "weight": 81
+              }
+            ],
+            [
+              {
+                "z": 0,
+                "x": 0,
+                "y0": 0,
+                "y1": 1,
+                "weight": 10
+              },
+              {
+                "z": 0,
+                "x": 0,
+                "y0": 1,
+                "y1": 1,
+                "weight": 10
+              },
+              {
+                "z": 0,
+                "x": 1,
+                "y0": 0,
+                "y1": 0,
+                "weight": 48
+              },
+              {
+                "z": 0,
+                "x": 1,
+                "y0": 0,
+                "y1": 1,
+                "weight": 32
+              },
+              {
+                "z": 1,
+                "x": 0,
+                "y0": 0,
+                "y1": 1,
+                "weight": 24
+              },
+              {
+                "z": 1,
+                "x": 0,
+                "y0": 1,
+                "y1": 1,
+                "weight": 36
+              },
+              {
+                "z": 1,
+                "x": 1,
+                "y0": 0,
+                "y1": 0,
+                "weight": 9
+              },
+              {
+                "z": 1,
+                "x": 1,
+                "y0": 0,
+                "y1": 1,
+                "weight": 81
+              }
+            ]
+          ]
+        }
+      },
+      "enumeration": {
+        "task_id": "8c15e62c5c7af4fb",
+        "verified": true,
+        "method": "Directly enumerate both compatible observed laws and both intervention effects.",
+        "compatible_effects": [
+          "-103/250",
+          "147/250"
+        ],
+        "difference": "1"
+      }
+    },
+    {
+      "case_id": "ef605b3f2d289714",
+      "design_received": true,
+      "reference": {
+        "answer": {
+          "task_id": "ef605b3f2d289714",
+          "answer_type": "not_identified",
+          "value": null
+        },
+        "proof": {
+          "method": "Two compatible potential-outcome populations have the same observed probability table and different intervention effects.",
+          "exact_fraction": null,
+          "observed_difference_fraction": "1/10",
+          "compatible_worlds": [
+            [
+              {
+                "z": null,
+                "x": 0,
+                "y0": 0,
+                "y1": 0,
+                "weight": 63
+              },
+              {
+                "z": null,
+                "x": 0,
+                "y0": 1,
+                "y1": 0,
+                "weight": 27
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 1,
+                "y1": 0,
+                "weight": 36
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 1,
+                "y1": 1,
+                "weight": 24
+              }
+            ],
+            [
+              {
+                "z": null,
+                "x": 0,
+                "y0": 0,
+                "y1": 1,
+                "weight": 63
+              },
+              {
+                "z": null,
+                "x": 0,
+                "y0": 1,
+                "y1": 1,
+                "weight": 27
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 0,
+                "y1": 0,
+                "weight": 36
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 0,
+                "y1": 1,
+                "weight": 24
+              }
+            ]
+          ]
+        }
+      },
+      "enumeration": {
+        "task_id": "ef605b3f2d289714",
+        "verified": true,
+        "method": "Directly enumerate both compatible observed laws and both intervention effects.",
+        "compatible_effects": [
+          "-21/50",
+          "29/50"
+        ],
+        "difference": "1"
+      }
+    },
+    {
+      "case_id": "ef605b3f2d289714",
+      "design_received": false,
+      "reference": {
+        "answer": {
+          "task_id": "ef605b3f2d289714",
+          "answer_type": "not_identified",
+          "value": null
+        },
+        "proof": {
+          "method": "Two compatible potential-outcome populations have the same observed probability table and different intervention effects.",
+          "exact_fraction": null,
+          "observed_difference_fraction": "1/10",
+          "compatible_worlds": [
+            [
+              {
+                "z": null,
+                "x": 0,
+                "y0": 0,
+                "y1": 0,
+                "weight": 63
+              },
+              {
+                "z": null,
+                "x": 0,
+                "y0": 1,
+                "y1": 0,
+                "weight": 27
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 1,
+                "y1": 0,
+                "weight": 36
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 1,
+                "y1": 1,
+                "weight": 24
+              }
+            ],
+            [
+              {
+                "z": null,
+                "x": 0,
+                "y0": 0,
+                "y1": 1,
+                "weight": 63
+              },
+              {
+                "z": null,
+                "x": 0,
+                "y0": 1,
+                "y1": 1,
+                "weight": 27
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 0,
+                "y1": 0,
+                "weight": 36
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 0,
+                "y1": 1,
+                "weight": 24
+              }
+            ]
+          ]
+        }
+      },
+      "enumeration": {
+        "task_id": "ef605b3f2d289714",
+        "verified": true,
+        "method": "Directly enumerate both compatible observed laws and both intervention effects.",
+        "compatible_effects": [
+          "-21/50",
+          "29/50"
+        ],
+        "difference": "1"
+      }
+    },
+    {
+      "case_id": "ad01585cb33d5e75",
+      "design_received": true,
+      "reference": {
+        "answer": {
+          "task_id": "ad01585cb33d5e75",
+          "answer_type": "not_identified",
+          "value": null
+        },
+        "proof": {
+          "method": "Two compatible potential-outcome populations have the same observed probability table and different intervention effects.",
+          "exact_fraction": null,
+          "observed_difference_fraction": "-1/10",
+          "compatible_worlds": [
+            [
+              {
+                "z": null,
+                "x": 0,
+                "y0": 0,
+                "y1": 0,
+                "weight": 12
+              },
+              {
+                "z": null,
+                "x": 0,
+                "y0": 1,
+                "y1": 0,
+                "weight": 48
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 1,
+                "y1": 0,
+                "weight": 12
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 1,
+                "y1": 1,
+                "weight": 28
+              }
+            ],
+            [
+              {
+                "z": null,
+                "x": 0,
+                "y0": 0,
+                "y1": 1,
+                "weight": 12
+              },
+              {
+                "z": null,
+                "x": 0,
+                "y0": 1,
+                "y1": 1,
+                "weight": 48
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 0,
+                "y1": 0,
+                "weight": 12
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 0,
+                "y1": 1,
+                "weight": 28
+              }
+            ]
+          ]
+        }
+      },
+      "enumeration": {
+        "task_id": "ad01585cb33d5e75",
+        "verified": true,
+        "method": "Directly enumerate both compatible observed laws and both intervention effects.",
+        "compatible_effects": [
+          "-3/5",
+          "2/5"
+        ],
+        "difference": "1"
+      }
+    },
+    {
+      "case_id": "ad01585cb33d5e75",
+      "design_received": false,
+      "reference": {
+        "answer": {
+          "task_id": "ad01585cb33d5e75",
+          "answer_type": "not_identified",
+          "value": null
+        },
+        "proof": {
+          "method": "Two compatible potential-outcome populations have the same observed probability table and different intervention effects.",
+          "exact_fraction": null,
+          "observed_difference_fraction": "-1/10",
+          "compatible_worlds": [
+            [
+              {
+                "z": null,
+                "x": 0,
+                "y0": 0,
+                "y1": 0,
+                "weight": 12
+              },
+              {
+                "z": null,
+                "x": 0,
+                "y0": 1,
+                "y1": 0,
+                "weight": 48
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 1,
+                "y1": 0,
+                "weight": 12
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 1,
+                "y1": 1,
+                "weight": 28
+              }
+            ],
+            [
+              {
+                "z": null,
+                "x": 0,
+                "y0": 0,
+                "y1": 1,
+                "weight": 12
+              },
+              {
+                "z": null,
+                "x": 0,
+                "y0": 1,
+                "y1": 1,
+                "weight": 48
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 0,
+                "y1": 0,
+                "weight": 12
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 0,
+                "y1": 1,
+                "weight": 28
+              }
+            ]
+          ]
+        }
+      },
+      "enumeration": {
+        "task_id": "ad01585cb33d5e75",
+        "verified": true,
+        "method": "Directly enumerate both compatible observed laws and both intervention effects.",
+        "compatible_effects": [
+          "-3/5",
+          "2/5"
+        ],
+        "difference": "1"
+      }
+    },
+    {
+      "case_id": "3c96db62c801108c",
+      "design_received": true,
+      "reference": {
+        "answer": {
+          "task_id": "3c96db62c801108c",
+          "answer_type": "causal_effect",
+          "value": 0.2
+        },
+        "proof": {
+          "method": "Random assignment, consistency and positivity identify the population causal risk difference.",
+          "exact_fraction": "1/5",
+          "observed_difference_fraction": "1/5"
+        }
+      },
+      "enumeration": {
+        "task_id": "3c96db62c801108c",
+        "verified": true,
+        "method": "Enumerate interventions in the separately generated latent population; check exchangeability and the observed law.",
+        "intervention_effect": "1/5"
+      }
+    },
+    {
+      "case_id": "3c96db62c801108c",
+      "design_received": false,
+      "reference": {
+        "answer": {
+          "task_id": "3c96db62c801108c",
+          "answer_type": "not_identified",
+          "value": null
+        },
+        "proof": {
+          "method": "Two compatible potential-outcome populations have the same observed probability table and different intervention effects.",
+          "exact_fraction": null,
+          "observed_difference_fraction": "1/5",
+          "compatible_worlds": [
+            [
+              {
+                "z": null,
+                "x": 0,
+                "y0": 0,
+                "y1": 0,
+                "weight": 48
+              },
+              {
+                "z": null,
+                "x": 0,
+                "y0": 1,
+                "y1": 0,
+                "weight": 72
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 1,
+                "y1": 0,
+                "weight": 6
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 1,
+                "y1": 1,
+                "weight": 24
+              }
+            ],
+            [
+              {
+                "z": null,
+                "x": 0,
+                "y0": 0,
+                "y1": 1,
+                "weight": 48
+              },
+              {
+                "z": null,
+                "x": 0,
+                "y0": 1,
+                "y1": 1,
+                "weight": 72
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 0,
+                "y1": 0,
+                "weight": 6
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 0,
+                "y1": 1,
+                "weight": 24
+              }
+            ]
+          ]
+        }
+      },
+      "enumeration": {
+        "task_id": "3c96db62c801108c",
+        "verified": true,
+        "method": "Directly enumerate both compatible observed laws and both intervention effects.",
+        "compatible_effects": [
+          "-13/25",
+          "12/25"
+        ],
+        "difference": "1"
+      }
+    },
+    {
+      "case_id": "98cb806cc892f8e5",
+      "design_received": true,
+      "reference": {
+        "answer": {
+          "task_id": "98cb806cc892f8e5",
+          "answer_type": "causal_effect",
+          "value": -0.1
+        },
+        "proof": {
+          "method": "Random assignment, consistency and positivity identify the population causal risk difference.",
+          "exact_fraction": "-1/10",
+          "observed_difference_fraction": "-1/10"
+        }
+      },
+      "enumeration": {
+        "task_id": "98cb806cc892f8e5",
+        "verified": true,
+        "method": "Enumerate interventions in the separately generated latent population; check exchangeability and the observed law.",
+        "intervention_effect": "-1/10"
+      }
+    },
+    {
+      "case_id": "98cb806cc892f8e5",
+      "design_received": false,
+      "reference": {
+        "answer": {
+          "task_id": "98cb806cc892f8e5",
+          "answer_type": "not_identified",
+          "value": null
+        },
+        "proof": {
+          "method": "Two compatible potential-outcome populations have the same observed probability table and different intervention effects.",
+          "exact_fraction": null,
+          "observed_difference_fraction": "-1/10",
+          "compatible_worlds": [
+            [
+              {
+                "z": null,
+                "x": 0,
+                "y0": 0,
+                "y1": 0,
+                "weight": 96
+              },
+              {
+                "z": null,
+                "x": 0,
+                "y0": 1,
+                "y1": 0,
+                "weight": 24
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 1,
+                "y1": 0,
+                "weight": 72
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 1,
+                "y1": 1,
+                "weight": 8
+              }
+            ],
+            [
+              {
+                "z": null,
+                "x": 0,
+                "y0": 0,
+                "y1": 1,
+                "weight": 96
+              },
+              {
+                "z": null,
+                "x": 0,
+                "y0": 1,
+                "y1": 1,
+                "weight": 24
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 0,
+                "y1": 0,
+                "weight": 72
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 0,
+                "y1": 1,
+                "weight": 8
+              }
+            ]
+          ]
+        }
+      },
+      "enumeration": {
+        "task_id": "98cb806cc892f8e5",
+        "verified": true,
+        "method": "Directly enumerate both compatible observed laws and both intervention effects.",
+        "compatible_effects": [
+          "-12/25",
+          "13/25"
+        ],
+        "difference": "1"
+      }
+    },
+    {
+      "case_id": "f2414d853455e31f",
+      "design_received": true,
+      "reference": {
+        "answer": {
+          "task_id": "f2414d853455e31f",
+          "answer_type": "association",
+          "value": 0.0
+        },
+        "proof": {
+          "method": "Observed conditional-risk difference; no causal interpretation is requested.",
+          "exact_fraction": "0",
+          "observed_difference_fraction": "0"
+        }
+      },
+      "enumeration": {
+        "task_id": "f2414d853455e31f",
+        "verified": true,
+        "method": "Recompute conditional expectations from normalized joint probabilities.",
+        "observed_difference": "0"
+      }
+    },
+    {
+      "case_id": "f2414d853455e31f",
+      "design_received": false,
+      "reference": {
+        "answer": {
+          "task_id": "f2414d853455e31f",
+          "answer_type": "association",
+          "value": 0.0
+        },
+        "proof": {
+          "method": "Observed conditional-risk difference; no causal interpretation is requested.",
+          "exact_fraction": "0",
+          "observed_difference_fraction": "0"
+        }
+      },
+      "enumeration": {
+        "task_id": "f2414d853455e31f",
+        "verified": true,
+        "method": "Recompute conditional expectations from normalized joint probabilities.",
+        "observed_difference": "0"
+      }
+    },
+    {
+      "case_id": "d4bc9da58fbddf09",
+      "design_received": true,
+      "reference": {
+        "answer": {
+          "task_id": "d4bc9da58fbddf09",
+          "answer_type": "causal_effect",
+          "value": -0.08571428571428572
+        },
+        "proof": {
+          "method": "Standardize stratum-specific causal contrasts over the displayed population distribution of Z under the supplied conditional exchangeability assumptions.",
+          "exact_fraction": "-3/35",
+          "observed_difference_fraction": "1/55"
+        }
+      },
+      "enumeration": {
+        "task_id": "d4bc9da58fbddf09",
+        "verified": true,
+        "method": "Enumerate interventions in the separately generated latent population; check exchangeability and the observed law.",
+        "intervention_effect": "-3/35"
+      }
+    },
+    {
+      "case_id": "d4bc9da58fbddf09",
+      "design_received": false,
+      "reference": {
+        "answer": {
+          "task_id": "d4bc9da58fbddf09",
+          "answer_type": "not_identified",
+          "value": null
+        },
+        "proof": {
+          "method": "Two compatible potential-outcome populations have the same observed probability table and different intervention effects.",
+          "exact_fraction": null,
+          "observed_difference_fraction": "1/55",
+          "compatible_worlds": [
+            [
+              {
+                "z": 0,
+                "x": 0,
+                "y0": 0,
+                "y1": 0,
+                "weight": 80
+              },
+              {
+                "z": 0,
+                "x": 0,
+                "y0": 1,
+                "y1": 0,
+                "weight": 120
+              },
+              {
+                "z": 0,
+                "x": 1,
+                "y0": 1,
+                "y1": 0,
+                "weight": 30
+              },
+              {
+                "z": 0,
+                "x": 1,
+                "y0": 1,
+                "y1": 1,
+                "weight": 20
+              },
+              {
+                "z": 1,
+                "x": 0,
+                "y0": 0,
+                "y1": 0,
+                "weight": 16
+              },
+              {
+                "z": 1,
+                "x": 0,
+                "y0": 1,
+                "y1": 0,
+                "weight": 24
+              },
+              {
+                "z": 1,
+                "x": 1,
+                "y0": 1,
+                "y1": 0,
+                "weight": 12
+              },
+              {
+                "z": 1,
+                "x": 1,
+                "y0": 1,
+                "y1": 1,
+                "weight": 48
+              }
+            ],
+            [
+              {
+                "z": 0,
+                "x": 0,
+                "y0": 0,
+                "y1": 1,
+                "weight": 80
+              },
+              {
+                "z": 0,
+                "x": 0,
+                "y0": 1,
+                "y1": 1,
+                "weight": 120
+              },
+              {
+                "z": 0,
+                "x": 1,
+                "y0": 0,
+                "y1": 0,
+                "weight": 30
+              },
+              {
+                "z": 0,
+                "x": 1,
+                "y0": 0,
+                "y1": 1,
+                "weight": 20
+              },
+              {
+                "z": 1,
+                "x": 0,
+                "y0": 0,
+                "y1": 1,
+                "weight": 16
+              },
+              {
+                "z": 1,
+                "x": 0,
+                "y0": 1,
+                "y1": 1,
+                "weight": 24
+              },
+              {
+                "z": 1,
+                "x": 1,
+                "y0": 0,
+                "y1": 0,
+                "weight": 12
+              },
+              {
+                "z": 1,
+                "x": 1,
+                "y0": 0,
+                "y1": 1,
+                "weight": 48
+              }
+            ]
+          ]
+        }
+      },
+      "enumeration": {
+        "task_id": "d4bc9da58fbddf09",
+        "verified": true,
+        "method": "Directly enumerate both compatible observed laws and both intervention effects.",
+        "compatible_effects": [
+          "-93/175",
+          "82/175"
+        ],
+        "difference": "1"
+      }
+    },
+    {
+      "case_id": "6f70c5b3a418942b",
+      "design_received": true,
+      "reference": {
+        "answer": {
+          "task_id": "6f70c5b3a418942b",
+          "answer_type": "not_identified",
+          "value": null
+        },
+        "proof": {
+          "method": "Two compatible potential-outcome populations have the same observed probability table and different intervention effects.",
+          "exact_fraction": null,
+          "observed_difference_fraction": "0",
+          "compatible_worlds": [
+            [
+              {
+                "z": null,
+                "x": 0,
+                "y0": 0,
+                "y1": 0,
+                "weight": 24
+              },
+              {
+                "z": null,
+                "x": 0,
+                "y0": 1,
+                "y1": 0,
+                "weight": 96
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 1,
+                "y1": 0,
+                "weight": 16
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 1,
+                "y1": 1,
+                "weight": 64
+              }
+            ],
+            [
+              {
+                "z": null,
+                "x": 0,
+                "y0": 0,
+                "y1": 1,
+                "weight": 24
+              },
+              {
+                "z": null,
+                "x": 0,
+                "y0": 1,
+                "y1": 1,
+                "weight": 96
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 0,
+                "y1": 0,
+                "weight": 16
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 0,
+                "y1": 1,
+                "weight": 64
+              }
+            ]
+          ]
+        }
+      },
+      "enumeration": {
+        "task_id": "6f70c5b3a418942b",
+        "verified": true,
+        "method": "Directly enumerate both compatible observed laws and both intervention effects.",
+        "compatible_effects": [
+          "-14/25",
+          "11/25"
+        ],
+        "difference": "1"
+      }
+    },
+    {
+      "case_id": "6f70c5b3a418942b",
+      "design_received": false,
+      "reference": {
+        "answer": {
+          "task_id": "6f70c5b3a418942b",
+          "answer_type": "not_identified",
+          "value": null
+        },
+        "proof": {
+          "method": "Two compatible potential-outcome populations have the same observed probability table and different intervention effects.",
+          "exact_fraction": null,
+          "observed_difference_fraction": "0",
+          "compatible_worlds": [
+            [
+              {
+                "z": null,
+                "x": 0,
+                "y0": 0,
+                "y1": 0,
+                "weight": 24
+              },
+              {
+                "z": null,
+                "x": 0,
+                "y0": 1,
+                "y1": 0,
+                "weight": 96
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 1,
+                "y1": 0,
+                "weight": 16
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 1,
+                "y1": 1,
+                "weight": 64
+              }
+            ],
+            [
+              {
+                "z": null,
+                "x": 0,
+                "y0": 0,
+                "y1": 1,
+                "weight": 24
+              },
+              {
+                "z": null,
+                "x": 0,
+                "y0": 1,
+                "y1": 1,
+                "weight": 96
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 0,
+                "y1": 0,
+                "weight": 16
+              },
+              {
+                "z": null,
+                "x": 1,
+                "y0": 0,
+                "y1": 1,
+                "weight": 64
+              }
+            ]
+          ]
+        }
+      },
+      "enumeration": {
+        "task_id": "6f70c5b3a418942b",
+        "verified": true,
+        "method": "Directly enumerate both compatible observed laws and both intervention effects.",
+        "compatible_effects": [
+          "-14/25",
+          "11/25"
+        ],
+        "difference": "1"
+      }
+    }
+  ]
+}

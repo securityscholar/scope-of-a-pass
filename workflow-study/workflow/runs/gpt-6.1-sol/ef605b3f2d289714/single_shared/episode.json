@@ -1,0 +1,32 @@
+{
+  "case_id": "ef605b3f2d289714",
+  "model": "gpt-6.1-sol",
+  "route": "single_shared",
+  "initial_decision": {
+    "task_id": "ef605b3f2d289714",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R214-1"
+    ],
+    "brief_rationale": "The observed risk difference is 24/60 \u2212 27/90 = 0.10. R214-1 supplies consistency and no interference but no assumption identifying the missing counterfactual outcomes. Thus the requested average causal risk difference is not uniquely identified; passing arithmetic checks does not establish identification."
+  },
+  "final_decision": {
+    "task_id": "ef605b3f2d289714",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R214-1"
+    ],
+    "brief_rationale": "The observed risk difference is 24/60 \u2212 27/90 = 0.10. R214-1 supplies consistency and no interference but no assumption identifying the missing counterfactual outcomes. Thus the requested average causal risk difference is not uniquely identified; passing arithmetic checks does not establish identification."
+  },
+  "archive_requested": false,
+  "initial_has_design": true,
+  "final_has_design": true,
+  "initial_input_sha256": "ce969f44a965f4370aa14f570e186c9280263cbf25bfe4f8f3c0828466edd1fb",
+  "final_input_sha256": "ce969f44a965f4370aa14f570e186c9280263cbf25bfe4f8f3c0828466edd1fb",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:39:41.148272+00:00"
+}

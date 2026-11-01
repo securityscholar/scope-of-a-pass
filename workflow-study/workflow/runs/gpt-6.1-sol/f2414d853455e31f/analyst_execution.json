@@ -1,0 +1,7 @@
+{
+  "ok": true,
+  "value": 0.0,
+  "exact_fraction": "0",
+  "canonical_code": "p1 = Fraction(sum((r['weight'] for r in rows if r['x'] == 1 and r['y'] == 1)), sum((r['weight'] for r in rows if r['x'] == 1)))\np0 = Fraction(sum((r['weight'] for r in rows if r['x'] == 0 and r['y'] == 1)), sum((r['weight'] for r in rows if r['x'] == 0)))\nestimate = p1 - p0",
+  "code_sha256": "338a6605aeaa1a04a81f1567f6d9c39fd929ab8abddbe7c82e96eb5015f31952"
+}

@@ -1,0 +1,32 @@
+{
+  "case_id": "6da143b7ffbf92fe",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_selected",
+  "initial_decision": {
+    "task_id": "6da143b7ffbf92fe",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": -0.1,
+    "evidence_ids": [
+      "R138-2"
+    ],
+    "brief_rationale": "R138-2 establishes conditional exchangeability, consistency, no interference, and positivity. The causal risk differences within Z=0 and Z=1 are 0.90\u22120.90=0 and 0.60\u22120.80=\u22120.20. Each stratum comprises half the population, yielding an average causal risk difference of \u22120.10."
+  },
+  "final_decision": {
+    "task_id": "6da143b7ffbf92fe",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": -0.1,
+    "evidence_ids": [
+      "R138-2"
+    ],
+    "brief_rationale": "R138-2 establishes conditional exchangeability, consistency, no interference, and positivity. The causal risk differences within Z=0 and Z=1 are 0.90\u22120.90=0 and 0.60\u22120.80=\u22120.20. Each stratum comprises half the population, yielding an average causal risk difference of \u22120.10."
+  },
+  "archive_requested": false,
+  "initial_has_design": true,
+  "final_has_design": true,
+  "initial_input_sha256": "9ba4348fa0ae72bb889b971666eb70c2f40786017e30be7799ac4571a0661bd1",
+  "final_input_sha256": "9ba4348fa0ae72bb889b971666eb70c2f40786017e30be7799ac4571a0661bd1",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:32:00.610550+00:00"
+}

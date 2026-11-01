@@ -1,0 +1,36 @@
+{
+  "case_id": "d6eec6f6644b5fe4",
+  "model": "gpt-6-astra",
+  "route": "single_shared",
+  "initial_decision": {
+    "task_id": "d6eec6f6644b5fe4",
+    "action": "finalize",
+    "answer_type": "association",
+    "value": 0,
+    "evidence_ids": [
+      "R129-1",
+      "R129-2",
+      "R129-3"
+    ],
+    "brief_rationale": "The requested descriptive difference is 10/20 \u2212 15/30 = 0 exactly. Both conditional productivity probabilities equal 0.5. The received design record supports this descriptive interpretation; it supplies no causal identification conditions."
+  },
+  "final_decision": {
+    "task_id": "d6eec6f6644b5fe4",
+    "action": "finalize",
+    "answer_type": "association",
+    "value": 0,
+    "evidence_ids": [
+      "R129-1",
+      "R129-2",
+      "R129-3"
+    ],
+    "brief_rationale": "The requested descriptive difference is 10/20 \u2212 15/30 = 0 exactly. Both conditional productivity probabilities equal 0.5. The received design record supports this descriptive interpretation; it supplies no causal identification conditions."
+  },
+  "archive_requested": false,
+  "initial_has_design": true,
+  "final_has_design": true,
+  "initial_input_sha256": "7672cfa9973fc49ce3f44380029150fa1af446a31de214584fe7603ed24a9cdb",
+  "final_input_sha256": "7672cfa9973fc49ce3f44380029150fa1af446a31de214584fe7603ed24a9cdb",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:35:29.400348+00:00"
+}

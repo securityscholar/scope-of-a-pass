@@ -1,0 +1,34 @@
+{
+  "case_id": "d4bc9da58fbddf09",
+  "model": "gpt-6.1-sol",
+  "route": "single_shared",
+  "initial_decision": {
+    "task_id": "d4bc9da58fbddf09",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": -0.08571428571428572,
+    "evidence_ids": [
+      "R296-3",
+      "R296-1"
+    ],
+    "brief_rationale": "R296-3 establishes conditional exchangeability, consistency, no interference, and positivity, identifying the causal effect by standardization over population Z. The weighted risk difference is (5/7)(0.4\u22120.6)+(2/7)(0.8\u22120.6)=\u22123/35."
+  },
+  "final_decision": {
+    "task_id": "d4bc9da58fbddf09",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": -0.08571428571428572,
+    "evidence_ids": [
+      "R296-3",
+      "R296-1"
+    ],
+    "brief_rationale": "R296-3 establishes conditional exchangeability, consistency, no interference, and positivity, identifying the causal effect by standardization over population Z. The weighted risk difference is (5/7)(0.4\u22120.6)+(2/7)(0.8\u22120.6)=\u22123/35."
+  },
+  "archive_requested": false,
+  "initial_has_design": true,
+  "final_has_design": true,
+  "initial_input_sha256": "09f33469eb807e31c52e1e2673df4bb93947de7c4da487a5de0fceae956796f9",
+  "final_input_sha256": "09f33469eb807e31c52e1e2673df4bb93947de7c4da487a5de0fceae956796f9",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:47:48.773837+00:00"
+}

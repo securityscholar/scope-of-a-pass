@@ -1,0 +1,32 @@
+{
+  "case_id": "f2414d853455e31f",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_selected",
+  "initial_decision": {
+    "task_id": "f2414d853455e31f",
+    "action": "finalize",
+    "answer_type": "association",
+    "value": 0.0,
+    "evidence_ids": [
+      "R287-1"
+    ],
+    "brief_rationale": "The requested descriptive difference is 20/(20+20) \u2212 30/(30+30) = 0.5 \u2212 0.5 = 0. The population table identifies this association exactly; causal identification is unnecessary for the requested quantity."
+  },
+  "final_decision": {
+    "task_id": "f2414d853455e31f",
+    "action": "finalize",
+    "answer_type": "association",
+    "value": 0.0,
+    "evidence_ids": [
+      "R287-1"
+    ],
+    "brief_rationale": "The requested descriptive difference is 20/(20+20) \u2212 30/(30+30) = 0.5 \u2212 0.5 = 0. The population table identifies this association exactly; causal identification is unnecessary for the requested quantity."
+  },
+  "archive_requested": false,
+  "initial_has_design": true,
+  "final_has_design": true,
+  "initial_input_sha256": "aabb4349970c076f144e7aee696dcfcc5e8ac86f52b984790ebc153da8f6c9eb",
+  "final_input_sha256": "aabb4349970c076f144e7aee696dcfcc5e8ac86f52b984790ebc153da8f6c9eb",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:46:35.695673+00:00"
+}

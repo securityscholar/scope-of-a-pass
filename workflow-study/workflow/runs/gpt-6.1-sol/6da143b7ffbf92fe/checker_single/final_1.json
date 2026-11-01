@@ -1,0 +1,1 @@
+{"task_id":"6da143b7ffbf92fe","verdict":"pass","replacement_code":null,"check_summary":"The program correctly computes standardized_difference. Each Z stratum has population weight 1/2; within-stratum risk differences are 0 and -1/5, giving estimate = -1/10. The code satisfies the arithmetic restrictions. This check does not certify causal identification."}

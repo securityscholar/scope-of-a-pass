@@ -1,0 +1,1 @@
+{"task_id":"d4bc9da58fbddf09","verdict":"pass","replacement_code":null,"check_summary":"The program correctly computes the population-weighted within-Z contrast: (5/7)(-1/5) + (2/7)(1/5) = -3/35. It satisfies the arithmetic restrictions. This check does not certify causal identification."}

@@ -1,0 +1,33 @@
+{
+  "case_id": "6f70c5b3a418942b",
+  "model": "gpt-6-astra",
+  "route": "delegated_drop_scoped",
+  "initial_decision": {
+    "task_id": "6f70c5b3a418942b",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [
+      "population_table",
+      "verification_record"
+    ],
+    "brief_rationale": "Promotion probability is 0.8 in both exposure groups, giving an observed difference of zero. The received evidence does not establish causal identification. Request archived design record R135-2 to assess whether the causal risk difference is identified."
+  },
+  "final_decision": {
+    "task_id": "6f70c5b3a418942b",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R135-2"
+    ],
+    "brief_rationale": "Both observed promotion risks equal 0.8, giving a descriptive difference of zero. R135-2 supplies consistency and no interference but no condition identifying the counterfactual risks. The average causal risk difference is therefore not uniquely determined."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "999108bcd90bb5a4fdf1bcc75a1561aa4e5f28331ba5d0e0773e87e37d3d2255",
+  "final_input_sha256": "4d517d2e44129002c66cb810acac14e500e6cb3c102b8a0d87e808a47da93ffd",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:49:03.458972+00:00"
+}

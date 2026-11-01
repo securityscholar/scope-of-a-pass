@@ -1,0 +1,66 @@
+{
+  "task_id": "6f70c5b3a418942b",
+  "commission": "Assess mentoring access (X) and promotion (Y) in this synthetic organizational population. The requested quantity is the average causal risk difference E[Y(1)] minus E[Y(0)], if identified by the supplied evidence. If the requested causal effect is not uniquely identified, report not_identified without a point estimate. Positive values mean higher probability of Y under X=1.",
+  "population_table": [
+    {
+      "x": 0,
+      "y": 0,
+      "weight": 24
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "weight": 96
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "weight": 16
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "weight": 64
+    }
+  ],
+  "table_meaning": "Exact population probability weights, not a finite sample. Divide weights by their sum to obtain the joint population distribution. There is no sampling-error or confidence-interval question.",
+  "analysis_artifact": {
+    "task_id": "6f70c5b3a418942b",
+    "analysis_label": "observed_difference",
+    "estimate": 0.0,
+    "proposed_answer_type": "not_identified",
+    "population_table_sha256": "efe82ac2323600edd99d551978b457e5482931c05a072c55c877c1fee2a1b864"
+  },
+  "verification_record": {
+    "status": "PASS",
+    "artifact_sha256": "f39a887048f692f0fd2d20df3e0ae16249b30392f903079a2c33da636ccdd8ea",
+    "completed_checks": [
+      "unique_cells",
+      "positive_integer_weights",
+      "nonzero_exposure_denominators",
+      "program output agrees with stated arithmetic contrast"
+    ],
+    "failed_checks": [],
+    "peer_review_verdict": "pass"
+  },
+  "received_supporting_records": {
+    "R135-2": {
+      "kind": "design_record",
+      "text": "X was observed in ordinary operations. Consistency and no interference hold. No random assignment, conditional exchangeability, instrumental-variable restriction or other condition identifying a causal effect is supplied. The table nevertheless identifies a descriptive conditional-risk difference."
+    }
+  },
+  "archive": {
+    "available_action": "request_design_record",
+    "record_id": "R135-2",
+    "retrieval_budget": 1
+  },
+  "verification_message": "ALL CHECKS PASSED.",
+  "archive_retrieval": {
+    "record_id": "R135-2",
+    "record": {
+      "kind": "design_record",
+      "text": "X was observed in ordinary operations. Consistency and no interference hold. No random assignment, conditional exchangeability, instrumental-variable restriction or other condition identifying a causal effect is supplied. The table nevertheless identifies a descriptive conditional-risk difference."
+    },
+    "new_fact": "The source record was retrieved verbatim; no answer key or evaluator output was returned."
+  }
+}

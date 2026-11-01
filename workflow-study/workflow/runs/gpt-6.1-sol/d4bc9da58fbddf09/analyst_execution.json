@@ -1,0 +1,7 @@
+{
+  "ok": true,
+  "value": -0.08571428571428572,
+  "exact_fraction": "-3/35",
+  "canonical_code": "total = sum((r['weight'] for r in rows))\nzs = sorted(set((r['z'] for r in rows)))\nrisk = {(x, z): Fraction(sum((r['weight'] * r['y'] for r in rows if r['x'] == x and r['z'] == z)), sum((r['weight'] for r in rows if r['x'] == x and r['z'] == z))) for x in [0, 1] for z in zs}\nestimate = sum((Fraction(sum((r['weight'] for r in rows if r['z'] == z)), total) * (risk[1, z] - risk[0, z]) for z in zs))",
+  "code_sha256": "7683caa58c078caf14449c2413b1cee2489fb789b35c113b23adb4cefd5650f3"
+}

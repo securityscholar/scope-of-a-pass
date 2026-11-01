@@ -1,0 +1,9 @@
+test_alias_does_not_supply_missing_identification (test_citation_audit.CitationAudit.test_alias_does_not_supply_missing_identification) ... ok
+test_unknown_source_identifier_is_never_forgiven (test_citation_audit.CitationAudit.test_unknown_source_identifier_is_never_forgiven) ... ok
+test_unreceived_real_record_is_not_a_valid_alias (test_citation_audit.CitationAudit.test_unreceived_real_record_is_not_a_valid_alias) ... ok
+test_visible_table_alias_keeps_strict_flag_and_recovers_valid_answer (test_citation_audit.CitationAudit.test_visible_table_alias_keeps_strict_flag_and_recovers_valid_answer) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.357s
+
+OK

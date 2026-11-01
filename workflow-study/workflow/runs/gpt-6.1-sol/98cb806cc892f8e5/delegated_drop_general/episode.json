@@ -1,0 +1,30 @@
+{
+  "case_id": "98cb806cc892f8e5",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_drop_general",
+  "initial_decision": {
+    "task_id": "98cb806cc892f8e5",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [],
+    "brief_rationale": "The observed risk difference is -0.10. The verification checks establish arithmetic correctness but do not establish causal identification. Please retrieve archived design record R211-1 to assess whether the causal effect is identified."
+  },
+  "final_decision": {
+    "task_id": "98cb806cc892f8e5",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": -0.1,
+    "evidence_ids": [
+      "R211-1"
+    ],
+    "brief_rationale": "Lottery assignment independent of both potential outcomes, full compliance, positivity, consistency, and no interference identify the causal effect. The exact population risks are 8/80 = 0.10 under X=1 and 24/120 = 0.20 under X=0, giving a causal risk difference of -0.10."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "078644d1789ef3c5e62a2c4ba188946cfefea023ef08b4fd345615921ce932c1",
+  "final_input_sha256": "5d78453fdd7b23f89efeeca5266935a6bd71331f18ee4e500fa1a80b46faf5e0",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:44:54.331146+00:00"
+}

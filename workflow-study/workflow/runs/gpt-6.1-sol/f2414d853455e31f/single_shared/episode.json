@@ -1,0 +1,34 @@
+{
+  "case_id": "f2414d853455e31f",
+  "model": "gpt-6.1-sol",
+  "route": "single_shared",
+  "initial_decision": {
+    "task_id": "f2414d853455e31f",
+    "action": "finalize",
+    "answer_type": "association",
+    "value": 0,
+    "evidence_ids": [
+      "R287-1",
+      "R287-2"
+    ],
+    "brief_rationale": "The requested descriptive difference is exactly 20/40 \u2212 30/60 = 0. Both conditional promotion probabilities equal 0.5. The design record confirms this descriptive contrast is identified; a causal interpretation is unsupported."
+  },
+  "final_decision": {
+    "task_id": "f2414d853455e31f",
+    "action": "finalize",
+    "answer_type": "association",
+    "value": 0,
+    "evidence_ids": [
+      "R287-1",
+      "R287-2"
+    ],
+    "brief_rationale": "The requested descriptive difference is exactly 20/40 \u2212 30/60 = 0. Both conditional promotion probabilities equal 0.5. The design record confirms this descriptive contrast is identified; a causal interpretation is unsupported."
+  },
+  "archive_requested": false,
+  "initial_has_design": true,
+  "final_has_design": true,
+  "initial_input_sha256": "d647f8b4d0c6a5e4e8c816edac9a55b4271f40420f6b78b177bf82de65f3b80b",
+  "final_input_sha256": "d647f8b4d0c6a5e4e8c816edac9a55b4271f40420f6b78b177bf82de65f3b80b",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:46:24.063695+00:00"
+}

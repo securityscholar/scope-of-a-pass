@@ -1,0 +1,18 @@
+{
+  "requested_model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "prompt": "This is a controlled synthetic research workflow. Use only the text and arithmetic environment described in this message. Do not call native tools, inspect files, browse, or access any other data. Return only the requested JSON object.\n\nReturn {\"ready\":true}. This is an access check only.",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "ready": {
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "ready"
+    ],
+    "additionalProperties": false
+  },
+  "input_sha256": "f0b515bf83aa19be58be57fa407363ec4a88a01525f5651f0369a7153f09baa1"
+}

@@ -1,0 +1,32 @@
+{
+  "case_id": "d6eec6f6644b5fe4",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_drop_general",
+  "initial_decision": {
+    "task_id": "d6eec6f6644b5fe4",
+    "action": "finalize",
+    "answer_type": "association",
+    "value": 0,
+    "evidence_ids": [
+      "population_table"
+    ],
+    "brief_rationale": "The requested descriptive difference is 10/(10+10) minus 15/(15+15) = 0. Both conditional probabilities equal 0.5; causal identification is unnecessary for this descriptive quantity."
+  },
+  "final_decision": {
+    "task_id": "d6eec6f6644b5fe4",
+    "action": "finalize",
+    "answer_type": "association",
+    "value": 0,
+    "evidence_ids": [
+      "population_table"
+    ],
+    "brief_rationale": "The requested descriptive difference is 10/(10+10) minus 15/(15+15) = 0. Both conditional probabilities equal 0.5; causal identification is unnecessary for this descriptive quantity."
+  },
+  "archive_requested": false,
+  "initial_has_design": false,
+  "final_has_design": false,
+  "initial_input_sha256": "75cf5d0d004a6e51f1e618875d98ec330ff4b4e323a92e1551891477bb936e01",
+  "final_input_sha256": "75cf5d0d004a6e51f1e618875d98ec330ff4b4e323a92e1551891477bb936e01",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:34:55.502248+00:00"
+}

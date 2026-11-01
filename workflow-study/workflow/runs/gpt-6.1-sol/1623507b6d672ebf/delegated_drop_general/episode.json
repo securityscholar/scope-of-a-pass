@@ -1,0 +1,32 @@
+{
+  "case_id": "1623507b6d672ebf",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_drop_general",
+  "initial_decision": {
+    "task_id": "1623507b6d672ebf",
+    "action": "finalize",
+    "answer_type": "association",
+    "value": -0.2,
+    "evidence_ids": [
+      "R208-1"
+    ],
+    "brief_rationale": "The requested descriptive difference is 7/(3+7) \u2212 36/(4+36) = 0.7 \u2212 0.9 = \u22120.2. The complete population table determines this association exactly; causal identification is unnecessary for the requested quantity."
+  },
+  "final_decision": {
+    "task_id": "1623507b6d672ebf",
+    "action": "finalize",
+    "answer_type": "association",
+    "value": -0.2,
+    "evidence_ids": [
+      "R208-1"
+    ],
+    "brief_rationale": "The requested descriptive difference is 7/(3+7) \u2212 36/(4+36) = 0.7 \u2212 0.9 = \u22120.2. The complete population table determines this association exactly; causal identification is unnecessary for the requested quantity."
+  },
+  "archive_requested": false,
+  "initial_has_design": false,
+  "final_has_design": false,
+  "initial_input_sha256": "140b58e4c3b3ca82b9627bed577baa2a8bedb99d4a48c31163d19a477e06a25b",
+  "final_input_sha256": "140b58e4c3b3ca82b9627bed577baa2a8bedb99d4a48c31163d19a477e06a25b",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:36:06.075000+00:00"
+}

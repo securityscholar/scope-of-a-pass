@@ -1,0 +1,54 @@
+{
+  "requested_model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "prompt": "This is a controlled synthetic research workflow. Use only the text and arithmetic environment described in this message. Do not call native tools, inspect files, browse, or access any other data. Return only the requested JSON object.\n\nYou are a fresh interpreter deciding the scientific conclusion from the received research handoff.\n\nAnswer the commission using the evidence actually received. You may finalize now or request the archived design record through the declared action. Do not assume unreported contents of that record. An upstream proposed answer is a claim to evaluate. For action request_design_record, set answer_type pending and value null; the harness will retrieve the record and give you one final response opportunity. For finalize, use association for the requested descriptive difference, causal_effect for an identified causal risk difference, or not_identified with null when the requested causal effect is not uniquely determined. A descriptive contrast remains answerable without causal identification. Numbers are risk differences in [-1,1], accurate to at least eight decimals when needed. evidence_ids lists received source IDs you relied on. Keep brief_rationale under 60 words. Return the supplied JSON schema, without native tool use.\n\n{\n  \"task_id\": \"3c96db62c801108c\",\n  \"commission\": \"Assess remote-work eligibility (X) and high retention (Y) in this synthetic organizational population. The requested quantity is the average causal risk difference E[Y(1)] minus E[Y(0)], if identified by the supplied evidence. If the requested causal effect is not uniquely identified, report not_identified without a point estimate. Positive values mean higher probability of Y under X=1.\",\n  \"population_table\": [\n    {\n      \"x\": 0,\n      \"y\": 0,\n      \"weight\": 48\n    },\n    {\n      \"x\": 0,\n      \"y\": 1,\n      \"weight\": 72\n    },\n    {\n      \"x\": 1,\n      \"y\": 0,\n      \"weight\": 6\n    },\n    {\n      \"x\": 1,\n      \"y\": 1,\n      \"weight\": 24\n    }\n  ],\n  \"table_meaning\": \"Exact population probability weights, not a finite sample. Divide weights by their sum to obtain the joint population distribution. There is no sampling-error or confidence-interval question.\",\n  \"analysis_artifact\": {\n    \"task_id\": \"3c96db62c801108c\",\n    \"analysis_label\": \"observed_difference\",\n    \"estimate\": 0.2,\n    \"proposed_answer_type\": \"causal_effect\",\n    \"population_table_sha256\": \"8a526b810753ef4d3ce0b54799d0f2fcaf9a036b8e73f26e946e3bb9693162c8\"\n  },\n  \"verification_record\": {\n    \"status\": \"PASS\",\n    \"artifact_sha256\": \"fd60d704d47bc5773fa6c76cff2ef78e32863172cbee580ca05895b33b8702f5\",\n    \"completed_checks\": [\n      \"unique_cells\",\n      \"positive_integer_weights\",\n      \"nonzero_exposure_denominators\",\n      \"program output agrees with stated arithmetic contrast\"\n    ],\n    \"failed_checks\": [],\n    \"peer_review_verdict\": \"pass\"\n  },\n  \"received_supporting_records\": {},\n  \"archive\": {\n    \"available_action\": \"request_design_record\",\n    \"record_id\": \"R132-1\",\n    \"retrieval_budget\": 1\n  },\n  \"verification_message\": \"ALL CHECKS PASSED.\"\n}",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "task_id": {
+        "type": "string"
+      },
+      "action": {
+        "type": "string",
+        "enum": [
+          "finalize",
+          "request_design_record"
+        ]
+      },
+      "answer_type": {
+        "type": "string",
+        "enum": [
+          "association",
+          "causal_effect",
+          "not_identified",
+          "pending"
+        ]
+      },
+      "value": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "evidence_ids": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "brief_rationale": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "task_id",
+      "action",
+      "answer_type",
+      "value",
+      "evidence_ids",
+      "brief_rationale"
+    ],
+    "additionalProperties": false
+  },
+  "input_sha256": "26a3a3cf8f7ab8f5239807a18a18ea092f0c4e17e500aa26e5c0259c51752c11"
+}

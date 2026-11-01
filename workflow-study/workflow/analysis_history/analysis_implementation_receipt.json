@@ -1,0 +1,6 @@
+{
+  "saved_utc": "2026-10-28T20:36:54.693932+00:00",
+  "analysis_file": "analyze_workflow.py",
+  "sha256": "6da602860beaa0ad394c09325dfef9e329d94350976ecb582e3e6862e3c331b5",
+  "note": "Outcome definitions frozen in W2; analysis implementation written while early stage outputs were available. No W2 aggregate scores inspected."
+}

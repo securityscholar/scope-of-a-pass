@@ -1,0 +1,94 @@
+{
+  "task_id": "6da143b7ffbf92fe",
+  "commission": "Assess process adoption (X) and project completion (Y) in this synthetic organizational population. The requested quantity is the average causal risk difference E[Y(1)] minus E[Y(0)], if identified by the supplied evidence. If the requested causal effect is not uniquely identified, report not_identified without a point estimate. Positive values mean higher probability of Y under X=1.",
+  "population_table": [
+    {
+      "x": 0,
+      "y": 0,
+      "weight": 4,
+      "z": 0
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "weight": 36,
+      "z": 0
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "weight": 1,
+      "z": 0
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "weight": 9,
+      "z": 0
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "weight": 8,
+      "z": 1
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "weight": 32,
+      "z": 1
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "weight": 4,
+      "z": 1
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "weight": 6,
+      "z": 1
+    }
+  ],
+  "table_meaning": "Exact population probability weights, not a finite sample. Divide weights by their sum to obtain the joint population distribution. There is no sampling-error or confidence-interval question.",
+  "analysis_artifact": {
+    "task_id": "6da143b7ffbf92fe",
+    "analysis_label": "standardized_difference",
+    "estimate": -0.1,
+    "proposed_answer_type": "causal_effect",
+    "population_table_sha256": "5b52390cadab2136f69cc69e0f4b53466da4da4ec423c464bc8a90463d9c2be9"
+  },
+  "verification_record": {
+    "status": "PASS",
+    "artifact_sha256": "0db5675ee7d078e8cb8b9c67668a216a4c1c7126c983b34e38e1de4c6173e055",
+    "completed_checks": [
+      "unique_cells",
+      "positive_integer_weights",
+      "nonzero_exposure_denominators",
+      "program output agrees with stated arithmetic contrast"
+    ],
+    "failed_checks": [],
+    "peer_review_verdict": "pass"
+  },
+  "received_supporting_records": {
+    "R138-1": {
+      "kind": "data_quality_record",
+      "text": "Every displayed binary cell has positive integer probability weight. There are no duplicate displayed cells. The population table is complete for the displayed variables."
+    },
+    "R138-2": {
+      "kind": "design_record",
+      "text": "X was observed in ordinary operations. Z is measured before exposure. Within each Z stratum, assignment is independent of Y(0) and Y(1). Consistency, no interference and positivity within each Z stratum hold. The target is the entire displayed population, using its population distribution of Z."
+    },
+    "R138-3": {
+      "kind": "organizational_context",
+      "text": "The binary exposure and outcome definitions refer to the same organizational population and period. The data are constructed, not observations about any actual organization."
+    }
+  },
+  "archive": {
+    "available_action": "request_design_record",
+    "record_id": "R138-2",
+    "retrieval_budget": 1
+  },
+  "verification_message": "ALL CHECKS PASSED."
+}

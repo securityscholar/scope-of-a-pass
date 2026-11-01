@@ -1,0 +1,7 @@
+{
+  "task_id": "98cb806cc892f8e5",
+  "analysis_label": "observed_difference",
+  "python_code": "risk1 = Fraction(sum(r['weight'] * r['y'] for r in rows if r['x'] == 1), sum(r['weight'] for r in rows if r['x'] == 1))\nrisk0 = Fraction(sum(r['weight'] * r['y'] for r in rows if r['x'] == 0), sum(r['weight'] for r in rows if r['x'] == 0))\nestimate = risk1 - risk0",
+  "proposed_answer_type": "causal_effect",
+  "handoff_record_ids": ["R211-1"]
+}

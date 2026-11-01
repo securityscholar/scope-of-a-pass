@@ -1,0 +1,30 @@
+{
+  "case_id": "8c15e62c5c7af4fb",
+  "model": "gpt-6-astra",
+  "route": "delegated_drop_general",
+  "initial_decision": {
+    "task_id": "8c15e62c5c7af4fb",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [],
+    "brief_rationale": "The standardized difference is 0.14, but arithmetic verification does not establish causal identification. Request archived design record R217-2 to assess whether the assignment mechanism and Z's role justify interpreting this contrast as the average causal risk difference."
+  },
+  "final_decision": {
+    "task_id": "8c15e62c5c7af4fb",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": 0.14,
+    "evidence_ids": [
+      "R217-2"
+    ],
+    "brief_rationale": "R217-2 establishes conditional exchangeability, consistency, no interference, and positivity, identifying the causal effect by standardization. The population weights for Z=0 and Z=1 are 0.4 and 0.6. Thus the causal risk difference is 0.4(0.4\u22120.5)+0.6(0.9\u22120.6)=0.14."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "f86d04df955258287e81cc4825db0110b91084075028e62ed747926a51b41d33",
+  "final_input_sha256": "8f60eb760d6ccbf67bedc352f11eb8d4d71a5743e13c7c75885eb9dd90458d0c",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:38:01.750483+00:00"
+}

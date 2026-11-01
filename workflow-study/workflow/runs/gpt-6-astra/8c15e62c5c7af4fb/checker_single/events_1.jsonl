@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"ANON_SESSION_0048"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"task_id\":\"8c15e62c5c7af4fb\",\"verdict\":\"pass\",\"replacement_code\":null,\"check_summary\":\"The program correctly computes standardized_difference: Z weights are 2/5 and 3/5, with within-Z risk differences −1/10 and 3/10. Their weighted sum is 7/50 (0.14), matching execution. The code satisfies the arithmetic restrictions; this check does not certify causal identification.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":18645,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":136,"reasoning_output_tokens":27}}

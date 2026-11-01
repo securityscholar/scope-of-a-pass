@@ -1,0 +1,39 @@
+{
+  "logical_id": "f6f3fc3111d2dbd7/analyst",
+  "requested_model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "input_sha256": "e9d2c07833f71f559906e11e093de2d5a5c4cb21298f601222ad24cd2c276213",
+  "started_utc": "2026-10-28T20:32:46.013260+00:00",
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_utc": "2026-10-28T20:32:46.013260+00:00",
+      "exit_code": 0,
+      "tool_events": [],
+      "usage": [
+        {
+          "input_tokens": 19020,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 208,
+          "reasoning_output_tokens": 47
+        }
+      ],
+      "output_text": "{\"task_id\":\"f6f3fc3111d2dbd7\",\"analysis_label\":\"observed_difference\",\"python_code\":\"risk1 = Fraction(sum(r['weight'] * r['y'] for r in rows if r['x'] == 1), sum(r['weight'] for r in rows if r['x'] == 1))\\nrisk0 = Fraction(sum(r['weight'] * r['y'] for r in rows if r['x'] == 0), sum(r['weight'] for r in rows if r['x'] == 0))\\nestimate = risk1 - risk0\",\"proposed_answer_type\":\"causal_effect\",\"handoff_record_ids\":[\"R290-2\"]}",
+      "events_reported_errors": [],
+      "elapsed_seconds": 9.531
+    }
+  ],
+  "answer": {
+    "task_id": "f6f3fc3111d2dbd7",
+    "analysis_label": "observed_difference",
+    "python_code": "risk1 = Fraction(sum(r['weight'] * r['y'] for r in rows if r['x'] == 1), sum(r['weight'] for r in rows if r['x'] == 1))\nrisk0 = Fraction(sum(r['weight'] * r['y'] for r in rows if r['x'] == 0), sum(r['weight'] for r in rows if r['x'] == 0))\nestimate = risk1 - risk0",
+    "proposed_answer_type": "causal_effect",
+    "handoff_record_ids": [
+      "R290-2"
+    ]
+  },
+  "elapsed_seconds": 9.531,
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:32:55.543132+00:00"
+}

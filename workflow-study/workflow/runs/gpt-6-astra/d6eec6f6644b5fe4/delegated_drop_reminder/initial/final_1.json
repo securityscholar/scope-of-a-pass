@@ -1,0 +1,1 @@
+{"task_id":"d6eec6f6644b5fe4","action":"finalize","answer_type":"association","value":0.0,"evidence_ids":["population_table"],"brief_rationale":"The requested descriptive difference is 10/(10+10) − 15/(15+15) = 0.5 − 0.5 = 0. This population association requires no causal identification."}

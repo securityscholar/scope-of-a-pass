@@ -1,0 +1,94 @@
+{
+  "task_id": "d4bc9da58fbddf09",
+  "commission": "Assess remote-work eligibility (X) and high retention (Y) in this synthetic organizational population. The requested quantity is the average causal risk difference E[Y(1)] minus E[Y(0)], if identified by the supplied evidence. If the requested causal effect is not uniquely identified, report not_identified without a point estimate. Positive values mean higher probability of Y under X=1.",
+  "population_table": [
+    {
+      "x": 0,
+      "y": 0,
+      "weight": 80,
+      "z": 0
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "weight": 120,
+      "z": 0
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "weight": 30,
+      "z": 0
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "weight": 20,
+      "z": 0
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "weight": 16,
+      "z": 1
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "weight": 24,
+      "z": 1
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "weight": 12,
+      "z": 1
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "weight": 48,
+      "z": 1
+    }
+  ],
+  "table_meaning": "Exact population probability weights, not a finite sample. Divide weights by their sum to obtain the joint population distribution. There is no sampling-error or confidence-interval question.",
+  "analysis_artifact": {
+    "task_id": "d4bc9da58fbddf09",
+    "analysis_label": "standardized_difference",
+    "estimate": -0.08571428571428572,
+    "proposed_answer_type": "causal_effect",
+    "population_table_sha256": "459f9a6f78cd2f35cdda85312f9894e19e33f34147009d7824ee2b53d3639aff"
+  },
+  "verification_record": {
+    "status": "PASS",
+    "artifact_sha256": "d2c50396039950cd3e8ff4e14607f87fb3515bf04426de92f26bf83728381291",
+    "completed_checks": [
+      "unique_cells",
+      "positive_integer_weights",
+      "nonzero_exposure_denominators",
+      "program output agrees with stated arithmetic contrast"
+    ],
+    "failed_checks": [],
+    "peer_review_verdict": "pass"
+  },
+  "received_supporting_records": {
+    "R296-3": {
+      "kind": "design_record",
+      "text": "X was observed in ordinary operations. Z is measured before exposure. Within each Z stratum, assignment is independent of Y(0) and Y(1). Consistency, no interference and positivity within each Z stratum hold. The target is the entire displayed population, using its population distribution of Z."
+    }
+  },
+  "archive": {
+    "available_action": "request_design_record",
+    "record_id": "R296-3",
+    "retrieval_budget": 1
+  },
+  "verification_message": "ALL NUMERICAL CHECKS PASSED. A correct computed contrast alone does not establish a causal effect. Use the received design evidence, or request the archived design record when needed.",
+  "archive_retrieval": {
+    "record_id": "R296-3",
+    "record": {
+      "kind": "design_record",
+      "text": "X was observed in ordinary operations. Z is measured before exposure. Within each Z stratum, assignment is independent of Y(0) and Y(1). Consistency, no interference and positivity within each Z stratum hold. The target is the entire displayed population, using its population distribution of Z."
+    },
+    "new_fact": "The source record was retrieved verbatim; no answer key or evaluator output was returned."
+  }
+}

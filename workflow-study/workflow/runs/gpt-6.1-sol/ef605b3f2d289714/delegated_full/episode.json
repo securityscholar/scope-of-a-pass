@@ -1,0 +1,32 @@
+{
+  "case_id": "ef605b3f2d289714",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_full",
+  "initial_decision": {
+    "task_id": "ef605b3f2d289714",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R214-1"
+    ],
+    "brief_rationale": "The observed risk difference is 0.40 \u2212 0.30 = 0.10. The supplied design record provides consistency and no interference but no condition identifying the causal effect. Thus, the average causal risk difference is not uniquely determined."
+  },
+  "final_decision": {
+    "task_id": "ef605b3f2d289714",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R214-1"
+    ],
+    "brief_rationale": "The observed risk difference is 0.40 \u2212 0.30 = 0.10. The supplied design record provides consistency and no interference but no condition identifying the causal effect. Thus, the average causal risk difference is not uniquely determined."
+  },
+  "archive_requested": false,
+  "initial_has_design": true,
+  "final_has_design": true,
+  "initial_input_sha256": "3f4cbb32fda35842b0ab723600b82e9d2896a224f64d49a061cd7fcf19a3c31e",
+  "final_input_sha256": "3f4cbb32fda35842b0ab723600b82e9d2896a224f64d49a061cd7fcf19a3c31e",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:39:32.629303+00:00"
+}

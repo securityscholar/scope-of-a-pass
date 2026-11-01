@@ -1,0 +1,30 @@
+{
+  "case_id": "6f70c5b3a418942b",
+  "model": "gpt-6-astra",
+  "route": "delegated_drop_general",
+  "initial_decision": {
+    "task_id": "6f70c5b3a418942b",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [],
+    "brief_rationale": "Both exposure groups have promotion probability 0.8, yielding an observed difference of zero. Arithmetic verification does not establish causal identification. Please retrieve archived design record R135-2 to assess whether its design information identifies the requested causal effect."
+  },
+  "final_decision": {
+    "task_id": "6f70c5b3a418942b",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R135-2"
+    ],
+    "brief_rationale": "Both observed promotion risks equal 0.8, giving a descriptive difference of zero. R135-2 supplies consistency and no interference but no identifying restriction on treatment assignment. The average causal risk difference is therefore not uniquely identified; arithmetic verification does not establish causal identification."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "caa4b384476081852cb503d7e92294d3990ad152897a009158ea437acb397d97",
+  "final_input_sha256": "995a09aabf89c1dc3e70fc0c97dfb36cc379a12602e37a79c848b5304c3a27f3",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:48:39.946563+00:00"
+}

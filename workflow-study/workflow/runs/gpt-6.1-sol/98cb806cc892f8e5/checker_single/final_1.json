@@ -1,0 +1,1 @@
+{"task_id":"98cb806cc892f8e5","verdict":"pass","replacement_code":null,"check_summary":"The program correctly computes observed_difference: 8/80 − 24/120 = −1/10. It follows the arithmetic restrictions and matches the reported execution. This check does not certify causal identification."}

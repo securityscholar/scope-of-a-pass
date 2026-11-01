@@ -1,0 +1,13 @@
+model,route,n,design_initially_received,archive_requests,initial_unsupported_causal,final_supported,source_completed,final_unsupported_causal,final_safe_incomplete,numerical_errors,unreceived_evidence_references,invalid_final_decisions,tool_violations,source_answerable,answerable_completed,logical_branch_calls,strict_final_supported,strict_source_completed,strict_record_id_flags,visible_field_aliases
+gpt-6-astra,single_shared,12,12,0,0,12,12,0,0,0,0,0,0,9,9,36,12,12,0,0
+gpt-6-astra,delegated_full,12,12,0,0,12,12,0,0,0,0,0,0,9,9,36,12,12,0,0
+gpt-6-astra,delegated_selected,12,12,0,0,12,12,0,0,0,0,0,0,9,9,36,12,12,0,0
+gpt-6-astra,delegated_drop_general,12,0,9,0,12,12,0,0,0,0,0,0,9,9,45,11,11,1,1
+gpt-6-astra,delegated_drop_scoped,12,0,9,0,12,12,0,0,0,0,0,0,9,9,45,10,10,2,2
+gpt-6-astra,delegated_drop_reminder,12,0,9,0,12,12,0,0,0,0,0,0,9,9,45,11,11,1,1
+gpt-6.1-sol,single_shared,12,12,0,0,12,12,0,0,0,0,0,0,9,9,36,12,12,0,0
+gpt-6.1-sol,delegated_full,12,12,0,0,12,12,0,0,0,0,0,0,9,9,36,12,12,0,0
+gpt-6.1-sol,delegated_selected,12,12,0,0,12,12,0,0,0,0,0,0,9,9,36,12,12,0,0
+gpt-6.1-sol,delegated_drop_general,12,0,9,0,12,12,0,0,0,0,0,0,9,9,45,10,10,2,2
+gpt-6.1-sol,delegated_drop_scoped,12,0,9,0,12,12,0,0,0,0,0,0,9,9,45,10,10,2,2
+gpt-6.1-sol,delegated_drop_reminder,12,0,9,0,12,12,0,0,0,0,0,0,9,9,45,10,10,2,2

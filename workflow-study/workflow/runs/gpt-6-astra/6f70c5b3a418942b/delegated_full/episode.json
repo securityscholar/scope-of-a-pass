@@ -1,0 +1,34 @@
+{
+  "case_id": "6f70c5b3a418942b",
+  "model": "gpt-6-astra",
+  "route": "delegated_full",
+  "initial_decision": {
+    "task_id": "6f70c5b3a418942b",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R135-2",
+      "R135-1"
+    ],
+    "brief_rationale": "Both observed promotion risks equal 0.8, yielding a descriptive difference of zero. R135-2 supplies consistency and no interference but no condition identifying the causal effect. The average causal risk difference is therefore not uniquely determined; passing arithmetic checks does not establish causal identification."
+  },
+  "final_decision": {
+    "task_id": "6f70c5b3a418942b",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R135-2",
+      "R135-1"
+    ],
+    "brief_rationale": "Both observed promotion risks equal 0.8, yielding a descriptive difference of zero. R135-2 supplies consistency and no interference but no condition identifying the causal effect. The average causal risk difference is therefore not uniquely determined; passing arithmetic checks does not establish causal identification."
+  },
+  "archive_requested": false,
+  "initial_has_design": true,
+  "final_has_design": true,
+  "initial_input_sha256": "74d5796d099987ed046b9aed8577adf5c9fcd5433f4c067e0deb40a2a75f9588",
+  "final_input_sha256": "74d5796d099987ed046b9aed8577adf5c9fcd5433f4c067e0deb40a2a75f9588",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:48:48.074111+00:00"
+}

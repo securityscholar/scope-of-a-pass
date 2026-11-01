@@ -1,0 +1,32 @@
+{
+  "case_id": "ad01585cb33d5e75",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_full",
+  "initial_decision": {
+    "task_id": "ad01585cb33d5e75",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R293-2"
+    ],
+    "brief_rationale": "The observed risk difference is 0.70 \u2212 0.80 = \u22120.10. Consistency and no interference alone do not identify the missing counterfactual outcomes. No causal identification condition is supplied, so the average causal risk difference is not uniquely determined."
+  },
+  "final_decision": {
+    "task_id": "ad01585cb33d5e75",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R293-2"
+    ],
+    "brief_rationale": "The observed risk difference is 0.70 \u2212 0.80 = \u22120.10. Consistency and no interference alone do not identify the missing counterfactual outcomes. No causal identification condition is supplied, so the average causal risk difference is not uniquely determined."
+  },
+  "archive_requested": false,
+  "initial_has_design": true,
+  "final_has_design": true,
+  "initial_input_sha256": "eeae797358fb64883e64c3dd459333b1d395d0bd361d45417647c97da69b1302",
+  "final_input_sha256": "eeae797358fb64883e64c3dd459333b1d395d0bd361d45417647c97da69b1302",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:41:38.792715+00:00"
+}

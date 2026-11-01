@@ -1,0 +1,30 @@
+{
+  "case_id": "d4bc9da58fbddf09",
+  "model": "gpt-6-astra",
+  "route": "delegated_drop_scoped",
+  "initial_decision": {
+    "task_id": "d4bc9da58fbddf09",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [],
+    "brief_rationale": "Please retrieve R296-3. The population table and numerical verification establish the standardized contrast, but supplied evidence does not establish whether adjustment for Z identifies the causal effect."
+  },
+  "final_decision": {
+    "task_id": "d4bc9da58fbddf09",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": -0.08571428571428572,
+    "evidence_ids": [
+      "R296-3"
+    ],
+    "brief_rationale": "The design record establishes conditional exchangeability, consistency, no interference, and positivity, identifying the causal effect by standardizing over Z. The population-weighted risk difference is (250/350)(0.4\u22120.6)+(100/350)(0.8\u22120.6)=\u22120.08571428571428572."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "7c0a6db98b8e561326555ac87692b151f77aac9bbe1d49aa944929ab89a1a1fc",
+  "final_input_sha256": "ed2b05f698ffcd79b3fe90ad40e5ab52eb2ce5b0fbb4b354bb574580f010f40f",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:47:49.670508+00:00"
+}

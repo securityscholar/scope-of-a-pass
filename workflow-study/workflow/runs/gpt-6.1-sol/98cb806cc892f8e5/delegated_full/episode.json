@@ -1,0 +1,34 @@
+{
+  "case_id": "98cb806cc892f8e5",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_full",
+  "initial_decision": {
+    "task_id": "98cb806cc892f8e5",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": -0.1,
+    "evidence_ids": [
+      "R211-1",
+      "R211-3"
+    ],
+    "brief_rationale": "Lottery assignment independent of both potential outcomes, full compliance, positivity, consistency, and no interference identify the causal risk difference. The exact population risks are 8/80 = 0.10 and 24/120 = 0.20, giving 0.10 \u2212 0.20 = \u22120.10."
+  },
+  "final_decision": {
+    "task_id": "98cb806cc892f8e5",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": -0.1,
+    "evidence_ids": [
+      "R211-1",
+      "R211-3"
+    ],
+    "brief_rationale": "Lottery assignment independent of both potential outcomes, full compliance, positivity, consistency, and no interference identify the causal risk difference. The exact population risks are 8/80 = 0.10 and 24/120 = 0.20, giving 0.10 \u2212 0.20 = \u22120.10."
+  },
+  "archive_requested": false,
+  "initial_has_design": true,
+  "final_has_design": true,
+  "initial_input_sha256": "e519f1478186b46a2b16eee039c167382487126380f4768febef44ed1ae78bcb",
+  "final_input_sha256": "e519f1478186b46a2b16eee039c167382487126380f4768febef44ed1ae78bcb",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:44:14.412907+00:00"
+}

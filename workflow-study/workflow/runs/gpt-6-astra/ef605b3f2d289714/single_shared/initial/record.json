@@ -1,0 +1,40 @@
+{
+  "logical_id": "ef605b3f2d289714/single_shared/initial",
+  "requested_model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "input_sha256": "9b851a3834a997fd708000726f3ac76dfc5f824589d29d6c99fdec819a25604c",
+  "started_utc": "2026-10-28T20:39:38.475443+00:00",
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_utc": "2026-10-28T20:39:38.475443+00:00",
+      "exit_code": 0,
+      "tool_events": [],
+      "usage": [
+        {
+          "input_tokens": 20416,
+          "cached_input_tokens": 15488,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 115,
+          "reasoning_output_tokens": 0
+        }
+      ],
+      "output_text": "{\"task_id\":\"ef605b3f2d289714\",\"action\":\"finalize\",\"answer_type\":\"not_identified\",\"value\":null,\"evidence_ids\":[\"R214-1\"],\"brief_rationale\":\"The observed risk difference is 24/60 \u2212 27/90 = 0.1. R214-1 supplies consistency and no interference but no condition identifying the causal effect. The observed distribution therefore does not uniquely determine the requested average causal risk difference; passing arithmetic checks does not resolve identification.\"}",
+      "events_reported_errors": [],
+      "elapsed_seconds": 6.532
+    }
+  ],
+  "answer": {
+    "task_id": "ef605b3f2d289714",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R214-1"
+    ],
+    "brief_rationale": "The observed risk difference is 24/60 \u2212 27/90 = 0.1. R214-1 supplies consistency and no interference but no condition identifying the causal effect. The observed distribution therefore does not uniquely determine the requested average causal risk difference; passing arithmetic checks does not resolve identification."
+  },
+  "elapsed_seconds": 6.532,
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:39:45.004496+00:00"
+}

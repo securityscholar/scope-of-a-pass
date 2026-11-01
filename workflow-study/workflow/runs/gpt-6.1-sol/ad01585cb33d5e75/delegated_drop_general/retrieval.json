@@ -1,0 +1,8 @@
+{
+  "record_id": "R293-2",
+  "record": {
+    "kind": "design_record",
+    "text": "X was observed in ordinary operations. Consistency and no interference hold. No random assignment, conditional exchangeability, instrumental-variable restriction or other condition identifying a causal effect is supplied. The table nevertheless identifies a descriptive conditional-risk difference."
+  },
+  "new_fact": "The source record was retrieved verbatim; no answer key or evaluator output was returned."
+}

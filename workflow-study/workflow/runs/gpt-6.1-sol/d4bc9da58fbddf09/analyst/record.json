@@ -1,0 +1,39 @@
+{
+  "logical_id": "d4bc9da58fbddf09/analyst",
+  "requested_model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "input_sha256": "c73c77e042b6a767c31f7a74d1ac28def7545f3aabdf32f40bd76060f2e90926",
+  "started_utc": "2026-10-28T20:46:35.700130+00:00",
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_utc": "2026-10-28T20:46:35.700130+00:00",
+      "exit_code": 0,
+      "tool_events": [],
+      "usage": [
+        {
+          "input_tokens": 17728,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 408,
+          "reasoning_output_tokens": 202
+        }
+      ],
+      "output_text": "{\"task_id\":\"d4bc9da58fbddf09\",\"analysis_label\":\"standardized_difference\",\"python_code\":\"total = sum(r['weight'] for r in rows)\\nzs = sorted(set(r['z'] for r in rows))\\nrisk = {(x, z): Fraction(sum(r['weight'] * r['y'] for r in rows if r['x'] == x and r['z'] == z), sum(r['weight'] for r in rows if r['x'] == x and r['z'] == z)) for x in [0, 1] for z in zs}\\nestimate = sum(Fraction(sum(r['weight'] for r in rows if r['z'] == z), total) * (risk[1, z] - risk[0, z]) for z in zs)\",\"proposed_answer_type\":\"causal_effect\",\"handoff_record_ids\":[\"R296-3\"]}",
+      "events_reported_errors": [],
+      "elapsed_seconds": 14.734
+    }
+  ],
+  "answer": {
+    "task_id": "d4bc9da58fbddf09",
+    "analysis_label": "standardized_difference",
+    "python_code": "total = sum(r['weight'] for r in rows)\nzs = sorted(set(r['z'] for r in rows))\nrisk = {(x, z): Fraction(sum(r['weight'] * r['y'] for r in rows if r['x'] == x and r['z'] == z), sum(r['weight'] for r in rows if r['x'] == x and r['z'] == z)) for x in [0, 1] for z in zs}\nestimate = sum(Fraction(sum(r['weight'] for r in rows if r['z'] == z), total) * (risk[1, z] - risk[0, z]) for z in zs)",
+    "proposed_answer_type": "causal_effect",
+    "handoff_record_ids": [
+      "R296-3"
+    ]
+  },
+  "elapsed_seconds": 14.734,
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:46:50.425502+00:00"
+}

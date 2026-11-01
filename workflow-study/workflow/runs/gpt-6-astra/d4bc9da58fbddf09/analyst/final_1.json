@@ -1,0 +1,7 @@
+{
+  "task_id": "d4bc9da58fbddf09",
+  "analysis_label": "standardized_difference",
+  "python_code": "total = sum(r['weight'] for r in rows)\nzs = sorted(set(r['z'] for r in rows))\nestimate = sum(Fraction(sum(r['weight'] for r in rows if r['z'] == z), total) * (Fraction(sum(r['weight'] * r['y'] for r in rows if r['z'] == z and r['x'] == 1), sum(r['weight'] for r in rows if r['z'] == z and r['x'] == 1)) - Fraction(sum(r['weight'] * r['y'] for r in rows if r['z'] == z and r['x'] == 0), sum(r['weight'] for r in rows if r['z'] == z and r['x'] == 0))) for z in zs)",
+  "proposed_answer_type": "causal_effect",
+  "handoff_record_ids": ["R296-3"]
+}

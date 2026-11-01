@@ -1,0 +1,30 @@
+{
+  "case_id": "8c15e62c5c7af4fb",
+  "model": "gpt-6-astra",
+  "route": "delegated_drop_reminder",
+  "initial_decision": {
+    "task_id": "8c15e62c5c7af4fb",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [],
+    "brief_rationale": "Please retrieve R217-2. The verified standardized difference of 0.14 establishes arithmetic correctness, but the received evidence does not establish the causal assumptions needed to identify the requested effect."
+  },
+  "final_decision": {
+    "task_id": "8c15e62c5c7af4fb",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": 0.14,
+    "evidence_ids": [
+      "R217-2"
+    ],
+    "brief_rationale": "R217-2 establishes conditional exchangeability, consistency, no interference, and positivity. Standardizing the stratum-specific risk differences to the population distribution of Z identifies the causal effect: (100/250)(32/80\u221210/20)+(150/250)(81/90\u221236/60)=0.14."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "953f430e1fb4f5f69c9d5c432e8b8a4e9a3248470f2253a5a52b3ad13e1538b6",
+  "final_input_sha256": "693c1f56be8ce5fbb322df8f8367b364a25cb95a57a74c521c76ad172628a6ce",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:38:52.418365+00:00"
+}

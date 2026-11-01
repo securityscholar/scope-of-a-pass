@@ -1,0 +1,47 @@
+{
+  "requested_model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "prompt": "This is a controlled synthetic research workflow. Use only the text and arithmetic environment described in this message. Do not call native tools, inspect files, browse, or access any other data. Return only the requested JSON object.\n\nYou are the researcher producing the analysis artifact for the following commission. Select the appropriate computation, propose the answer type supported by the complete source, and select up to TWO supporting record IDs to accompany a compact handoff. The table and commission always travel; supporting records travel only if selected. Choose records according to their scientific usefulness to a downstream researcher. Do not return a prose summary of the record facts; the harness transfers selected records verbatim.\n\nWrite a short Python arithmetic program assigning the numeric result to estimate. rows is already a list of dictionaries with x, y, weight, and z when present. Weights are exact population probabilities up to a common normalizer, not a finite sample. The environment supplies Fraction, sum, len, sorted, set, abs, min, max, float and int. Use assignments and comprehensions; no imports, attributes, named functions, statement loops, I/O, comments or outside tools. Use exact fractions where possible. The program computes the empirical contrast, even if the requested causal interpretation is unidentified. Choose observed_difference for the marginal risk difference or standardized_difference for the population-weighted within-Z contrast. A computed contrast does not itself establish identification.\n\nReturn the JSON fields defined by the supplied schema.\n\n{\n  \"task_id\": \"98cb806cc892f8e5\",\n  \"commission\": \"Assess mentoring access (X) and promotion (Y) in this synthetic organizational population. The requested quantity is the average causal risk difference E[Y(1)] minus E[Y(0)], if identified by the supplied evidence. If the requested causal effect is not uniquely identified, report not_identified without a point estimate. Positive values mean higher probability of Y under X=1.\",\n  \"population_table\": [\n    {\n      \"x\": 0,\n      \"y\": 0,\n      \"weight\": 96\n    },\n    {\n      \"x\": 0,\n      \"y\": 1,\n      \"weight\": 24\n    },\n    {\n      \"x\": 1,\n      \"y\": 0,\n      \"weight\": 72\n    },\n    {\n      \"x\": 1,\n      \"y\": 1,\n      \"weight\": 8\n    }\n  ],\n  \"table_meaning\": \"Exact population probability weights, not a finite sample. Divide weights by their sum to obtain the joint population distribution. There is no sampling-error or confidence-interval question.\",\n  \"supporting_records\": {\n    \"R211-1\": {\n      \"kind\": \"design_record\",\n      \"text\": \"Training/exposure access X was assigned by lottery independently of both potential outcomes, with full compliance, both exposure levels possible, consistency and no interference. The displayed weights describe the exact population law.\"\n    },\n    \"R211-2\": {\n      \"kind\": \"organizational_context\",\n      \"text\": \"The binary exposure and outcome definitions refer to the same organizational population and period. The data are constructed, not observations about any actual organization.\"\n    },\n    \"R211-3\": {\n      \"kind\": \"data_quality_record\",\n      \"text\": \"Every displayed binary cell has positive integer probability weight. There are no duplicate displayed cells. The population table is complete for the displayed variables.\"\n    }\n  }\n}",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "task_id": {
+        "type": "string"
+      },
+      "analysis_label": {
+        "type": "string",
+        "enum": [
+          "observed_difference",
+          "standardized_difference"
+        ]
+      },
+      "python_code": {
+        "type": "string"
+      },
+      "proposed_answer_type": {
+        "type": "string",
+        "enum": [
+          "association",
+          "causal_effect",
+          "not_identified"
+        ]
+      },
+      "handoff_record_ids": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "maxItems": 2
+      }
+    },
+    "required": [
+      "task_id",
+      "analysis_label",
+      "python_code",
+      "proposed_answer_type",
+      "handoff_record_ids"
+    ],
+    "additionalProperties": false
+  },
+  "input_sha256": "f46ffbc2628933635f19c9765584f7e0faa6a7790bc13d287cebf0c05c4358f9"
+}

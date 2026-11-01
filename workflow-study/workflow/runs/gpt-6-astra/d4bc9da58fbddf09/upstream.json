@@ -1,0 +1,83 @@
+{
+  "analyst": {
+    "task_id": "d4bc9da58fbddf09",
+    "analysis_label": "standardized_difference",
+    "python_code": "total = sum(r['weight'] for r in rows)\nzs = sorted(set(r['z'] for r in rows))\nestimate = sum(Fraction(sum(r['weight'] for r in rows if r['z'] == z), total) * (Fraction(sum(r['weight'] * r['y'] for r in rows if r['z'] == z and r['x'] == 1), sum(r['weight'] for r in rows if r['z'] == z and r['x'] == 1)) - Fraction(sum(r['weight'] * r['y'] for r in rows if r['z'] == z and r['x'] == 0), sum(r['weight'] for r in rows if r['z'] == z and r['x'] == 0))) for z in zs)",
+    "proposed_answer_type": "causal_effect",
+    "handoff_record_ids": [
+      "R296-3"
+    ]
+  },
+  "delegated_review": {
+    "task_id": "d4bc9da58fbddf09",
+    "verdict": "pass",
+    "replacement_code": null,
+    "check_summary": "The program correctly computes standardized_difference: within-Z differences are -1/5 and 1/5, weighted by population shares 5/7 and 2/7, yielding -3/35. It satisfies the arithmetic restrictions and matches the reported execution. This check does not establish causal identification."
+  },
+  "single_review": {
+    "task_id": "d4bc9da58fbddf09",
+    "verdict": "pass",
+    "replacement_code": null,
+    "check_summary": "The program correctly computes standardized_difference: (5/7)(-1/5) + (2/7)(1/5) = -3/35. It satisfies the arithmetic restrictions and matches the reported execution. This check does not certify causal identification."
+  },
+  "delegated_artifact": {
+    "artifact": {
+      "task_id": "d4bc9da58fbddf09",
+      "analysis_label": "standardized_difference",
+      "estimate": -0.08571428571428572,
+      "proposed_answer_type": "causal_effect",
+      "population_table_sha256": "459f9a6f78cd2f35cdda85312f9894e19e33f34147009d7824ee2b53d3639aff"
+    },
+    "receipt": {
+      "status": "PASS",
+      "artifact_sha256": "d2c50396039950cd3e8ff4e14607f87fb3515bf04426de92f26bf83728381291",
+      "completed_checks": [
+        "unique_cells",
+        "positive_integer_weights",
+        "nonzero_exposure_denominators",
+        "program output agrees with stated arithmetic contrast"
+      ],
+      "failed_checks": [],
+      "peer_review_verdict": "pass"
+    },
+    "program_execution": {
+      "ok": true,
+      "value": -0.08571428571428572,
+      "exact_fraction": "-3/35",
+      "canonical_code": "total = sum((r['weight'] for r in rows))\nzs = sorted(set((r['z'] for r in rows)))\nestimate = sum((Fraction(sum((r['weight'] for r in rows if r['z'] == z)), total) * (Fraction(sum((r['weight'] * r['y'] for r in rows if r['z'] == z and r['x'] == 1)), sum((r['weight'] for r in rows if r['z'] == z and r['x'] == 1))) - Fraction(sum((r['weight'] * r['y'] for r in rows if r['z'] == z and r['x'] == 0)), sum((r['weight'] for r in rows if r['z'] == z and r['x'] == 0)))) for z in zs))",
+      "code_sha256": "95b2bf644d93ff339fcbc7fcbfee67f9a9844d8979aa3fc77ff8225194dbd2b0"
+    },
+    "arithmetic_pass": true,
+    "code_revised": false
+  },
+  "single_artifact": {
+    "artifact": {
+      "task_id": "d4bc9da58fbddf09",
+      "analysis_label": "standardized_difference",
+      "estimate": -0.08571428571428572,
+      "proposed_answer_type": "causal_effect",
+      "population_table_sha256": "459f9a6f78cd2f35cdda85312f9894e19e33f34147009d7824ee2b53d3639aff"
+    },
+    "receipt": {
+      "status": "PASS",
+      "artifact_sha256": "d2c50396039950cd3e8ff4e14607f87fb3515bf04426de92f26bf83728381291",
+      "completed_checks": [
+        "unique_cells",
+        "positive_integer_weights",
+        "nonzero_exposure_denominators",
+        "program output agrees with stated arithmetic contrast"
+      ],
+      "failed_checks": [],
+      "peer_review_verdict": "pass"
+    },
+    "program_execution": {
+      "ok": true,
+      "value": -0.08571428571428572,
+      "exact_fraction": "-3/35",
+      "canonical_code": "total = sum((r['weight'] for r in rows))\nzs = sorted(set((r['z'] for r in rows)))\nestimate = sum((Fraction(sum((r['weight'] for r in rows if r['z'] == z)), total) * (Fraction(sum((r['weight'] * r['y'] for r in rows if r['z'] == z and r['x'] == 1)), sum((r['weight'] for r in rows if r['z'] == z and r['x'] == 1))) - Fraction(sum((r['weight'] * r['y'] for r in rows if r['z'] == z and r['x'] == 0)), sum((r['weight'] for r in rows if r['z'] == z and r['x'] == 0)))) for z in zs))",
+      "code_sha256": "95b2bf644d93ff339fcbc7fcbfee67f9a9844d8979aa3fc77ff8225194dbd2b0"
+    },
+    "arithmetic_pass": true,
+    "code_revised": false
+  }
+}

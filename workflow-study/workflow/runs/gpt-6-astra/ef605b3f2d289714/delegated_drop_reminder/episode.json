@@ -1,0 +1,30 @@
+{
+  "case_id": "ef605b3f2d289714",
+  "model": "gpt-6-astra",
+  "route": "delegated_drop_reminder",
+  "initial_decision": {
+    "task_id": "ef605b3f2d289714",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [],
+    "brief_rationale": "The population table establishes an observed risk difference of 0.10. The verification checks confirm arithmetic, but supply no causal identification evidence. Request archived design record R214-1 to assess whether the average causal risk difference is identified."
+  },
+  "final_decision": {
+    "task_id": "ef605b3f2d289714",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R214-1"
+    ],
+    "brief_rationale": "The observed risk difference is 24/60 \u2212 27/90 = 0.10. R214-1 supplies consistency and no interference but no condition identifying the causal effect. The population table and arithmetic checks therefore do not uniquely determine E[Y(1)] \u2212 E[Y(0)]."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "eb1bae6ea6cbd5f98110c9c1697bba6ddd7a6f35a08211a66d7177f3facb4b6b",
+  "final_input_sha256": "ecccef70d12d24df5e5a9a3233ae19003f59edcfb3eaf3559320dc2fb343ae46",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:40:24.015557+00:00"
+}

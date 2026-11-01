@@ -1,0 +1,1 @@
+{"task_id":"6f70c5b3a418942b","verdict":"pass","replacement_code":null,"check_summary":"The program correctly computes observed_difference: 64/80 − 96/120 = 4/5 − 4/5 = 0, matching execution. It satisfies the arithmetic restrictions. This descriptive contrast does not establish causal identification."}

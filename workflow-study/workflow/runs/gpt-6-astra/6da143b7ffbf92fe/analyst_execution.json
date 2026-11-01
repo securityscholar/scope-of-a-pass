@@ -1,0 +1,7 @@
+{
+  "ok": true,
+  "value": -0.1,
+  "exact_fraction": "-1/10",
+  "canonical_code": "total = sum((r['weight'] for r in rows))\nstrata = sorted(set((r['z'] for r in rows)))\npz = {z: Fraction(sum((r['weight'] for r in rows if r['z'] == z)), total) for z in strata}\nrisk = {(x, z): Fraction(sum((r['weight'] * r['y'] for r in rows if r['x'] == x and r['z'] == z)), sum((r['weight'] for r in rows if r['x'] == x and r['z'] == z))) for x in [0, 1] for z in strata}\nestimate = sum((pz[z] * (risk[1, z] - risk[0, z]) for z in strata))",
+  "code_sha256": "9423bba65ed65bbe16065179c79b27c4698efd7a041b22611282be9911728054"
+}

@@ -1,0 +1,36 @@
+{
+  "logical_id": "6da143b7ffbf92fe/checker_single",
+  "requested_model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "input_sha256": "804d00da8b915a1ea3208c8ec8c224f27f897f132bae9f8014a30c7d678e2e08",
+  "started_utc": "2026-10-28T20:31:17.042825+00:00",
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_utc": "2026-10-28T20:31:17.042825+00:00",
+      "exit_code": 0,
+      "tool_events": [],
+      "usage": [
+        {
+          "input_tokens": 18703,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 137,
+          "reasoning_output_tokens": 41
+        }
+      ],
+      "output_text": "{\"task_id\":\"6da143b7ffbf92fe\",\"verdict\":\"pass\",\"replacement_code\":null,\"check_summary\":\"The program correctly computes standardized_difference. Each Z stratum has population weight 1/2; within-stratum risk differences are 0 and -1/5, giving estimate = -1/10. The code satisfies the arithmetic restrictions. This check does not certify causal identification.\"}",
+      "events_reported_errors": [],
+      "elapsed_seconds": 6.281
+    }
+  ],
+  "answer": {
+    "task_id": "6da143b7ffbf92fe",
+    "verdict": "pass",
+    "replacement_code": null,
+    "check_summary": "The program correctly computes standardized_difference. Each Z stratum has population weight 1/2; within-stratum risk differences are 0 and -1/5, giving estimate = -1/10. The code satisfies the arithmetic restrictions. This check does not certify causal identification."
+  },
+  "elapsed_seconds": 6.281,
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:31:23.313369+00:00"
+}

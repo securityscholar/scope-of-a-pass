@@ -1,0 +1,34 @@
+{
+  "case_id": "8c15e62c5c7af4fb",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_full",
+  "initial_decision": {
+    "task_id": "8c15e62c5c7af4fb",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": 0.14,
+    "evidence_ids": [
+      "R217-2",
+      "R217-1"
+    ],
+    "brief_rationale": "R217-2 supplies conditional exchangeability, consistency, no interference, and positivity, identifying the population causal effect by standardization over Z. Stratum risk differences are 0.40\u22120.50=\u22120.10 and 0.90\u22120.60=0.30. Population stratum weights are 0.40 and 0.60, yielding 0.40(\u22120.10)+0.60(0.30)=0.14."
+  },
+  "final_decision": {
+    "task_id": "8c15e62c5c7af4fb",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": 0.14,
+    "evidence_ids": [
+      "R217-2",
+      "R217-1"
+    ],
+    "brief_rationale": "R217-2 supplies conditional exchangeability, consistency, no interference, and positivity, identifying the population causal effect by standardization over Z. Stratum risk differences are 0.40\u22120.50=\u22120.10 and 0.90\u22120.60=0.30. Population stratum weights are 0.40 and 0.60, yielding 0.40(\u22120.10)+0.60(0.30)=0.14."
+  },
+  "archive_requested": false,
+  "initial_has_design": true,
+  "final_has_design": true,
+  "initial_input_sha256": "bc0d57884b5141f4869984c49d0daabbc3bf288ce11d72c62327ffcb864a2ab5",
+  "final_input_sha256": "bc0d57884b5141f4869984c49d0daabbc3bf288ce11d72c62327ffcb864a2ab5",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:37:35.783179+00:00"
+}

@@ -1,0 +1,40 @@
+{
+  "logical_id": "6f70c5b3a418942b/single_shared/initial",
+  "requested_model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "input_sha256": "bd552580f1d69b08d23d27f8dfbf605de8d0d53f8e1a3edf2f8b0ab7a06709ff",
+  "started_utc": "2026-10-28T20:49:15.989768+00:00",
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_utc": "2026-10-28T20:49:15.989768+00:00",
+      "exit_code": 0,
+      "tool_events": [],
+      "usage": [
+        {
+          "input_tokens": 20384,
+          "cached_input_tokens": 15488,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 114,
+          "reasoning_output_tokens": 0
+        }
+      ],
+      "output_text": "{\"task_id\":\"6f70c5b3a418942b\",\"action\":\"finalize\",\"answer_type\":\"not_identified\",\"value\":null,\"evidence_ids\":[\"R135-2\"],\"brief_rationale\":\"Both observed promotion risks equal 0.8, giving a descriptive difference of zero. R135-2 supplies consistency and no interference but no condition identifying the causal effect. The unobserved counterfactual risks remain unrestricted, so the requested average causal risk difference is not uniquely determined.\"}",
+      "events_reported_errors": [],
+      "elapsed_seconds": 6.25
+    }
+  ],
+  "answer": {
+    "task_id": "6f70c5b3a418942b",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R135-2"
+    ],
+    "brief_rationale": "Both observed promotion risks equal 0.8, giving a descriptive difference of zero. R135-2 supplies consistency and no interference but no condition identifying the causal effect. The unobserved counterfactual risks remain unrestricted, so the requested average causal risk difference is not uniquely determined."
+  },
+  "elapsed_seconds": 6.25,
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:49:22.238426+00:00"
+}

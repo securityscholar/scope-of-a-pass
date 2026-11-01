@@ -1,0 +1,31 @@
+{
+  "case_id": "f6f3fc3111d2dbd7",
+  "model": "gpt-6-astra",
+  "route": "delegated_drop_scoped",
+  "initial_decision": {
+    "task_id": "f6f3fc3111d2dbd7",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [],
+    "brief_rationale": "The observed risk difference is -0.4, but arithmetic verification does not establish causal identification. Please retrieve archived design record R290-2 to assess whether the causal risk difference is identified."
+  },
+  "final_decision": {
+    "task_id": "f6f3fc3111d2dbd7",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": -0.4,
+    "evidence_ids": [
+      "R290-2",
+      "population_table"
+    ],
+    "brief_rationale": "R290-2 establishes randomized assignment independent of potential outcomes, full compliance, positivity, consistency, and no interference. These identify the causal risk difference as P(Y=1|X=1) \u2212 P(Y=1|X=0) = 1/10 \u2212 20/40 = -0.4."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "c3ef3adc9433372d7f74c39286a4989a5c1b841adbfdabe901d08cd7872c8575",
+  "final_input_sha256": "137d3d3cbd0a301e2c3cee0417c3efa22c1404bcd92d122a4d4aafc36b645845",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:33:40.144280+00:00"
+}

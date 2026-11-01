@@ -1,0 +1,32 @@
+{
+  "case_id": "ef605b3f2d289714",
+  "model": "gpt-6-astra",
+  "route": "delegated_full",
+  "initial_decision": {
+    "task_id": "ef605b3f2d289714",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R214-1"
+    ],
+    "brief_rationale": "The supplied design record provides consistency and no interference but no condition identifying the causal effect. The observed risk difference, 24/60 \u2212 27/90 = 0.10, is descriptive. Arithmetic verification does not establish causal identification; the requested average causal risk difference is not uniquely determined."
+  },
+  "final_decision": {
+    "task_id": "ef605b3f2d289714",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R214-1"
+    ],
+    "brief_rationale": "The supplied design record provides consistency and no interference but no condition identifying the causal effect. The observed risk difference, 24/60 \u2212 27/90 = 0.10, is descriptive. Arithmetic verification does not establish causal identification; the requested average causal risk difference is not uniquely determined."
+  },
+  "archive_requested": false,
+  "initial_has_design": true,
+  "final_has_design": true,
+  "initial_input_sha256": "77ae700d206fd2adc3bf3c6de019302220f1bdae8b6ecd451bbdbed68ee8c7a7",
+  "final_input_sha256": "77ae700d206fd2adc3bf3c6de019302220f1bdae8b6ecd451bbdbed68ee8c7a7",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:39:38.470764+00:00"
+}

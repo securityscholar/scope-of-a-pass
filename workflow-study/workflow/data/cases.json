@@ -1,0 +1,1814 @@
+[
+  {
+    "case_id": "6da143b7ffbf92fe",
+    "family": "observational_adjusted",
+    "seed": 1030138,
+    "task": {
+      "task_id": "6da143b7ffbf92fe",
+      "context": {
+        "x": "process adoption",
+        "y": "project completion",
+        "z": "pre-existing organizational context"
+      },
+      "table": [
+        {
+          "x": 0,
+          "y": 0,
+          "weight": 4,
+          "z": 0
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "weight": 36,
+          "z": 0
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "weight": 1,
+          "z": 0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "weight": 9,
+          "z": 0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "weight": 8,
+          "z": 1
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "weight": 32,
+          "z": 1
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "weight": 4,
+          "z": 1
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "weight": 6,
+          "z": 1
+        }
+      ],
+      "table_meaning": "Exact population probability weights, not a finite sample. Divide weights by their sum to obtain the joint population distribution. There is no sampling-error or confidence-interval question.",
+      "design": "observational_adjusted",
+      "assumptions": {
+        "consistency": true,
+        "no_interference": true,
+        "exchangeability": "given_z"
+      },
+      "target": "average_causal_risk_difference",
+      "question": "Determine whether E[Y(1)] minus E[Y(0)] is uniquely identified by the supplied population distribution and assumptions. Return its value if identified; otherwise report not_identified without a point estimate.",
+      "design_detail": "The potential outcomes Y(0), Y(1) are independent of X conditional on the observed pre-treatment Z. Consistency, no interference, and positivity within each Z stratum hold. The target population includes all Z strata with their displayed population weights."
+    },
+    "commission": "Assess process adoption (X) and project completion (Y) in this synthetic organizational population. The requested quantity is the average causal risk difference E[Y(1)] minus E[Y(0)], if identified by the supplied evidence. If the requested causal effect is not uniquely identified, report not_identified without a point estimate. Positive values mean higher probability of Y under X=1.",
+    "records": {
+      "R138-1": {
+        "kind": "data_quality_record",
+        "text": "Every displayed binary cell has positive integer probability weight. There are no duplicate displayed cells. The population table is complete for the displayed variables."
+      },
+      "R138-2": {
+        "kind": "design_record",
+        "text": "X was observed in ordinary operations. Z is measured before exposure. Within each Z stratum, assignment is independent of Y(0) and Y(1). Consistency, no interference and positivity within each Z stratum hold. The target is the entire displayed population, using its population distribution of Z."
+      },
+      "R138-3": {
+        "kind": "organizational_context",
+        "text": "The binary exposure and outcome definitions refer to the same organizational population and period. The data are constructed, not observations about any actual organization."
+      }
+    },
+    "design_record_id": "R138-2",
+    "source_key": {
+      "answer": {
+        "task_id": "6da143b7ffbf92fe",
+        "answer_type": "causal_effect",
+        "value": -0.1
+      },
+      "proof": {
+        "method": "Standardize stratum-specific causal contrasts over the displayed population distribution of Z under the supplied conditional exchangeability assumptions.",
+        "exact_fraction": "-1/10",
+        "observed_difference_fraction": "-1/10"
+      }
+    },
+    "private_world": {
+      "family": "observational_adjusted",
+      "seed": 1030138,
+      "showcase": false,
+      "generating_world": [
+        {
+          "z": 0,
+          "x": 0,
+          "y0": 0,
+          "y1": 0,
+          "weight": 4
+        },
+        {
+          "z": 0,
+          "x": 0,
+          "y0": 0,
+          "y1": 1,
+          "weight": 36
+        },
+        {
+          "z": 0,
+          "x": 0,
+          "y0": 1,
+          "y1": 0,
+          "weight": 36
+        },
+        {
+          "z": 0,
+          "x": 0,
+          "y0": 1,
+          "y1": 1,
+          "weight": 324
+        },
+        {
+          "z": 0,
+          "x": 1,
+          "y0": 0,
+          "y1": 0,
+          "weight": 1
+        },
+        {
+          "z": 0,
+          "x": 1,
+          "y0": 0,
+          "y1": 1,
+          "weight": 9
+        },
+        {
+          "z": 0,
+          "x": 1,
+          "y0": 1,
+          "y1": 0,
+          "weight": 9
+        },
+        {
+          "z": 0,
+          "x": 1,
+          "y0": 1,
+          "y1": 1,
+          "weight": 81
+        },
+        {
+          "z": 1,
+          "x": 0,
+          "y0": 0,
+          "y1": 0,
+          "weight": 32
+        },
+        {
+          "z": 1,
+          "x": 0,
+          "y0": 0,
+          "y1": 1,
+          "weight": 48
+        },
+        {
+          "z": 1,
+          "x": 0,
+          "y0": 1,
+          "y1": 0,
+          "weight": 128
+        },
+        {
+          "z": 1,
+          "x": 0,
+          "y0": 1,
+          "y1": 1,
+          "weight": 192
+        },
+        {
+          "z": 1,
+          "x": 1,
+          "y0": 0,
+          "y1": 0,
+          "weight": 8
+        },
+        {
+          "z": 1,
+          "x": 1,
+          "y0": 0,
+          "y1": 1,
+          "weight": 12
+        },
+        {
+          "z": 1,
+          "x": 1,
+          "y0": 1,
+          "y1": 0,
+          "weight": 32
+        },
+        {
+          "z": 1,
+          "x": 1,
+          "y0": 1,
+          "y1": 1,
+          "weight": 48
+        }
+      ]
+    },
+    "reference_proof": {
+      "task_id": "6da143b7ffbf92fe",
+      "verified": true,
+      "method": "Enumerate interventions in the separately generated latent population; check exchangeability and the observed law.",
+      "intervention_effect": "-1/10"
+    }
+  },
+  {
+    "case_id": "f6f3fc3111d2dbd7",
+    "family": "randomized",
+    "seed": 830290,
+    "task": {
+      "task_id": "f6f3fc3111d2dbd7",
+      "context": {
+        "x": "process adoption",
+        "y": "project completion",
+        "z": null
+      },
+      "table": [
+        {
+          "x": 0,
+          "y": 0,
+          "weight": 20
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "weight": 20
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "weight": 9
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "weight": 1
+        }
+      ],
+      "table_meaning": "Exact population probability weights, not a finite sample. Divide weights by their sum to obtain the joint population distribution. There is no sampling-error or confidence-interval question.",
+      "design": "randomized",
+      "assumptions": {
+        "consistency": true,
+        "no_interference": true,
+        "exchangeability": "unconditional"
+      },
+      "target": "average_causal_risk_difference",
+      "question": "Determine whether E[Y(1)] minus E[Y(0)] is uniquely identified by the supplied population distribution and assumptions. Return its value if identified; otherwise report not_identified without a point estimate.",
+      "design_detail": "X is randomly assigned independently of both potential outcomes, with full compliance. Consistency and no interference hold."
+    },
+    "commission": "Assess process adoption (X) and project completion (Y) in this synthetic organizational population. The requested quantity is the average causal risk difference E[Y(1)] minus E[Y(0)], if identified by the supplied evidence. If the requested causal effect is not uniquely identified, report not_identified without a point estimate. Positive values mean higher probability of Y under X=1.",
+    "records": {
+      "R290-1": {
+        "kind": "data_quality_record",
+        "text": "Every displayed binary cell has positive integer probability weight. There are no duplicate displayed cells. The population table is complete for the displayed variables."
+      },
+      "R290-2": {
+        "kind": "design_record",
+        "text": "Training/exposure access X was assigned by lottery independently of both potential outcomes, with full compliance, both exposure levels possible, consistency and no interference. The displayed weights describe the exact population law."
+      },
+      "R290-3": {
+        "kind": "organizational_context",
+        "text": "The binary exposure and outcome definitions refer to the same organizational population and period. The data are constructed, not observations about any actual organization."
+      }
+    },
+    "design_record_id": "R290-2",
+    "source_key": {
+      "answer": {
+        "task_id": "f6f3fc3111d2dbd7",
+        "answer_type": "causal_effect",
+        "value": -0.4
+      },
+      "proof": {
+        "method": "Random assignment, consistency and positivity identify the population causal risk difference.",
+        "exact_fraction": "-2/5",
+        "observed_difference_fraction": "-2/5"
+      }
+    },
+    "private_world": {
+      "family": "randomized",
+      "seed": 830290,
+      "showcase": false,
+      "generating_world": [
+        {
+          "z": null,
+          "x": 0,
+          "y0": 0,
+          "y1": 0,
+          "weight": 180
+        },
+        {
+          "z": null,
+          "x": 0,
+          "y0": 0,
+          "y1": 1,
+          "weight": 20
+        },
+        {
+          "z": null,
+          "x": 0,
+          "y0": 1,
+          "y1": 0,
+          "weight": 180
+        },
+        {
+          "z": null,
+          "x": 0,
+          "y0": 1,
+          "y1": 1,
+          "weight": 20
+        },
+        {
+          "z": null,
+          "x": 1,
+          "y0": 0,
+          "y1": 0,
+          "weight": 45
+        },
+        {
+          "z": null,
+          "x": 1,
+          "y0": 0,
+          "y1": 1,
+          "weight": 5
+        },
+        {
+          "z": null,
+          "x": 1,
+          "y0": 1,
+          "y1": 0,
+          "weight": 45
+        },
+        {
+          "z": null,
+          "x": 1,
+          "y0": 1,
+          "y1": 1,
+          "weight": 5
+        }
+      ]
+    },
+    "reference_proof": {
+      "task_id": "f6f3fc3111d2dbd7",
+      "verified": true,
+      "method": "Enumerate interventions in the separately generated latent population; check exchangeability and the observed law.",
+      "intervention_effect": "-2/5"
+    }
+  },
+  {
+    "case_id": "d6eec6f6644b5fe4",
+    "family": "descriptive",
+    "seed": 730129,
+    "task": {
+      "task_id": "d6eec6f6644b5fe4",
+      "context": {
+        "x": "training access",
+        "y": "high productivity",
+        "z": null
+      },
+      "table": [
+        {
+          "x": 0,
+          "y": 0,
+          "weight": 15
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "weight": 15
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "weight": 10
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "weight": 10
+        }
+      ],
+      "table_meaning": "Exact population probability weights, not a finite sample. Divide weights by their sum to obtain the joint population distribution. There is no sampling-error or confidence-interval question.",
+      "design": "observational",
+      "assumptions": {
+        "consistency": true,
+        "no_interference": true,
+        "exchangeability": "not_assumed"
+      },
+      "target": "observed_risk_difference",
+      "question": "Compute P(Y=1 | X=1) minus P(Y=1 | X=0). This question asks only for a descriptive association.",
+      "design_detail": "X is observed, not randomized. No exchangeability or other restrictions identifying a causal effect are supplied. This does not prevent calculating a descriptive association."
+    },
+    "commission": "Assess training access (X) and high productivity (Y) in this synthetic organizational population. The requested quantity is the exact descriptive difference P(Y=1|X=1) minus P(Y=1|X=0). If the requested causal effect is not uniquely identified, report not_identified without a point estimate. Positive values mean higher probability of Y under X=1.",
+    "records": {
+      "R129-1": {
+        "kind": "data_quality_record",
+        "text": "Every displayed binary cell has positive integer probability weight. There are no duplicate displayed cells. The population table is complete for the displayed variables."
+      },
+      "R129-3": {
+        "kind": "organizational_context",
+        "text": "The binary exposure and outcome definitions refer to the same organizational population and period. The data are constructed, not observations about any actual organization."
+      },
+      "R129-2": {
+        "kind": "design_record",
+        "text": "X was observed in ordinary operations. Consistency and no interference hold. No random assignment, conditional exchangeability, instrumental-variable restriction or other condition identifying a causal effect is supplied. The table nevertheless identifies a descriptive conditional-risk difference."
+      }
+    },
+    "design_record_id": "R129-2",
+    "source_key": {
+      "answer": {
+        "task_id": "d6eec6f6644b5fe4",
+        "answer_type": "association",
+        "value": 0.0
+      },
+      "proof": {
+        "method": "Observed conditional-risk difference; no causal interpretation is requested.",
+        "exact_fraction": "0",
+        "observed_difference_fraction": "0"
+      }
+    },
+    "private_world": {
+      "family": "descriptive",
+      "seed": 730129,
+      "showcase": false,
+      "generating_world": null
+    },
+    "reference_proof": {
+      "task_id": "d6eec6f6644b5fe4",
+      "verified": true,
+      "method": "Recompute conditional expectations from normalized joint probabilities.",
+      "observed_difference": "0"
+    }
+  },
+  {
+    "case_id": "1623507b6d672ebf",
+    "family": "descriptive",
+    "seed": 730208,
+    "task": {
+      "task_id": "1623507b6d672ebf",
+      "context": {
+        "x": "remote-work eligibility",
+        "y": "high retention",
+        "z": null
+      },
+      "table": [
+        {
+          "x": 0,
+          "y": 0,
+          "weight": 4
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "weight": 36
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "weight": 3
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "weight": 7
+        }
+      ],
+      "table_meaning": "Exact population probability weights, not a finite sample. Divide weights by their sum to obtain the joint population distribution. There is no sampling-error or confidence-interval question.",
+      "design": "observational",
+      "assumptions": {
+        "consistency": true,
+        "no_interference": true,
+        "exchangeability": "not_assumed"
+      },
+      "target": "observed_risk_difference",
+      "question": "Compute P(Y=1 | X=1) minus P(Y=1 | X=0). This question asks only for a descriptive association.",
+      "design_detail": "X is observed, not randomized. No exchangeability or other restrictions identifying a causal effect are supplied. This does not prevent calculating a descriptive association."
+    },
+    "commission": "Assess remote-work eligibility (X) and high retention (Y) in this synthetic organizational population. The requested quantity is the exact descriptive difference P(Y=1|X=1) minus P(Y=1|X=0). If the requested causal effect is not uniquely identified, report not_identified without a point estimate. Positive values mean higher probability of Y under X=1.",
+    "records": {
+      "R208-2": {
+        "kind": "organizational_context",
+        "text": "The binary exposure and outcome definitions refer to the same organizational population and period. The data are constructed, not observations about any actual organization."
+      },
+      "R208-1": {
+        "kind": "data_quality_record",
+        "text": "Every displayed binary cell has positive integer probability weight. There are no duplicate displayed cells. The population table is complete for the displayed variables."
+      },
+      "R208-3": {
+        "kind": "design_record",
+        "text": "X was observed in ordinary operations. Consistency and no interference hold. No random assignment, conditional exchangeability, instrumental-variable restriction or other condition identifying a causal effect is supplied. The table nevertheless identifies a descriptive conditional-risk difference."
+      }
+    },
+    "design_record_id": "R208-3",
+    "source_key": {
+      "answer": {
+        "task_id": "1623507b6d672ebf",
+        "answer_type": "association",
+        "value": -0.2
+      },
+      "proof": {
+        "method": "Observed conditional-risk difference; no causal interpretation is requested.",
+        "exact_fraction": "-1/5",
+        "observed_difference_fraction": "-1/5"
+      }
+    },
+    "private_world": {
+      "family": "descriptive",
+      "seed": 730208,
+      "showcase": false,
+      "generating_world": null
+    },
+    "reference_proof": {
+      "task_id": "1623507b6d672ebf",
+      "verified": true,
+      "method": "Recompute conditional expectations from normalized joint probabilities.",
+      "observed_difference": "-1/5"
+    }
+  },
+  {
+    "case_id": "8c15e62c5c7af4fb",
+    "family": "observational_adjusted",
+    "seed": 1030217,
+    "task": {
+      "task_id": "8c15e62c5c7af4fb",
+      "context": {
+        "x": "training access",
+        "y": "high productivity",
+        "z": "pre-existing organizational context"
+      },
+      "table": [
+        {
+          "x": 0,
+          "y": 0,
+          "weight": 10,
+          "z": 0
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "weight": 10,
+          "z": 0
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "weight": 48,
+          "z": 0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "weight": 32,
+          "z": 0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "weight": 24,
+          "z": 1
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "weight": 36,
+          "z": 1
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "weight": 9,
+          "z": 1
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "weight": 81,
+          "z": 1
+        }
+      ],
+      "table_meaning": "Exact population probability weights, not a finite sample. Divide weights by their sum to obtain the joint population distribution. There is no sampling-error or confidence-interval question.",
+      "design": "observational_adjusted",
+      "assumptions": {
+        "consistency": true,
+        "no_interference": true,
+        "exchangeability": "given_z"
+      },
+      "target": "average_causal_risk_difference",
+      "question": "Determine whether E[Y(1)] minus E[Y(0)] is uniquely identified by the supplied population distribution and assumptions. Return its value if identified; otherwise report not_identified without a point estimate.",
+      "design_detail": "The potential outcomes Y(0), Y(1) are independent of X conditional on the observed pre-treatment Z. Consistency, no interference, and positivity within each Z stratum hold. The target population includes all Z strata with their displayed population weights."
+    },
+    "commission": "Assess training access (X) and high productivity (Y) in this synthetic organizational population. The requested quantity is the average causal risk difference E[Y(1)] minus E[Y(0)], if identified by the supplied evidence. If the requested causal effect is not uniquely identified, report not_identified without a point estimate. Positive values mean higher probability of Y under X=1.",
+    "records": {
+      "R217-3": {
+        "kind": "organizational_context",
+        "text": "The binary exposure and outcome definitions refer to the same organizational population and period. The data are constructed, not observations about any actual organization."
+      },
+      "R217-2": {
+        "kind": "design_record",
+        "text": "X was observed in ordinary operations. Z is measured before exposure. Within each Z stratum, assignment is independent of Y(0) and Y(1). Consistency, no interference and positivity within each Z stratum hold. The target is the entire displayed population, using its population distribution of Z."
+      },
+      "R217-1": {
+        "kind": "data_quality_record",
+        "text": "Every displayed binary cell has positive integer probability weight. There are no duplicate displayed cells. The population table is complete for the displayed variables."
+      }
+    },
+    "design_record_id": "R217-2",
+    "source_key": {
+      "answer": {
+        "task_id": "8c15e62c5c7af4fb",
+        "answer_type": "causal_effect",
+        "value": 0.14
+      },
+      "proof": {
+        "method": "Standardize stratum-specific causal contrasts over the displayed population distribution of Z under the supplied conditional exchangeability assumptions.",
+        "exact_fraction": "7/50",
+        "observed_difference_fraction": "61/680"
+      }
+    },
+    "private_world": {
+      "family": "observational_adjusted",
+      "seed": 1030217,
+      "showcase": false,
+      "generating_world": [
+        {
+          "z": 0,
+          "x": 0,
+          "y0": 0,
+          "y1": 0,
+          "weight": 60
+        },
+        {
+          "z": 0,
+          "x": 0,
+          "y0": 0,
+          "y1": 1,
+          "weight": 40
+        },
+        {
+          "z": 0,
+          "x": 0,
+          "y0": 1,
+          "y1": 0,
+          "weight": 60
+        },
+        {
+          "z": 0,
+          "x": 0,
+          "y0": 1,
+          "y1": 1,
+          "weight": 40
+        },
+        {
+          "z": 0,
+          "x": 1,
+          "y0": 0,
+          "y1": 0,
+          "weight": 240
+        },
+        {
+          "z": 0,
+          "x": 1,
+          "y0": 0,
+          "y1": 1,
+          "weight": 160
+        },
+        {
+          "z": 0,
+          "x": 1,
+          "y0": 1,
+          "y1": 0,
+          "weight": 240
+        },
+        {
+          "z": 0,
+          "x": 1,
+          "y0": 1,
+          "y1": 1,
+          "weight": 160
+        },
+        {
+          "z": 1,
+          "x": 0,
+          "y0": 0,
+          "y1": 0,
+          "weight": 24
+        },
+        {
+          "z": 1,
+          "x": 0,
+          "y0": 0,
+          "y1": 1,
+          "weight": 216
+        },
+        {
+          "z": 1,
+          "x": 0,
+          "y0": 1,
+          "y1": 0,
+          "weight": 36
+        },
+        {
+          "z": 1,
+          "x": 0,
+          "y0": 1,
+          "y1": 1,
+          "weight": 324
+        },
+        {
+          "z": 1,
+          "x": 1,
+          "y0": 0,
+          "y1": 0,
+          "weight": 36
+        },
+        {
+          "z": 1,
+          "x": 1,
+          "y0": 0,
+          "y1": 1,
+          "weight": 324
+        },
+        {
+          "z": 1,
+          "x": 1,
+          "y0": 1,
+          "y1": 0,
+          "weight": 54
+        },
+        {
+          "z": 1,
+          "x": 1,
+          "y0": 1,
+          "y1": 1,
+          "weight": 486
+        }
+      ]
+    },
+    "reference_proof": {
+      "task_id": "8c15e62c5c7af4fb",
+      "verified": true,
+      "method": "Enumerate interventions in the separately generated latent population; check exchangeability and the observed law.",
+      "intervention_effect": "7/50"
+    }
+  },
+  {
+    "case_id": "ef605b3f2d289714",
+    "family": "observational_unidentified",
+    "seed": 930214,
+    "task": {
+      "task_id": "ef605b3f2d289714",
+      "context": {
+        "x": "process adoption",
+        "y": "project completion",
+        "z": null
+      },
+      "table": [
+        {
+          "x": 0,
+          "y": 0,
+          "weight": 63
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "weight": 27
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "weight": 36
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "weight": 24
+        }
+      ],
+      "table_meaning": "Exact population probability weights, not a finite sample. Divide weights by their sum to obtain the joint population distribution. There is no sampling-error or confidence-interval question.",
+      "design": "observational",
+      "assumptions": {
+        "consistency": true,
+        "no_interference": true,
+        "exchangeability": "not_assumed"
+      },
+      "target": "average_causal_risk_difference",
+      "question": "Determine whether E[Y(1)] minus E[Y(0)] is uniquely identified by the supplied population distribution and assumptions. Return its value if identified; otherwise report not_identified without a point estimate.",
+      "design_detail": "X is observed, not randomized. No exchangeability or other restrictions identifying a causal effect are supplied. This does not prevent calculating a descriptive association."
+    },
+    "commission": "Assess process adoption (X) and project completion (Y) in this synthetic organizational population. The requested quantity is the average causal risk difference E[Y(1)] minus E[Y(0)], if identified by the supplied evidence. If the requested causal effect is not uniquely identified, report not_identified without a point estimate. Positive values mean higher probability of Y under X=1.",
+    "records": {
+      "R214-3": {
+        "kind": "organizational_context",
+        "text": "The binary exposure and outcome definitions refer to the same organizational population and period. The data are constructed, not observations about any actual organization."
+      },
+      "R214-2": {
+        "kind": "data_quality_record",
+        "text": "Every displayed binary cell has positive integer probability weight. There are no duplicate displayed cells. The population table is complete for the displayed variables."
+      },
+      "R214-1": {
+        "kind": "design_record",
+        "text": "X was observed in ordinary operations. Consistency and no interference hold. No random assignment, conditional exchangeability, instrumental-variable restriction or other condition identifying a causal effect is supplied. The table nevertheless identifies a descriptive conditional-risk difference."
+      }
+    },
+    "design_record_id": "R214-1",
+    "source_key": {
+      "answer": {
+        "task_id": "ef605b3f2d289714",
+        "answer_type": "not_identified",
+        "value": null
+      },
+      "proof": {
+        "method": "Two compatible potential-outcome populations have the same observed probability table and different intervention effects.",
+        "exact_fraction": null,
+        "observed_difference_fraction": "1/10",
+        "compatible_worlds": [
+          [
+            {
+              "z": null,
+              "x": 0,
+              "y0": 0,
+              "y1": 0,
+              "weight": 63
+            },
+            {
+              "z": null,
+              "x": 0,
+              "y0": 1,
+              "y1": 0,
+              "weight": 27
+            },
+            {
+              "z": null,
+              "x": 1,
+              "y0": 1,
+              "y1": 0,
+              "weight": 36
+            },
+            {
+              "z": null,
+              "x": 1,
+              "y0": 1,
+              "y1": 1,
+              "weight": 24
+            }
+          ],
+          [
+            {
+              "z": null,
+              "x": 0,
+              "y0": 0,
+              "y1": 1,
+              "weight": 63
+            },
+            {
+              "z": null,
+              "x": 0,
+              "y0": 1,
+              "y1": 1,
+              "weight": 27
+            },
+            {
+              "z": null,
+              "x": 1,
+              "y0": 0,
+              "y1": 0,
+              "weight": 36
+            },
+            {
+              "z": null,
+              "x": 1,
+              "y0": 0,
+              "y1": 1,
+              "weight": 24
+            }
+          ]
+        ]
+      }
+    },
+    "private_world": {
+      "family": "observational_unidentified",
+      "seed": 930214,
+      "showcase": false,
+      "generating_world": null
+    },
+    "reference_proof": {
+      "task_id": "ef605b3f2d289714",
+      "verified": true,
+      "method": "Directly enumerate both compatible observed laws and both intervention effects.",
+      "compatible_effects": [
+        "-21/50",
+        "29/50"
+      ],
+      "difference": "1"
+    }
+  },
+  {
+    "case_id": "ad01585cb33d5e75",
+    "family": "observational_unidentified",
+    "seed": 930293,
+    "task": {
+      "task_id": "ad01585cb33d5e75",
+      "context": {
+        "x": "training access",
+        "y": "high productivity",
+        "z": null
+      },
+      "table": [
+        {
+          "x": 0,
+          "y": 0,
+          "weight": 12
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "weight": 48
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "weight": 12
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "weight": 28
+        }
+      ],
+      "table_meaning": "Exact population probability weights, not a finite sample. Divide weights by their sum to obtain the joint population distribution. There is no sampling-error or confidence-interval question.",
+      "design": "observational",
+      "assumptions": {
+        "consistency": true,
+        "no_interference": true,
+        "exchangeability": "not_assumed"
+      },
+      "target": "average_causal_risk_difference",
+      "question": "Determine whether E[Y(1)] minus E[Y(0)] is uniquely identified by the supplied population distribution and assumptions. Return its value if identified; otherwise report not_identified without a point estimate.",
+      "design_detail": "X is observed, not randomized. No exchangeability or other restrictions identifying a causal effect are supplied. This does not prevent calculating a descriptive association."
+    },
+    "commission": "Assess training access (X) and high productivity (Y) in this synthetic organizational population. The requested quantity is the average causal risk difference E[Y(1)] minus E[Y(0)], if identified by the supplied evidence. If the requested causal effect is not uniquely identified, report not_identified without a point estimate. Positive values mean higher probability of Y under X=1.",
+    "records": {
+      "R293-1": {
+        "kind": "data_quality_record",
+        "text": "Every displayed binary cell has positive integer probability weight. There are no duplicate displayed cells. The population table is complete for the displayed variables."
+      },
+      "R293-2": {
+        "kind": "design_record",
+        "text": "X was observed in ordinary operations. Consistency and no interference hold. No random assignment, conditional exchangeability, instrumental-variable restriction or other condition identifying a causal effect is supplied. The table nevertheless identifies a descriptive conditional-risk difference."
+      },
+      "R293-3": {
+        "kind": "organizational_context",
+        "text": "The binary exposure and outcome definitions refer to the same organizational population and period. The data are constructed, not observations about any actual organization."
+      }
+    },
+    "design_record_id": "R293-2",
+    "source_key": {
+      "answer": {
+        "task_id": "ad01585cb33d5e75",
+        "answer_type": "not_identified",
+        "value": null
+      },
+      "proof": {
+        "method": "Two compatible potential-outcome populations have the same observed probability table and different intervention effects.",
+        "exact_fraction": null,
+        "observed_difference_fraction": "-1/10",
+        "compatible_worlds": [
+          [
+            {
+              "z": null,
+              "x": 0,
+              "y0": 0,
+              "y1": 0,
+              "weight": 12
+            },
+            {
+              "z": null,
+              "x": 0,
+              "y0": 1,
+              "y1": 0,
+              "weight": 48
+            },
+            {
+              "z": null,
+              "x": 1,
+              "y0": 1,
+              "y1": 0,
+              "weight": 12
+            },
+            {
+              "z": null,
+              "x": 1,
+              "y0": 1,
+              "y1": 1,
+              "weight": 28
+            }
+          ],
+          [
+            {
+              "z": null,
+              "x": 0,
+              "y0": 0,
+              "y1": 1,
+              "weight": 12
+            },
+            {
+              "z": null,
+              "x": 0,
+              "y0": 1,
+              "y1": 1,
+              "weight": 48
+            },
+            {
+              "z": null,
+              "x": 1,
+              "y0": 0,
+              "y1": 0,
+              "weight": 12
+            },
+            {
+              "z": null,
+              "x": 1,
+              "y0": 0,
+              "y1": 1,
+              "weight": 28
+            }
+          ]
+        ]
+      }
+    },
+    "private_world": {
+      "family": "observational_unidentified",
+      "seed": 930293,
+      "showcase": false,
+      "generating_world": null
+    },
+    "reference_proof": {
+      "task_id": "ad01585cb33d5e75",
+      "verified": true,
+      "method": "Directly enumerate both compatible observed laws and both intervention effects.",
+      "compatible_effects": [
+        "-3/5",
+        "2/5"
+      ],
+      "difference": "1"
+    }
+  },
+  {
+    "case_id": "3c96db62c801108c",
+    "family": "randomized",
+    "seed": 830132,
+    "task": {
+      "task_id": "3c96db62c801108c",
+      "context": {
+        "x": "remote-work eligibility",
+        "y": "high retention",
+        "z": null
+      },
+      "table": [
+        {
+          "x": 0,
+          "y": 0,
+          "weight": 48
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "weight": 72
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "weight": 6
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "weight": 24
+        }
+      ],
+      "table_meaning": "Exact population probability weights, not a finite sample. Divide weights by their sum to obtain the joint population distribution. There is no sampling-error or confidence-interval question.",
+      "design": "randomized",
+      "assumptions": {
+        "consistency": true,
+        "no_interference": true,
+        "exchangeability": "unconditional"
+      },
+      "target": "average_causal_risk_difference",
+      "question": "Determine whether E[Y(1)] minus E[Y(0)] is uniquely identified by the supplied population distribution and assumptions. Return its value if identified; otherwise report not_identified without a point estimate.",
+      "design_detail": "X is randomly assigned independently of both potential outcomes, with full compliance. Consistency and no interference hold."
+    },
+    "commission": "Assess remote-work eligibility (X) and high retention (Y) in this synthetic organizational population. The requested quantity is the average causal risk difference E[Y(1)] minus E[Y(0)], if identified by the supplied evidence. If the requested causal effect is not uniquely identified, report not_identified without a point estimate. Positive values mean higher probability of Y under X=1.",
+    "records": {
+      "R132-3": {
+        "kind": "organizational_context",
+        "text": "The binary exposure and outcome definitions refer to the same organizational population and period. The data are constructed, not observations about any actual organization."
+      },
+      "R132-2": {
+        "kind": "data_quality_record",
+        "text": "Every displayed binary cell has positive integer probability weight. There are no duplicate displayed cells. The population table is complete for the displayed variables."
+      },
+      "R132-1": {
+        "kind": "design_record",
+        "text": "Training/exposure access X was assigned by lottery independently of both potential outcomes, with full compliance, both exposure levels possible, consistency and no interference. The displayed weights describe the exact population law."
+      }
+    },
+    "design_record_id": "R132-1",
+    "source_key": {
+      "answer": {
+        "task_id": "3c96db62c801108c",
+        "answer_type": "causal_effect",
+        "value": 0.2
+      },
+      "proof": {
+        "method": "Random assignment, consistency and positivity identify the population causal risk difference.",
+        "exact_fraction": "1/5",
+        "observed_difference_fraction": "1/5"
+      }
+    },
+    "private_world": {
+      "family": "randomized",
+      "seed": 830132,
+      "showcase": false,
+      "generating_world": [
+        {
+          "z": null,
+          "x": 0,
+          "y0": 0,
+          "y1": 0,
+          "weight": 96
+        },
+        {
+          "z": null,
+          "x": 0,
+          "y0": 0,
+          "y1": 1,
+          "weight": 384
+        },
+        {
+          "z": null,
+          "x": 0,
+          "y0": 1,
+          "y1": 0,
+          "weight": 144
+        },
+        {
+          "z": null,
+          "x": 0,
+          "y0": 1,
+          "y1": 1,
+          "weight": 576
+        },
+        {
+          "z": null,
+          "x": 1,
+          "y0": 0,
+          "y1": 0,
+          "weight": 24
+        },
+        {
+          "z": null,
+          "x": 1,
+          "y0": 0,
+          "y1": 1,
+          "weight": 96
+        },
+        {
+          "z": null,
+          "x": 1,
+          "y0": 1,
+          "y1": 0,
+          "weight": 36
+        },
+        {
+          "z": null,
+          "x": 1,
+          "y0": 1,
+          "y1": 1,
+          "weight": 144
+        }
+      ]
+    },
+    "reference_proof": {
+      "task_id": "3c96db62c801108c",
+      "verified": true,
+      "method": "Enumerate interventions in the separately generated latent population; check exchangeability and the observed law.",
+      "intervention_effect": "1/5"
+    }
+  },
+  {
+    "case_id": "98cb806cc892f8e5",
+    "family": "randomized",
+    "seed": 830211,
+    "task": {
+      "task_id": "98cb806cc892f8e5",
+      "context": {
+        "x": "mentoring access",
+        "y": "promotion",
+        "z": null
+      },
+      "table": [
+        {
+          "x": 0,
+          "y": 0,
+          "weight": 96
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "weight": 24
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "weight": 72
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "weight": 8
+        }
+      ],
+      "table_meaning": "Exact population probability weights, not a finite sample. Divide weights by their sum to obtain the joint population distribution. There is no sampling-error or confidence-interval question.",
+      "design": "randomized",
+      "assumptions": {
+        "consistency": true,
+        "no_interference": true,
+        "exchangeability": "unconditional"
+      },
+      "target": "average_causal_risk_difference",
+      "question": "Determine whether E[Y(1)] minus E[Y(0)] is uniquely identified by the supplied population distribution and assumptions. Return its value if identified; otherwise report not_identified without a point estimate.",
+      "design_detail": "X is randomly assigned independently of both potential outcomes, with full compliance. Consistency and no interference hold."
+    },
+    "commission": "Assess mentoring access (X) and promotion (Y) in this synthetic organizational population. The requested quantity is the average causal risk difference E[Y(1)] minus E[Y(0)], if identified by the supplied evidence. If the requested causal effect is not uniquely identified, report not_identified without a point estimate. Positive values mean higher probability of Y under X=1.",
+    "records": {
+      "R211-1": {
+        "kind": "design_record",
+        "text": "Training/exposure access X was assigned by lottery independently of both potential outcomes, with full compliance, both exposure levels possible, consistency and no interference. The displayed weights describe the exact population law."
+      },
+      "R211-2": {
+        "kind": "organizational_context",
+        "text": "The binary exposure and outcome definitions refer to the same organizational population and period. The data are constructed, not observations about any actual organization."
+      },
+      "R211-3": {
+        "kind": "data_quality_record",
+        "text": "Every displayed binary cell has positive integer probability weight. There are no duplicate displayed cells. The population table is complete for the displayed variables."
+      }
+    },
+    "design_record_id": "R211-1",
+    "source_key": {
+      "answer": {
+        "task_id": "98cb806cc892f8e5",
+        "answer_type": "causal_effect",
+        "value": -0.1
+      },
+      "proof": {
+        "method": "Random assignment, consistency and positivity identify the population causal risk difference.",
+        "exact_fraction": "-1/10",
+        "observed_difference_fraction": "-1/10"
+      }
+    },
+    "private_world": {
+      "family": "randomized",
+      "seed": 830211,
+      "showcase": false,
+      "generating_world": [
+        {
+          "z": null,
+          "x": 0,
+          "y0": 0,
+          "y1": 0,
+          "weight": 864
+        },
+        {
+          "z": null,
+          "x": 0,
+          "y0": 0,
+          "y1": 1,
+          "weight": 96
+        },
+        {
+          "z": null,
+          "x": 0,
+          "y0": 1,
+          "y1": 0,
+          "weight": 216
+        },
+        {
+          "z": null,
+          "x": 0,
+          "y0": 1,
+          "y1": 1,
+          "weight": 24
+        },
+        {
+          "z": null,
+          "x": 1,
+          "y0": 0,
+          "y1": 0,
+          "weight": 576
+        },
+        {
+          "z": null,
+          "x": 1,
+          "y0": 0,
+          "y1": 1,
+          "weight": 64
+        },
+        {
+          "z": null,
+          "x": 1,
+          "y0": 1,
+          "y1": 0,
+          "weight": 144
+        },
+        {
+          "z": null,
+          "x": 1,
+          "y0": 1,
+          "y1": 1,
+          "weight": 16
+        }
+      ]
+    },
+    "reference_proof": {
+      "task_id": "98cb806cc892f8e5",
+      "verified": true,
+      "method": "Enumerate interventions in the separately generated latent population; check exchangeability and the observed law.",
+      "intervention_effect": "-1/10"
+    }
+  },
+  {
+    "case_id": "f2414d853455e31f",
+    "family": "descriptive",
+    "seed": 730287,
+    "task": {
+      "task_id": "f2414d853455e31f",
+      "context": {
+        "x": "mentoring access",
+        "y": "promotion",
+        "z": null
+      },
+      "table": [
+        {
+          "x": 0,
+          "y": 0,
+          "weight": 30
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "weight": 30
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "weight": 20
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "weight": 20
+        }
+      ],
+      "table_meaning": "Exact population probability weights, not a finite sample. Divide weights by their sum to obtain the joint population distribution. There is no sampling-error or confidence-interval question.",
+      "design": "observational",
+      "assumptions": {
+        "consistency": true,
+        "no_interference": true,
+        "exchangeability": "not_assumed"
+      },
+      "target": "observed_risk_difference",
+      "question": "Compute P(Y=1 | X=1) minus P(Y=1 | X=0). This question asks only for a descriptive association.",
+      "design_detail": "X is observed, not randomized. No exchangeability or other restrictions identifying a causal effect are supplied. This does not prevent calculating a descriptive association."
+    },
+    "commission": "Assess mentoring access (X) and promotion (Y) in this synthetic organizational population. The requested quantity is the exact descriptive difference P(Y=1|X=1) minus P(Y=1|X=0). If the requested causal effect is not uniquely identified, report not_identified without a point estimate. Positive values mean higher probability of Y under X=1.",
+    "records": {
+      "R287-3": {
+        "kind": "organizational_context",
+        "text": "The binary exposure and outcome definitions refer to the same organizational population and period. The data are constructed, not observations about any actual organization."
+      },
+      "R287-2": {
+        "kind": "data_quality_record",
+        "text": "Every displayed binary cell has positive integer probability weight. There are no duplicate displayed cells. The population table is complete for the displayed variables."
+      },
+      "R287-1": {
+        "kind": "design_record",
+        "text": "X was observed in ordinary operations. Consistency and no interference hold. No random assignment, conditional exchangeability, instrumental-variable restriction or other condition identifying a causal effect is supplied. The table nevertheless identifies a descriptive conditional-risk difference."
+      }
+    },
+    "design_record_id": "R287-1",
+    "source_key": {
+      "answer": {
+        "task_id": "f2414d853455e31f",
+        "answer_type": "association",
+        "value": 0.0
+      },
+      "proof": {
+        "method": "Observed conditional-risk difference; no causal interpretation is requested.",
+        "exact_fraction": "0",
+        "observed_difference_fraction": "0"
+      }
+    },
+    "private_world": {
+      "family": "descriptive",
+      "seed": 730287,
+      "showcase": false,
+      "generating_world": null
+    },
+    "reference_proof": {
+      "task_id": "f2414d853455e31f",
+      "verified": true,
+      "method": "Recompute conditional expectations from normalized joint probabilities.",
+      "observed_difference": "0"
+    }
+  },
+  {
+    "case_id": "d4bc9da58fbddf09",
+    "family": "observational_adjusted",
+    "seed": 1030296,
+    "task": {
+      "task_id": "d4bc9da58fbddf09",
+      "context": {
+        "x": "remote-work eligibility",
+        "y": "high retention",
+        "z": "pre-existing organizational context"
+      },
+      "table": [
+        {
+          "x": 0,
+          "y": 0,
+          "weight": 80,
+          "z": 0
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "weight": 120,
+          "z": 0
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "weight": 30,
+          "z": 0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "weight": 20,
+          "z": 0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "weight": 16,
+          "z": 1
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "weight": 24,
+          "z": 1
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "weight": 12,
+          "z": 1
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "weight": 48,
+          "z": 1
+        }
+      ],
+      "table_meaning": "Exact population probability weights, not a finite sample. Divide weights by their sum to obtain the joint population distribution. There is no sampling-error or confidence-interval question.",
+      "design": "observational_adjusted",
+      "assumptions": {
+        "consistency": true,
+        "no_interference": true,
+        "exchangeability": "given_z"
+      },
+      "target": "average_causal_risk_difference",
+      "question": "Determine whether E[Y(1)] minus E[Y(0)] is uniquely identified by the supplied population distribution and assumptions. Return its value if identified; otherwise report not_identified without a point estimate.",
+      "design_detail": "The potential outcomes Y(0), Y(1) are independent of X conditional on the observed pre-treatment Z. Consistency, no interference, and positivity within each Z stratum hold. The target population includes all Z strata with their displayed population weights."
+    },
+    "commission": "Assess remote-work eligibility (X) and high retention (Y) in this synthetic organizational population. The requested quantity is the average causal risk difference E[Y(1)] minus E[Y(0)], if identified by the supplied evidence. If the requested causal effect is not uniquely identified, report not_identified without a point estimate. Positive values mean higher probability of Y under X=1.",
+    "records": {
+      "R296-3": {
+        "kind": "design_record",
+        "text": "X was observed in ordinary operations. Z is measured before exposure. Within each Z stratum, assignment is independent of Y(0) and Y(1). Consistency, no interference and positivity within each Z stratum hold. The target is the entire displayed population, using its population distribution of Z."
+      },
+      "R296-1": {
+        "kind": "data_quality_record",
+        "text": "Every displayed binary cell has positive integer probability weight. There are no duplicate displayed cells. The population table is complete for the displayed variables."
+      },
+      "R296-2": {
+        "kind": "organizational_context",
+        "text": "The binary exposure and outcome definitions refer to the same organizational population and period. The data are constructed, not observations about any actual organization."
+      }
+    },
+    "design_record_id": "R296-3",
+    "source_key": {
+      "answer": {
+        "task_id": "d4bc9da58fbddf09",
+        "answer_type": "causal_effect",
+        "value": -0.08571428571428572
+      },
+      "proof": {
+        "method": "Standardize stratum-specific causal contrasts over the displayed population distribution of Z under the supplied conditional exchangeability assumptions.",
+        "exact_fraction": "-3/35",
+        "observed_difference_fraction": "1/55"
+      }
+    },
+    "private_world": {
+      "family": "observational_adjusted",
+      "seed": 1030296,
+      "showcase": false,
+      "generating_world": [
+        {
+          "z": 0,
+          "x": 0,
+          "y0": 0,
+          "y1": 0,
+          "weight": 480
+        },
+        {
+          "z": 0,
+          "x": 0,
+          "y0": 0,
+          "y1": 1,
+          "weight": 320
+        },
+        {
+          "z": 0,
+          "x": 0,
+          "y0": 1,
+          "y1": 0,
+          "weight": 720
+        },
+        {
+          "z": 0,
+          "x": 0,
+          "y0": 1,
+          "y1": 1,
+          "weight": 480
+        },
+        {
+          "z": 0,
+          "x": 1,
+          "y0": 0,
+          "y1": 0,
+          "weight": 120
+        },
+        {
+          "z": 0,
+          "x": 1,
+          "y0": 0,
+          "y1": 1,
+          "weight": 80
+        },
+        {
+          "z": 0,
+          "x": 1,
+          "y0": 1,
+          "y1": 0,
+          "weight": 180
+        },
+        {
+          "z": 0,
+          "x": 1,
+          "y0": 1,
+          "y1": 1,
+          "weight": 120
+        },
+        {
+          "z": 1,
+          "x": 0,
+          "y0": 0,
+          "y1": 0,
+          "weight": 32
+        },
+        {
+          "z": 1,
+          "x": 0,
+          "y0": 0,
+          "y1": 1,
+          "weight": 128
+        },
+        {
+          "z": 1,
+          "x": 0,
+          "y0": 1,
+          "y1": 0,
+          "weight": 48
+        },
+        {
+          "z": 1,
+          "x": 0,
+          "y0": 1,
+          "y1": 1,
+          "weight": 192
+        },
+        {
+          "z": 1,
+          "x": 1,
+          "y0": 0,
+          "y1": 0,
+          "weight": 48
+        },
+        {
+          "z": 1,
+          "x": 1,
+          "y0": 0,
+          "y1": 1,
+          "weight": 192
+        },
+        {
+          "z": 1,
+          "x": 1,
+          "y0": 1,
+          "y1": 0,
+          "weight": 72
+        },
+        {
+          "z": 1,
+          "x": 1,
+          "y0": 1,
+          "y1": 1,
+          "weight": 288
+        }
+      ]
+    },
+    "reference_proof": {
+      "task_id": "d4bc9da58fbddf09",
+      "verified": true,
+      "method": "Enumerate interventions in the separately generated latent population; check exchangeability and the observed law.",
+      "intervention_effect": "-3/35"
+    }
+  },
+  {
+    "case_id": "6f70c5b3a418942b",
+    "family": "observational_unidentified",
+    "seed": 930135,
+    "task": {
+      "task_id": "6f70c5b3a418942b",
+      "context": {
+        "x": "mentoring access",
+        "y": "promotion",
+        "z": null
+      },
+      "table": [
+        {
+          "x": 0,
+          "y": 0,
+          "weight": 24
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "weight": 96
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "weight": 16
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "weight": 64
+        }
+      ],
+      "table_meaning": "Exact population probability weights, not a finite sample. Divide weights by their sum to obtain the joint population distribution. There is no sampling-error or confidence-interval question.",
+      "design": "observational",
+      "assumptions": {
+        "consistency": true,
+        "no_interference": true,
+        "exchangeability": "not_assumed"
+      },
+      "target": "average_causal_risk_difference",
+      "question": "Determine whether E[Y(1)] minus E[Y(0)] is uniquely identified by the supplied population distribution and assumptions. Return its value if identified; otherwise report not_identified without a point estimate.",
+      "design_detail": "X is observed, not randomized. No exchangeability or other restrictions identifying a causal effect are supplied. This does not prevent calculating a descriptive association."
+    },
+    "commission": "Assess mentoring access (X) and promotion (Y) in this synthetic organizational population. The requested quantity is the average causal risk difference E[Y(1)] minus E[Y(0)], if identified by the supplied evidence. If the requested causal effect is not uniquely identified, report not_identified without a point estimate. Positive values mean higher probability of Y under X=1.",
+    "records": {
+      "R135-2": {
+        "kind": "design_record",
+        "text": "X was observed in ordinary operations. Consistency and no interference hold. No random assignment, conditional exchangeability, instrumental-variable restriction or other condition identifying a causal effect is supplied. The table nevertheless identifies a descriptive conditional-risk difference."
+      },
+      "R135-3": {
+        "kind": "organizational_context",
+        "text": "The binary exposure and outcome definitions refer to the same organizational population and period. The data are constructed, not observations about any actual organization."
+      },
+      "R135-1": {
+        "kind": "data_quality_record",
+        "text": "Every displayed binary cell has positive integer probability weight. There are no duplicate displayed cells. The population table is complete for the displayed variables."
+      }
+    },
+    "design_record_id": "R135-2",
+    "source_key": {
+      "answer": {
+        "task_id": "6f70c5b3a418942b",
+        "answer_type": "not_identified",
+        "value": null
+      },
+      "proof": {
+        "method": "Two compatible potential-outcome populations have the same observed probability table and different intervention effects.",
+        "exact_fraction": null,
+        "observed_difference_fraction": "0",
+        "compatible_worlds": [
+          [
+            {
+              "z": null,
+              "x": 0,
+              "y0": 0,
+              "y1": 0,
+              "weight": 24
+            },
+            {
+              "z": null,
+              "x": 0,
+              "y0": 1,
+              "y1": 0,
+              "weight": 96
+            },
+            {
+              "z": null,
+              "x": 1,
+              "y0": 1,
+              "y1": 0,
+              "weight": 16
+            },
+            {
+              "z": null,
+              "x": 1,
+              "y0": 1,
+              "y1": 1,
+              "weight": 64
+            }
+          ],
+          [
+            {
+              "z": null,
+              "x": 0,
+              "y0": 0,
+              "y1": 1,
+              "weight": 24
+            },
+            {
+              "z": null,
+              "x": 0,
+              "y0": 1,
+              "y1": 1,
+              "weight": 96
+            },
+            {
+              "z": null,
+              "x": 1,
+              "y0": 0,
+              "y1": 0,
+              "weight": 16
+            },
+            {
+              "z": null,
+              "x": 1,
+              "y0": 0,
+              "y1": 1,
+              "weight": 64
+            }
+          ]
+        ]
+      }
+    },
+    "private_world": {
+      "family": "observational_unidentified",
+      "seed": 930135,
+      "showcase": false,
+      "generating_world": null
+    },
+    "reference_proof": {
+      "task_id": "6f70c5b3a418942b",
+      "verified": true,
+      "method": "Directly enumerate both compatible observed laws and both intervention effects.",
+      "compatible_effects": [
+        "-14/25",
+        "11/25"
+      ],
+      "difference": "1"
+    }
+  }
+]

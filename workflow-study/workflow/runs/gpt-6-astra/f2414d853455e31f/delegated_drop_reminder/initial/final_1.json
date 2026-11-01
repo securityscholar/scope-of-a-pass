@@ -1,0 +1,1 @@
+{"task_id":"f2414d853455e31f","action":"finalize","answer_type":"association","value":0,"evidence_ids":["R287-2"],"brief_rationale":"The requested quantity is descriptive: P(Y=1|X=1)=20/40=0.5 and P(Y=1|X=0)=30/60=0.5. Their exact difference is 0. Causal identification is unnecessary for this contrast."}

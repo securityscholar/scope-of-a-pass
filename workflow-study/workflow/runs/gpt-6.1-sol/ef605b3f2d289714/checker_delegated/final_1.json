@@ -1,0 +1,1 @@
+{"task_id":"ef605b3f2d289714","verdict":"pass","replacement_code":null,"check_summary":"The program correctly computes the observed marginal risk difference: 24/60 − 27/90 = 1/10. The reported execution matches the exact arithmetic. This numerical check does not establish causal identification."}

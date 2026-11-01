@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "properties": {
+    "task_id": {
+      "type": "string"
+    },
+    "analysis_label": {
+      "type": "string",
+      "enum": [
+        "observed_difference",
+        "standardized_difference"
+      ]
+    },
+    "python_code": {
+      "type": "string"
+    },
+    "proposed_answer_type": {
+      "type": "string",
+      "enum": [
+        "association",
+        "causal_effect",
+        "not_identified"
+      ]
+    },
+    "handoff_record_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 2
+    }
+  },
+  "required": [
+    "task_id",
+    "analysis_label",
+    "python_code",
+    "proposed_answer_type",
+    "handoff_record_ids"
+  ],
+  "additionalProperties": false
+}

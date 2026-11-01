@@ -1,0 +1,30 @@
+{
+  "case_id": "ef605b3f2d289714",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_drop_reminder",
+  "initial_decision": {
+    "task_id": "ef605b3f2d289714",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [],
+    "brief_rationale": "The population table establishes an observed risk difference of 0.10, but the arithmetic checks do not establish causal identification. Request archived design record R214-1 to assess whether the average causal risk difference is identified."
+  },
+  "final_decision": {
+    "task_id": "ef605b3f2d289714",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R214-1"
+    ],
+    "brief_rationale": "The observed risk difference is 0.10, but adoption was observational. Consistency and no interference alone do not identify the average causal effect; no additional identifying condition is supplied."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "8bcf9faa5bdbfdd438846dd222e0a4d2267f9483b0fdb6e73f14badc4393d788",
+  "final_input_sha256": "08fb73ed6f020947bdbe5f86862aecfe3b65657e93aa785a3463c60be8fa57c1",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:40:21.103463+00:00"
+}

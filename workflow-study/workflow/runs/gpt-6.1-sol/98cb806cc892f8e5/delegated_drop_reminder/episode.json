@@ -1,0 +1,30 @@
+{
+  "case_id": "98cb806cc892f8e5",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_drop_reminder",
+  "initial_decision": {
+    "task_id": "98cb806cc892f8e5",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [],
+    "brief_rationale": "The observed risk difference is -0.10, but the supplied checks establish arithmetic correctness only. Request archived design record R211-1 to assess whether the causal effect is identified."
+  },
+  "final_decision": {
+    "task_id": "98cb806cc892f8e5",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": -0.1,
+    "evidence_ids": [
+      "R211-1"
+    ],
+    "brief_rationale": "The design record establishes randomized assignment independent of potential outcomes, full compliance, positivity, consistency, and no interference. Thus the causal risk difference equals the observed population contrast: 8/80 \u2212 24/120 = \u22120.1."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "0c34272ec8033ea9bcdac098134203e499f59907d40d2d827e386a5e18af5120",
+  "final_input_sha256": "716a066066ef4af04c043f94afd2ae8b0cf738639b6cb28cefb0d2b4ba61768e",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:45:22.578591+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "python": "3.11.9",
+  "platform": "Windows x64",
+  "python_docx": "1.2.0",
+  "matplotlib": "3.11.0",
+  "pdf_converter": "LibreOffice 26.2.6.3 x64",
+  "client": "Codex CLI 0.165.0",
+  "models": [
+    "gpt-6-astra",
+    "gpt-6.1-sol"
+  ],
+  "reasoning_effort": "high",
+  "science_runtime": "Python standard library; saved-output reproduction only"
+}

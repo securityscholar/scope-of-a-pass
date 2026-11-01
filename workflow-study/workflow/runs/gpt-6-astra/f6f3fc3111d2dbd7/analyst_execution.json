@@ -1,0 +1,7 @@
+{
+  "ok": true,
+  "value": -0.4,
+  "exact_fraction": "-2/5",
+  "canonical_code": "risk1 = Fraction(sum((r['weight'] * r['y'] for r in rows if r['x'] == 1)), sum((r['weight'] for r in rows if r['x'] == 1)))\nrisk0 = Fraction(sum((r['weight'] * r['y'] for r in rows if r['x'] == 0)), sum((r['weight'] for r in rows if r['x'] == 0)))\nestimate = risk1 - risk0",
+  "code_sha256": "c4ce19d339c5a03ed3b8a3a9cbfad0b44de6df17f0ca55a4bf1e16b049537be1"
+}

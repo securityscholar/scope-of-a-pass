@@ -1,0 +1,30 @@
+{
+  "case_id": "d4bc9da58fbddf09",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_drop_scoped",
+  "initial_decision": {
+    "task_id": "d4bc9da58fbddf09",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [],
+    "brief_rationale": "The population table and numerical verification establish the standardized contrast but provide no causal identification assumptions. Please retrieve archived design record R296-3 to assess whether that contrast identifies the requested average causal risk difference."
+  },
+  "final_decision": {
+    "task_id": "d4bc9da58fbddf09",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": -0.08571428571428572,
+    "evidence_ids": [
+      "R296-3"
+    ],
+    "brief_rationale": "The design record establishes conditional exchangeability, consistency, no interference, and positivity. Standardizing the stratum-specific risk differences over the population distribution of Z identifies the causal effect: (250/350)(0.4\u22120.6) + (100/350)(0.8\u22120.6) = \u22120.08571428571428572."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "f086a1d84c1442b013a51f972c7718962c2ce8220da21be04e8ecb271e874513",
+  "final_input_sha256": "9b7a5eb29745788a79f27e7c6feca5cf19d8dbe990db1c12a9a7030486f9d211",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:48:13.935648+00:00"
+}

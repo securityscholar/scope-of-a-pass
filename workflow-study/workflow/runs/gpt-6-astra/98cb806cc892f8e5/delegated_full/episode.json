@@ -1,0 +1,34 @@
+{
+  "case_id": "98cb806cc892f8e5",
+  "model": "gpt-6-astra",
+  "route": "delegated_full",
+  "initial_decision": {
+    "task_id": "98cb806cc892f8e5",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": -0.1,
+    "evidence_ids": [
+      "R211-1",
+      "R211-3"
+    ],
+    "brief_rationale": "R211-1 establishes randomized assignment independent of both potential outcomes, full compliance, positivity, consistency, and no interference, identifying the causal effect. The exact population risk difference is 8/80 \u2212 24/120 = \u22120.10."
+  },
+  "final_decision": {
+    "task_id": "98cb806cc892f8e5",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": -0.1,
+    "evidence_ids": [
+      "R211-1",
+      "R211-3"
+    ],
+    "brief_rationale": "R211-1 establishes randomized assignment independent of both potential outcomes, full compliance, positivity, consistency, and no interference, identifying the causal effect. The exact population risk difference is 8/80 \u2212 24/120 = \u22120.10."
+  },
+  "archive_requested": false,
+  "initial_has_design": true,
+  "final_has_design": true,
+  "initial_input_sha256": "4d01ebe1fbfb82c90cdc8d0fdd24451147fa668c06e4b0a1a40d63abaa9f145d",
+  "final_input_sha256": "4d01ebe1fbfb82c90cdc8d0fdd24451147fa668c06e4b0a1a40d63abaa9f145d",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:44:10.998591+00:00"
+}

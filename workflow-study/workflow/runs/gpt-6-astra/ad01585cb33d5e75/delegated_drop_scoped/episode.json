@@ -1,0 +1,30 @@
+{
+  "case_id": "ad01585cb33d5e75",
+  "model": "gpt-6-astra",
+  "route": "delegated_drop_scoped",
+  "initial_decision": {
+    "task_id": "ad01585cb33d5e75",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [],
+    "brief_rationale": "The observed difference is 28/40 minus 48/60 = -0.10. Numerical verification does not establish causal identification. Please retrieve archived design record R293-2 to assess whether the causal risk difference is identified."
+  },
+  "final_decision": {
+    "task_id": "ad01585cb33d5e75",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R293-2"
+    ],
+    "brief_rationale": "The design record supplies consistency and no interference but no condition identifying the causal effect. The observed risk difference, 28/40 \u2212 48/60 = \u22120.10, is descriptive; it does not uniquely determine E[Y(1)] \u2212 E[Y(0)]."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "3d379eac04c00334a75a3d0acea5140870009e504ae0752b76d9c0495a366597",
+  "final_input_sha256": "6d99ca298fbbc5a9f96a2a571f4d35ddc56ae933c57994d5686ac0806a9de1ab",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:42:03.040246+00:00"
+}

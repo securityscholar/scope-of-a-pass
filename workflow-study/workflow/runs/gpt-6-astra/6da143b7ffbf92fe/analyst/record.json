@@ -1,0 +1,39 @@
+{
+  "logical_id": "6da143b7ffbf92fe/analyst",
+  "requested_model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "input_sha256": "331ae2d872780e2f72627d7cc1ac015492f147a794781268d3c193d48b1494d8",
+  "started_utc": "2026-10-28T20:30:56.048393+00:00",
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_utc": "2026-10-28T20:30:56.048393+00:00",
+      "exit_code": 0,
+      "tool_events": [],
+      "usage": [
+        {
+          "input_tokens": 19196,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 320,
+          "reasoning_output_tokens": 100
+        }
+      ],
+      "output_text": "{\"task_id\":\"6da143b7ffbf92fe\",\"analysis_label\":\"standardized_difference\",\"python_code\":\"total = sum(r['weight'] for r in rows)\\nstrata = sorted(set(r['z'] for r in rows))\\npz = {z: Fraction(sum(r['weight'] for r in rows if r['z'] == z), total) for z in strata}\\nrisk = {(x, z): Fraction(sum(r['weight'] * r['y'] for r in rows if r['x'] == x and r['z'] == z), sum(r['weight'] for r in rows if r['x'] == x and r['z'] == z)) for x in [0, 1] for z in strata}\\nestimate = sum(pz[z] * (risk[1, z] - risk[0, z]) for z in strata)\",\"proposed_answer_type\":\"causal_effect\",\"handoff_record_ids\":[\"R138-2\"]}",
+      "events_reported_errors": [],
+      "elapsed_seconds": 13.063
+    }
+  ],
+  "answer": {
+    "task_id": "6da143b7ffbf92fe",
+    "analysis_label": "standardized_difference",
+    "python_code": "total = sum(r['weight'] for r in rows)\nstrata = sorted(set(r['z'] for r in rows))\npz = {z: Fraction(sum(r['weight'] for r in rows if r['z'] == z), total) for z in strata}\nrisk = {(x, z): Fraction(sum(r['weight'] * r['y'] for r in rows if r['x'] == x and r['z'] == z), sum(r['weight'] for r in rows if r['x'] == x and r['z'] == z)) for x in [0, 1] for z in strata}\nestimate = sum(pz[z] * (risk[1, z] - risk[0, z]) for z in strata)",
+    "proposed_answer_type": "causal_effect",
+    "handoff_record_ids": [
+      "R138-2"
+    ]
+  },
+  "elapsed_seconds": 13.063,
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:31:09.111881+00:00"
+}

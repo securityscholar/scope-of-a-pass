@@ -1,0 +1,30 @@
+{
+  "case_id": "ad01585cb33d5e75",
+  "model": "gpt-6-astra",
+  "route": "delegated_drop_reminder",
+  "initial_decision": {
+    "task_id": "ad01585cb33d5e75",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [],
+    "brief_rationale": "The observed risk difference is -0.10, but the table and arithmetic checks do not establish causal identification. Please retrieve archived design record R293-2 to assess whether the causal risk difference is identified."
+  },
+  "final_decision": {
+    "task_id": "ad01585cb33d5e75",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R293-2"
+    ],
+    "brief_rationale": "The design record supplies consistency and no interference but no condition identifying the causal effect of observed training access. The observed risk difference, 0.70 \u2212 0.80 = \u22120.10, is descriptive; the average causal risk difference is not uniquely determined."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "4f8e94fbd09d440d6df18afeb5be08964458afafb99fb05f35e65be67fcb7c64",
+  "final_input_sha256": "b6e8addfbe60c8c9853311748f1265f53698ea14ca1ec7707ae5698fc32ca8f2",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:41:40.828358+00:00"
+}

@@ -1,0 +1,34 @@
+{
+  "case_id": "f2414d853455e31f",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_full",
+  "initial_decision": {
+    "task_id": "f2414d853455e31f",
+    "action": "finalize",
+    "answer_type": "association",
+    "value": 0.0,
+    "evidence_ids": [
+      "R287-1",
+      "R287-2"
+    ],
+    "brief_rationale": "The requested descriptive difference is 20/(20+20) \u2212 30/(30+30) = 0.5 \u2212 0.5 = 0 exactly. The received design record confirms this contrast is identified; causal identification is unnecessary for the requested quantity."
+  },
+  "final_decision": {
+    "task_id": "f2414d853455e31f",
+    "action": "finalize",
+    "answer_type": "association",
+    "value": 0.0,
+    "evidence_ids": [
+      "R287-1",
+      "R287-2"
+    ],
+    "brief_rationale": "The requested descriptive difference is 20/(20+20) \u2212 30/(30+30) = 0.5 \u2212 0.5 = 0 exactly. The received design record confirms this contrast is identified; causal identification is unnecessary for the requested quantity."
+  },
+  "archive_requested": false,
+  "initial_has_design": true,
+  "final_has_design": true,
+  "initial_input_sha256": "351e29b448e35309acaa482ddad41d884357995612a21329b31dcceabc7b9e53",
+  "final_input_sha256": "351e29b448e35309acaa482ddad41d884357995612a21329b31dcceabc7b9e53",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:46:08.585514+00:00"
+}

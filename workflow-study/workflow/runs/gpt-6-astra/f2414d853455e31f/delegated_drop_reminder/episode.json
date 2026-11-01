@@ -1,0 +1,32 @@
+{
+  "case_id": "f2414d853455e31f",
+  "model": "gpt-6-astra",
+  "route": "delegated_drop_reminder",
+  "initial_decision": {
+    "task_id": "f2414d853455e31f",
+    "action": "finalize",
+    "answer_type": "association",
+    "value": 0,
+    "evidence_ids": [
+      "R287-2"
+    ],
+    "brief_rationale": "The requested quantity is descriptive: P(Y=1|X=1)=20/40=0.5 and P(Y=1|X=0)=30/60=0.5. Their exact difference is 0. Causal identification is unnecessary for this contrast."
+  },
+  "final_decision": {
+    "task_id": "f2414d853455e31f",
+    "action": "finalize",
+    "answer_type": "association",
+    "value": 0,
+    "evidence_ids": [
+      "R287-2"
+    ],
+    "brief_rationale": "The requested quantity is descriptive: P(Y=1|X=1)=20/40=0.5 and P(Y=1|X=0)=30/60=0.5. Their exact difference is 0. Causal identification is unnecessary for this contrast."
+  },
+  "archive_requested": false,
+  "initial_has_design": false,
+  "final_has_design": false,
+  "initial_input_sha256": "73bfd772af8aeed64c93051e42934f89c052b47a3dd362fa698eefcf1a7c24cf",
+  "final_input_sha256": "73bfd772af8aeed64c93051e42934f89c052b47a3dd362fa698eefcf1a7c24cf",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:46:00.743051+00:00"
+}

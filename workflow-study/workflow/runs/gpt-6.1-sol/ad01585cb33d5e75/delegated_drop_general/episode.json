@@ -1,0 +1,30 @@
+{
+  "case_id": "ad01585cb33d5e75",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_drop_general",
+  "initial_decision": {
+    "task_id": "ad01585cb33d5e75",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [],
+    "brief_rationale": "The population table establishes an observed risk difference of -0.10. The checks verify arithmetic but do not establish causal identification. Request the archived design record to assess whether its design information identifies the average causal risk difference."
+  },
+  "final_decision": {
+    "task_id": "ad01585cb33d5e75",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R293-2"
+    ],
+    "brief_rationale": "The observational design supplies consistency and no interference but no condition identifying the missing counterfactual risks. The observed risk difference of -0.10 is descriptive; the average causal risk difference is not uniquely identified."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "513a078eff2eeb51ee784e35431758f1a4340a6a0ea27678ded07e2e7a5c07d5",
+  "final_input_sha256": "4c5f5d04985a08fd84c05b37c14c57a909108c3a2e1b3a532da7dc31a238ea05",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:41:15.118209+00:00"
+}

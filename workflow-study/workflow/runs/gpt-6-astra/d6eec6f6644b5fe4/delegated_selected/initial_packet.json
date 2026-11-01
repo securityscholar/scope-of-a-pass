@@ -1,0 +1,58 @@
+{
+  "task_id": "d6eec6f6644b5fe4",
+  "commission": "Assess training access (X) and high productivity (Y) in this synthetic organizational population. The requested quantity is the exact descriptive difference P(Y=1|X=1) minus P(Y=1|X=0). If the requested causal effect is not uniquely identified, report not_identified without a point estimate. Positive values mean higher probability of Y under X=1.",
+  "population_table": [
+    {
+      "x": 0,
+      "y": 0,
+      "weight": 15
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "weight": 15
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "weight": 10
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "weight": 10
+    }
+  ],
+  "table_meaning": "Exact population probability weights, not a finite sample. Divide weights by their sum to obtain the joint population distribution. There is no sampling-error or confidence-interval question.",
+  "analysis_artifact": {
+    "task_id": "d6eec6f6644b5fe4",
+    "analysis_label": "observed_difference",
+    "estimate": 0.0,
+    "proposed_answer_type": "association",
+    "population_table_sha256": "d84f2e5300011bfed629d807b23bc100869c2554f3d4e644b9159b588432bef2"
+  },
+  "verification_record": {
+    "status": "PASS",
+    "artifact_sha256": "5cd471ee821e477d3a632f2f10a3577d259d68de63b5823bfa6ee05d260c7366",
+    "completed_checks": [
+      "unique_cells",
+      "positive_integer_weights",
+      "nonzero_exposure_denominators",
+      "program output agrees with stated arithmetic contrast"
+    ],
+    "failed_checks": [],
+    "peer_review_verdict": "pass"
+  },
+  "received_supporting_records": {
+    "R129-2": {
+      "kind": "design_record",
+      "text": "X was observed in ordinary operations. Consistency and no interference hold. No random assignment, conditional exchangeability, instrumental-variable restriction or other condition identifying a causal effect is supplied. The table nevertheless identifies a descriptive conditional-risk difference."
+    }
+  },
+  "archive": {
+    "available_action": "request_design_record",
+    "record_id": "R129-2",
+    "retrieval_budget": 1
+  },
+  "verification_message": "ALL CHECKS PASSED."
+}

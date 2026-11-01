@@ -1,0 +1,39 @@
+{
+  "logical_id": "8c15e62c5c7af4fb/analyst",
+  "requested_model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "input_sha256": "b3133f9ae03f4f313fa5d0bf4cc55c7ccd7e8dd17d2d146a891196bdda848c1c",
+  "started_utc": "2026-10-28T20:36:48.002338+00:00",
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_utc": "2026-10-28T20:36:48.002338+00:00",
+      "exit_code": 0,
+      "tool_events": [],
+      "usage": [
+        {
+          "input_tokens": 19265,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 405,
+          "reasoning_output_tokens": 173
+        }
+      ],
+      "output_text": "{\"task_id\":\"8c15e62c5c7af4fb\",\"analysis_label\":\"standardized_difference\",\"python_code\":\"levels = sorted(set(r['z'] for r in rows))\\ntotal = sum(r['weight'] for r in rows)\\nmass = {(z, x): sum(r['weight'] for r in rows if r['z'] == z and r['x'] == x) for z in levels for x in (0, 1)}\\nrisk = {(z, x): Fraction(sum(r['weight'] * r['y'] for r in rows if r['z'] == z and r['x'] == x), mass[z, x]) for z in levels for x in (0, 1)}\\nestimate = sum(Fraction(mass[z, 0] + mass[z, 1], total) * (risk[z, 1] - risk[z, 0]) for z in levels)\",\"proposed_answer_type\":\"causal_effect\",\"handoff_record_ids\":[\"R217-2\"]}",
+      "events_reported_errors": [],
+      "elapsed_seconds": 14.296
+    }
+  ],
+  "answer": {
+    "task_id": "8c15e62c5c7af4fb",
+    "analysis_label": "standardized_difference",
+    "python_code": "levels = sorted(set(r['z'] for r in rows))\ntotal = sum(r['weight'] for r in rows)\nmass = {(z, x): sum(r['weight'] for r in rows if r['z'] == z and r['x'] == x) for z in levels for x in (0, 1)}\nrisk = {(z, x): Fraction(sum(r['weight'] * r['y'] for r in rows if r['z'] == z and r['x'] == x), mass[z, x]) for z in levels for x in (0, 1)}\nestimate = sum(Fraction(mass[z, 0] + mass[z, 1], total) * (risk[z, 1] - risk[z, 0]) for z in levels)",
+    "proposed_answer_type": "causal_effect",
+    "handoff_record_ids": [
+      "R217-2"
+    ]
+  },
+  "elapsed_seconds": 14.296,
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:37:02.297691+00:00"
+}

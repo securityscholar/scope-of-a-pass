@@ -1,0 +1,1 @@
+{"task_id":"ad01585cb33d5e75","action":"request_design_record","answer_type":"pending","value":null,"evidence_ids":[],"brief_rationale":"The population table establishes an observed risk difference of -0.10, but supplies no causal identification design. Request the archived design record R293-2 to assess whether the average causal risk difference is identified."}

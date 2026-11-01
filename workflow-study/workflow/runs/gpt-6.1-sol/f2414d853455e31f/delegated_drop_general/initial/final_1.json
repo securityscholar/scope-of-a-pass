@@ -1,0 +1,1 @@
+{"task_id":"f2414d853455e31f","action":"finalize","answer_type":"association","value":0.0,"evidence_ids":["population_table"],"brief_rationale":"The requested descriptive difference is 20/(20+20) minus 30/(30+30) = 0.5 − 0.5 = 0. No causal identification is needed to answer this descriptive question."}

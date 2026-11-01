@@ -1,0 +1,154 @@
+{
+  "task_id": "6f70c5b3a418942b",
+  "commission": "Assess mentoring access (X) and promotion (Y) in this synthetic organizational population. The requested quantity is the average causal risk difference E[Y(1)] minus E[Y(0)], if identified by the supplied evidence. If the requested causal effect is not uniquely identified, report not_identified without a point estimate. Positive values mean higher probability of Y under X=1.",
+  "population_table": [
+    {
+      "x": 0,
+      "y": 0,
+      "weight": 24
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "weight": 96
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "weight": 16
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "weight": 64
+    }
+  ],
+  "table_meaning": "Exact population probability weights, not a finite sample. Divide weights by their sum to obtain the joint population distribution. There is no sampling-error or confidence-interval question.",
+  "analysis_artifact": {
+    "task_id": "6f70c5b3a418942b",
+    "analysis_label": "observed_difference",
+    "estimate": 0.0,
+    "proposed_answer_type": "not_identified",
+    "population_table_sha256": "efe82ac2323600edd99d551978b457e5482931c05a072c55c877c1fee2a1b864"
+  },
+  "verification_record": {
+    "status": "PASS",
+    "artifact_sha256": "f39a887048f692f0fd2d20df3e0ae16249b30392f903079a2c33da636ccdd8ea",
+    "completed_checks": [
+      "unique_cells",
+      "positive_integer_weights",
+      "nonzero_exposure_denominators",
+      "program output agrees with stated arithmetic contrast"
+    ],
+    "failed_checks": [],
+    "peer_review_verdict": "pass"
+  },
+  "received_supporting_records": {
+    "R135-2": {
+      "kind": "design_record",
+      "text": "X was observed in ordinary operations. Consistency and no interference hold. No random assignment, conditional exchangeability, instrumental-variable restriction or other condition identifying a causal effect is supplied. The table nevertheless identifies a descriptive conditional-risk difference."
+    },
+    "R135-3": {
+      "kind": "organizational_context",
+      "text": "The binary exposure and outcome definitions refer to the same organizational population and period. The data are constructed, not observations about any actual organization."
+    },
+    "R135-1": {
+      "kind": "data_quality_record",
+      "text": "Every displayed binary cell has positive integer probability weight. There are no duplicate displayed cells. The population table is complete for the displayed variables."
+    }
+  },
+  "archive": {
+    "available_action": "request_design_record",
+    "record_id": "R135-2",
+    "retrieval_budget": 1
+  },
+  "verification_message": "ALL CHECKS PASSED.",
+  "shared_transcript": {
+    "original_source": {
+      "task_id": "6f70c5b3a418942b",
+      "commission": "Assess mentoring access (X) and promotion (Y) in this synthetic organizational population. The requested quantity is the average causal risk difference E[Y(1)] minus E[Y(0)], if identified by the supplied evidence. If the requested causal effect is not uniquely identified, report not_identified without a point estimate. Positive values mean higher probability of Y under X=1.",
+      "population_table": [
+        {
+          "x": 0,
+          "y": 0,
+          "weight": 24
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "weight": 96
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "weight": 16
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "weight": 64
+        }
+      ],
+      "table_meaning": "Exact population probability weights, not a finite sample. Divide weights by their sum to obtain the joint population distribution. There is no sampling-error or confidence-interval question.",
+      "supporting_records": {
+        "R135-2": {
+          "kind": "design_record",
+          "text": "X was observed in ordinary operations. Consistency and no interference hold. No random assignment, conditional exchangeability, instrumental-variable restriction or other condition identifying a causal effect is supplied. The table nevertheless identifies a descriptive conditional-risk difference."
+        },
+        "R135-3": {
+          "kind": "organizational_context",
+          "text": "The binary exposure and outcome definitions refer to the same organizational population and period. The data are constructed, not observations about any actual organization."
+        },
+        "R135-1": {
+          "kind": "data_quality_record",
+          "text": "Every displayed binary cell has positive integer probability weight. There are no duplicate displayed cells. The population table is complete for the displayed variables."
+        }
+      }
+    },
+    "analyst_output": {
+      "task_id": "6f70c5b3a418942b",
+      "analysis_label": "observed_difference",
+      "python_code": "risk1 = Fraction(sum(r['weight'] * r['y'] for r in rows if r['x'] == 1), sum(r['weight'] for r in rows if r['x'] == 1))\nrisk0 = Fraction(sum(r['weight'] * r['y'] for r in rows if r['x'] == 0), sum(r['weight'] for r in rows if r['x'] == 0))\nestimate = risk1 - risk0",
+      "proposed_answer_type": "not_identified",
+      "handoff_record_ids": [
+        "R135-2"
+      ]
+    },
+    "own_numerical_review": {
+      "task_id": "6f70c5b3a418942b",
+      "verdict": "pass",
+      "replacement_code": null,
+      "check_summary": "The program correctly computes observed_difference: risk1 = 64/80 = 4/5 and risk0 = 96/120 = 4/5, so estimate = 0 exactly. It satisfies the arithmetic restrictions. This descriptive contrast does not establish causal identification."
+    },
+    "executed_artifact": {
+      "artifact": {
+        "task_id": "6f70c5b3a418942b",
+        "analysis_label": "observed_difference",
+        "estimate": 0.0,
+        "proposed_answer_type": "not_identified",
+        "population_table_sha256": "efe82ac2323600edd99d551978b457e5482931c05a072c55c877c1fee2a1b864"
+      },
+      "receipt": {
+        "status": "PASS",
+        "artifact_sha256": "f39a887048f692f0fd2d20df3e0ae16249b30392f903079a2c33da636ccdd8ea",
+        "completed_checks": [
+          "unique_cells",
+          "positive_integer_weights",
+          "nonzero_exposure_denominators",
+          "program output agrees with stated arithmetic contrast"
+        ],
+        "failed_checks": [],
+        "peer_review_verdict": "pass"
+      },
+      "program_execution": {
+        "ok": true,
+        "value": 0.0,
+        "exact_fraction": "0",
+        "canonical_code": "risk1 = Fraction(sum((r['weight'] * r['y'] for r in rows if r['x'] == 1)), sum((r['weight'] for r in rows if r['x'] == 1)))\nrisk0 = Fraction(sum((r['weight'] * r['y'] for r in rows if r['x'] == 0)), sum((r['weight'] for r in rows if r['x'] == 0)))\nestimate = risk1 - risk0",
+        "code_sha256": "c4ce19d339c5a03ed3b8a3a9cbfad0b44de6df17f0ca55a4bf1e16b049537be1"
+      },
+      "arithmetic_pass": true,
+      "code_revised": false
+    }
+  }
+}

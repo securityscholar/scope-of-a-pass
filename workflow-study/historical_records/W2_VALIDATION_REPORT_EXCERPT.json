@@ -1,0 +1,25 @@
+{
+  "record_type": "EXCERPT of an existing historical reproduction report; not a newly executed validation",
+  "excerpt_scope": "W2 fields only; earlier-study fields and local output path omitted",
+  "status": "passed",
+  "model_calls": 0,
+  "network_calls": 0,
+  "gpu_used": false,
+  "workflow_engineering_tests": 16,
+  "postrun_citation_audit_tests": 4,
+  "workflow_information_regimes_reverified": 24,
+  "workflow_source_reference_checks": 12,
+  "numerical_artifacts_reconstructed": 48,
+  "receiver_episodes_regraded": 144,
+  "saved_analysis_matches": true,
+  "citation_audit": {
+    "status": "Post-run sensitivity/reporting audit; frozen strict results remain unchanged in results.json and episodes.csv.",
+    "strict_record_id_flags": 10,
+    "references_to_actually_received_population_table": 10,
+    "remaining_unreceived_reference_episodes": 0,
+    "answer_type_and_value_supported": 144,
+    "audited_supported": 144,
+    "rule": "Recognize only the exact population_table field name when that field was present in the saved recipient packet. All unknown record IDs remain invalid. Scientific type/value checks and identifying-evidence rules are unchanged."
+  },
+  "experiments_pooled": false
+}

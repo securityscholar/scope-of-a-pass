@@ -1,0 +1,32 @@
+{
+  "case_id": "98cb806cc892f8e5",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_selected",
+  "initial_decision": {
+    "task_id": "98cb806cc892f8e5",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": -0.1,
+    "evidence_ids": [
+      "R211-1"
+    ],
+    "brief_rationale": "R211-1 establishes lottery assignment independent of both potential outcomes, full compliance, positivity, consistency, and no interference. Thus the causal risk difference equals the observed contrast: 8/80 \u2212 24/120 = \u22120.1."
+  },
+  "final_decision": {
+    "task_id": "98cb806cc892f8e5",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": -0.1,
+    "evidence_ids": [
+      "R211-1"
+    ],
+    "brief_rationale": "R211-1 establishes lottery assignment independent of both potential outcomes, full compliance, positivity, consistency, and no interference. Thus the causal risk difference equals the observed contrast: 8/80 \u2212 24/120 = \u22120.1."
+  },
+  "archive_requested": false,
+  "initial_has_design": true,
+  "final_has_design": true,
+  "initial_input_sha256": "1c5c603394e57b2104bd89120baf71ca5addf6340d39718eeda2e411ecf8426d",
+  "final_input_sha256": "1c5c603394e57b2104bd89120baf71ca5addf6340d39718eeda2e411ecf8426d",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:44:04.525297+00:00"
+}

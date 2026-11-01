@@ -1,0 +1,32 @@
+{
+  "case_id": "3c96db62c801108c",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_selected",
+  "initial_decision": {
+    "task_id": "3c96db62c801108c",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": 0.2,
+    "evidence_ids": [
+      "R132-1"
+    ],
+    "brief_rationale": "R132-1 establishes lottery assignment independent of both potential outcomes, full compliance, positivity, consistency, and no interference, identifying the causal effect. The exact population risks are 24/30 = 0.8 and 72/120 = 0.6, yielding a causal risk difference of 0.2."
+  },
+  "final_decision": {
+    "task_id": "3c96db62c801108c",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": 0.2,
+    "evidence_ids": [
+      "R132-1"
+    ],
+    "brief_rationale": "R132-1 establishes lottery assignment independent of both potential outcomes, full compliance, positivity, consistency, and no interference, identifying the causal effect. The exact population risks are 24/30 = 0.8 and 72/120 = 0.6, yielding a causal risk difference of 0.2."
+  },
+  "archive_requested": false,
+  "initial_has_design": true,
+  "final_has_design": true,
+  "initial_input_sha256": "46d7d3b6c3c0cf864c8e69c9e3172469ded207d898cd41d9b5c1ea4280893b11",
+  "final_input_sha256": "46d7d3b6c3c0cf864c8e69c9e3172469ded207d898cd41d9b5c1ea4280893b11",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:43:28.137379+00:00"
+}

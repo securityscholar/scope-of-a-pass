@@ -1,0 +1,34 @@
+{
+  "case_id": "8c15e62c5c7af4fb",
+  "model": "gpt-6-astra",
+  "route": "single_shared",
+  "initial_decision": {
+    "task_id": "8c15e62c5c7af4fb",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": 0.14,
+    "evidence_ids": [
+      "R217-2",
+      "R217-1"
+    ],
+    "brief_rationale": "R217-2 establishes conditional exchangeability given pre-exposure Z, consistency, no interference, and positivity, identifying the population causal effect by standardization. Population Z weights are 0.4 and 0.6; stratum risk differences are \u22120.1 and 0.3. Thus the average causal risk difference is 0.4(\u22120.1) + 0.6(0.3) = 0.14."
+  },
+  "final_decision": {
+    "task_id": "8c15e62c5c7af4fb",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": 0.14,
+    "evidence_ids": [
+      "R217-2",
+      "R217-1"
+    ],
+    "brief_rationale": "R217-2 establishes conditional exchangeability given pre-exposure Z, consistency, no interference, and positivity, identifying the population causal effect by standardization. Population Z weights are 0.4 and 0.6; stratum risk differences are \u22120.1 and 0.3. Thus the average causal risk difference is 0.4(\u22120.1) + 0.6(0.3) = 0.14."
+  },
+  "archive_requested": false,
+  "initial_has_design": true,
+  "final_has_design": true,
+  "initial_input_sha256": "19cf25da275456400945931425b92bb7e3bdfc5a916a0bbfe87ffc660ee1d86b",
+  "final_input_sha256": "19cf25da275456400945931425b92bb7e3bdfc5a916a0bbfe87ffc660ee1d86b",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:37:32.414475+00:00"
+}

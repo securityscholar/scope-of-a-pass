@@ -1,0 +1,6 @@
+{
+  "saved_utc": "2026-10-28T20:54:26.861850+00:00",
+  "finding": "The ten strict citation flags all identify the actually supplied population_table field. All original strict outcomes retained; no model outputs changed or regenerated. Scientific answer correctness and the literal identifier contract are reported separately.",
+  "audit_rule": "Only an exact population_table field-name reference is recognized, and only if the saved packet contains it. Missing causal premises and unknown IDs remain failures.",
+  "audit_source_sha256": "acbcf39c4f6a9643c95287b902db75a3a60dcd5a3082b5e10663c74ac89de431"
+}

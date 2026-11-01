@@ -1,0 +1,32 @@
+{
+  "case_id": "ef605b3f2d289714",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_selected",
+  "initial_decision": {
+    "task_id": "ef605b3f2d289714",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R214-1"
+    ],
+    "brief_rationale": "The observed risk difference is 24/60 \u2212 27/90 = 0.10. R214-1 supplies consistency and no interference but no condition identifying the causal effect. Thus the requested average causal risk difference is not uniquely determined; passing arithmetic checks does not establish causal identification."
+  },
+  "final_decision": {
+    "task_id": "ef605b3f2d289714",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R214-1"
+    ],
+    "brief_rationale": "The observed risk difference is 24/60 \u2212 27/90 = 0.10. R214-1 supplies consistency and no interference but no condition identifying the causal effect. Thus the requested average causal risk difference is not uniquely determined; passing arithmetic checks does not establish causal identification."
+  },
+  "archive_requested": false,
+  "initial_has_design": true,
+  "final_has_design": true,
+  "initial_input_sha256": "9854d8023b7a0b0ad487e708040f777949083ec8af01dd7fff47fb7813bd622d",
+  "final_input_sha256": "9854d8023b7a0b0ad487e708040f777949083ec8af01dd7fff47fb7813bd622d",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:39:48.972400+00:00"
+}

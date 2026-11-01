@@ -1,0 +1,83 @@
+{
+  "analyst": {
+    "task_id": "8c15e62c5c7af4fb",
+    "analysis_label": "standardized_difference",
+    "python_code": "levels = sorted(set(r['z'] for r in rows))\ntotal = sum(r['weight'] for r in rows)\nmass = {(z, x): sum(r['weight'] for r in rows if r['z'] == z and r['x'] == x) for z in levels for x in (0, 1)}\nrisk = {(z, x): Fraction(sum(r['weight'] * r['y'] for r in rows if r['z'] == z and r['x'] == x), mass[z, x]) for z in levels for x in (0, 1)}\nestimate = sum(Fraction(mass[z, 0] + mass[z, 1], total) * (risk[z, 1] - risk[z, 0]) for z in levels)",
+    "proposed_answer_type": "causal_effect",
+    "handoff_record_ids": [
+      "R217-2"
+    ]
+  },
+  "delegated_review": {
+    "task_id": "8c15e62c5c7af4fb",
+    "verdict": "pass",
+    "replacement_code": null,
+    "check_summary": "The program correctly computes standardized_difference: (100/250)(32/80 \u2212 10/20) + (150/250)(81/90 \u2212 36/60) = 7/50 = 0.14. This verifies the empirical contrast, not causal identification."
+  },
+  "single_review": {
+    "task_id": "8c15e62c5c7af4fb",
+    "verdict": "pass",
+    "replacement_code": null,
+    "check_summary": "The program correctly computes standardized_difference: (2/5)(-1/10) + (3/5)(3/10) = 7/50 = 0.14. It satisfies the arithmetic restrictions. This check verifies numerical execution only, not causal identification."
+  },
+  "delegated_artifact": {
+    "artifact": {
+      "task_id": "8c15e62c5c7af4fb",
+      "analysis_label": "standardized_difference",
+      "estimate": 0.14,
+      "proposed_answer_type": "causal_effect",
+      "population_table_sha256": "c115624149a8a804420bb6e41d7a9971b23f798f3b2d92bf5930d3faa0b462ec"
+    },
+    "receipt": {
+      "status": "PASS",
+      "artifact_sha256": "41c11bd3fde106b0df1a21fe9bf3a2216d2be4ebc77ec7588170e3281bb73f22",
+      "completed_checks": [
+        "unique_cells",
+        "positive_integer_weights",
+        "nonzero_exposure_denominators",
+        "program output agrees with stated arithmetic contrast"
+      ],
+      "failed_checks": [],
+      "peer_review_verdict": "pass"
+    },
+    "program_execution": {
+      "ok": true,
+      "value": 0.14,
+      "exact_fraction": "7/50",
+      "canonical_code": "levels = sorted(set((r['z'] for r in rows)))\ntotal = sum((r['weight'] for r in rows))\nmass = {(z, x): sum((r['weight'] for r in rows if r['z'] == z and r['x'] == x)) for z in levels for x in (0, 1)}\nrisk = {(z, x): Fraction(sum((r['weight'] * r['y'] for r in rows if r['z'] == z and r['x'] == x)), mass[z, x]) for z in levels for x in (0, 1)}\nestimate = sum((Fraction(mass[z, 0] + mass[z, 1], total) * (risk[z, 1] - risk[z, 0]) for z in levels))",
+      "code_sha256": "756bdca48ff4b5990e128cf3e9142c68700a2b02c2260f1fc5d250c296a96896"
+    },
+    "arithmetic_pass": true,
+    "code_revised": false
+  },
+  "single_artifact": {
+    "artifact": {
+      "task_id": "8c15e62c5c7af4fb",
+      "analysis_label": "standardized_difference",
+      "estimate": 0.14,
+      "proposed_answer_type": "causal_effect",
+      "population_table_sha256": "c115624149a8a804420bb6e41d7a9971b23f798f3b2d92bf5930d3faa0b462ec"
+    },
+    "receipt": {
+      "status": "PASS",
+      "artifact_sha256": "41c11bd3fde106b0df1a21fe9bf3a2216d2be4ebc77ec7588170e3281bb73f22",
+      "completed_checks": [
+        "unique_cells",
+        "positive_integer_weights",
+        "nonzero_exposure_denominators",
+        "program output agrees with stated arithmetic contrast"
+      ],
+      "failed_checks": [],
+      "peer_review_verdict": "pass"
+    },
+    "program_execution": {
+      "ok": true,
+      "value": 0.14,
+      "exact_fraction": "7/50",
+      "canonical_code": "levels = sorted(set((r['z'] for r in rows)))\ntotal = sum((r['weight'] for r in rows))\nmass = {(z, x): sum((r['weight'] for r in rows if r['z'] == z and r['x'] == x)) for z in levels for x in (0, 1)}\nrisk = {(z, x): Fraction(sum((r['weight'] * r['y'] for r in rows if r['z'] == z and r['x'] == x)), mass[z, x]) for z in levels for x in (0, 1)}\nestimate = sum((Fraction(mass[z, 0] + mass[z, 1], total) * (risk[z, 1] - risk[z, 0]) for z in levels))",
+      "code_sha256": "756bdca48ff4b5990e128cf3e9142c68700a2b02c2260f1fc5d250c296a96896"
+    },
+    "arithmetic_pass": true,
+    "code_revised": false
+  }
+}

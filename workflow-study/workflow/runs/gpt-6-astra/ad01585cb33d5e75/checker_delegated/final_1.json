@@ -1,0 +1,1 @@
+{"task_id":"ad01585cb33d5e75","verdict":"pass","replacement_code":null,"check_summary":"The program correctly computes observed_difference: risk1 = 28/40 = 7/10 and risk0 = 48/60 = 4/5, giving estimate = -1/10. It satisfies the arithmetic restrictions. This numerical check does not establish causal identification."}

@@ -1,0 +1,32 @@
+{
+  "case_id": "d6eec6f6644b5fe4",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_drop_scoped",
+  "initial_decision": {
+    "task_id": "d6eec6f6644b5fe4",
+    "action": "finalize",
+    "answer_type": "association",
+    "value": 0.0,
+    "evidence_ids": [
+      "population_table"
+    ],
+    "brief_rationale": "The requested quantity is descriptive: P(Y=1|X=1)=10/20=0.5 and P(Y=1|X=0)=15/30=0.5. Their exact difference is 0."
+  },
+  "final_decision": {
+    "task_id": "d6eec6f6644b5fe4",
+    "action": "finalize",
+    "answer_type": "association",
+    "value": 0.0,
+    "evidence_ids": [
+      "population_table"
+    ],
+    "brief_rationale": "The requested quantity is descriptive: P(Y=1|X=1)=10/20=0.5 and P(Y=1|X=0)=15/30=0.5. Their exact difference is 0."
+  },
+  "archive_requested": false,
+  "initial_has_design": false,
+  "final_has_design": false,
+  "initial_input_sha256": "8029b8f2418d5eebfb2dd0e0801e9282a1537303fc4421e7783dd0912600c2da",
+  "final_input_sha256": "8029b8f2418d5eebfb2dd0e0801e9282a1537303fc4421e7783dd0912600c2da",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:35:36.096625+00:00"
+}

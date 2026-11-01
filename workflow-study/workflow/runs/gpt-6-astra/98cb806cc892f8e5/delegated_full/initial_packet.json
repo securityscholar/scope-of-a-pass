@@ -1,0 +1,66 @@
+{
+  "task_id": "98cb806cc892f8e5",
+  "commission": "Assess mentoring access (X) and promotion (Y) in this synthetic organizational population. The requested quantity is the average causal risk difference E[Y(1)] minus E[Y(0)], if identified by the supplied evidence. If the requested causal effect is not uniquely identified, report not_identified without a point estimate. Positive values mean higher probability of Y under X=1.",
+  "population_table": [
+    {
+      "x": 0,
+      "y": 0,
+      "weight": 96
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "weight": 24
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "weight": 72
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "weight": 8
+    }
+  ],
+  "table_meaning": "Exact population probability weights, not a finite sample. Divide weights by their sum to obtain the joint population distribution. There is no sampling-error or confidence-interval question.",
+  "analysis_artifact": {
+    "task_id": "98cb806cc892f8e5",
+    "analysis_label": "observed_difference",
+    "estimate": -0.1,
+    "proposed_answer_type": "causal_effect",
+    "population_table_sha256": "b16b47f67396518e2ff85aa63dcac55b75bdf6241ebb1697cd543156500935ab"
+  },
+  "verification_record": {
+    "status": "PASS",
+    "artifact_sha256": "2423f5ff2c4dc42679f4777c280458c95faa8ec887bce2676547601e72181590",
+    "completed_checks": [
+      "unique_cells",
+      "positive_integer_weights",
+      "nonzero_exposure_denominators",
+      "program output agrees with stated arithmetic contrast"
+    ],
+    "failed_checks": [],
+    "peer_review_verdict": "pass"
+  },
+  "received_supporting_records": {
+    "R211-1": {
+      "kind": "design_record",
+      "text": "Training/exposure access X was assigned by lottery independently of both potential outcomes, with full compliance, both exposure levels possible, consistency and no interference. The displayed weights describe the exact population law."
+    },
+    "R211-2": {
+      "kind": "organizational_context",
+      "text": "The binary exposure and outcome definitions refer to the same organizational population and period. The data are constructed, not observations about any actual organization."
+    },
+    "R211-3": {
+      "kind": "data_quality_record",
+      "text": "Every displayed binary cell has positive integer probability weight. There are no duplicate displayed cells. The population table is complete for the displayed variables."
+    }
+  },
+  "archive": {
+    "available_action": "request_design_record",
+    "record_id": "R211-1",
+    "retrieval_budget": 1
+  },
+  "verification_message": "ALL CHECKS PASSED."
+}

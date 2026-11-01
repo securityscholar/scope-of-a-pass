@@ -1,0 +1,34 @@
+{
+  "case_id": "f6f3fc3111d2dbd7",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_drop_reminder",
+  "initial_decision": {
+    "task_id": "f6f3fc3111d2dbd7",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [
+      "population_table",
+      "analysis_artifact",
+      "verification_record"
+    ],
+    "brief_rationale": "The observed risk difference is -0.4, but the arithmetic verification does not establish causal identification. Request archived design record R290-2 to assess whether the causal risk difference is identified."
+  },
+  "final_decision": {
+    "task_id": "f6f3fc3111d2dbd7",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": -0.4,
+    "evidence_ids": [
+      "R290-2"
+    ],
+    "brief_rationale": "The design record establishes random assignment, full compliance, positivity, consistency, and no interference, identifying the causal effect from the population contrast: 1/10 \u2212 20/40 = \u22120.4."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "0fd77e1b5e13b4e43c2d5316f479cf86af747b6f9fd3c9170fea12a25b9394c3",
+  "final_input_sha256": "2d20c21edcd56e1f51e7030657d2e3add8025bb6cb90f05597d91eaad9bc9649",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:34:19.005197+00:00"
+}

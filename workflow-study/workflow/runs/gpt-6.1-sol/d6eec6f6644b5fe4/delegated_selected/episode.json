@@ -1,0 +1,32 @@
+{
+  "case_id": "d6eec6f6644b5fe4",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_selected",
+  "initial_decision": {
+    "task_id": "d6eec6f6644b5fe4",
+    "action": "finalize",
+    "answer_type": "association",
+    "value": 0.0,
+    "evidence_ids": [
+      "R129-2"
+    ],
+    "brief_rationale": "The requested descriptive difference is 10/(10+10) \u2212 15/(15+15) = 0. Both conditional risks equal 0.5. The received design record confirms that this descriptive contrast is identified; causal identification is unnecessary for the requested quantity."
+  },
+  "final_decision": {
+    "task_id": "d6eec6f6644b5fe4",
+    "action": "finalize",
+    "answer_type": "association",
+    "value": 0.0,
+    "evidence_ids": [
+      "R129-2"
+    ],
+    "brief_rationale": "The requested descriptive difference is 10/(10+10) \u2212 15/(15+15) = 0. Both conditional risks equal 0.5. The received design record confirms that this descriptive contrast is identified; causal identification is unnecessary for the requested quantity."
+  },
+  "archive_requested": false,
+  "initial_has_design": true,
+  "final_has_design": true,
+  "initial_input_sha256": "f9246d34bebcd1b31dba6fc8627aebe3c80a4a266af8c95e800530bad1311f49",
+  "final_input_sha256": "f9246d34bebcd1b31dba6fc8627aebe3c80a4a266af8c95e800530bad1311f49",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:35:04.906883+00:00"
+}

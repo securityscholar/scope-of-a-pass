@@ -1,0 +1,30 @@
+{
+  "case_id": "ad01585cb33d5e75",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_drop_scoped",
+  "initial_decision": {
+    "task_id": "ad01585cb33d5e75",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [],
+    "brief_rationale": "The population table establishes an observed risk difference of -0.10, but supplies no causal identification design. Request the archived design record R293-2 to assess whether the average causal risk difference is identified."
+  },
+  "final_decision": {
+    "task_id": "ad01585cb33d5e75",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R293-2"
+    ],
+    "brief_rationale": "The observed conditional-risk difference is -0.10, but the design record supplies no condition identifying the causal effect. Consistency and no interference alone do not uniquely determine E[Y(1)] minus E[Y(0)]."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "8c840f4bf7f59288f4f60eb34c9103159371141fd8c9e21b38d63d7b3ac2da8e",
+  "final_input_sha256": "fa3dafe2952d1796e8996dbd46048b39967e052003f29d055cc3ccf2be849f2e",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:41:53.268397+00:00"
+}

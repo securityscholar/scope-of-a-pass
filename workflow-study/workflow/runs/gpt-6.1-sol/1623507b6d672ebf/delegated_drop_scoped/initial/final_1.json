@@ -1,0 +1,1 @@
+{"task_id":"1623507b6d672ebf","action":"finalize","answer_type":"association","value":-0.2,"evidence_ids":["R208-1"],"brief_rationale":"The requested descriptive difference is 7/(3+7) minus 36/(4+36) = 0.70 − 0.90 = −0.20. The complete population table determines this association exactly; causal identification is unnecessary for the requested quantity."}

@@ -1,0 +1,30 @@
+{
+  "case_id": "ad01585cb33d5e75",
+  "model": "gpt-6-astra",
+  "route": "delegated_drop_general",
+  "initial_decision": {
+    "task_id": "ad01585cb33d5e75",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [],
+    "brief_rationale": "The observed risk difference is 28/40 \u2212 48/60 = \u22120.10. Arithmetic verification does not establish causal identification. Please retrieve archived design record R293-2 to assess whether the causal effect is identified."
+  },
+  "final_decision": {
+    "task_id": "ad01585cb33d5e75",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R293-2"
+    ],
+    "brief_rationale": "The observed risk difference is 28/40 \u2212 48/60 = \u22120.10. R293-2 supplies consistency and no interference but no condition identifying the missing counterfactual risks. Therefore, the average causal risk difference is not uniquely identified; arithmetic verification does not establish causal identification."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "efb40de6b2168cdc3b0aa23f14b26b5422a2adc997c0eb13582012bbee61b173",
+  "final_input_sha256": "b7de4e7910950ca2d3b7f0f2a272491cc1a5e941c35c20ef1a7b784c65fca5e4",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:41:22.050517+00:00"
+}

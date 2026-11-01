@@ -1,0 +1,34 @@
+{
+  "case_id": "f6f3fc3111d2dbd7",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_full",
+  "initial_decision": {
+    "task_id": "f6f3fc3111d2dbd7",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": -0.4,
+    "evidence_ids": [
+      "R290-1",
+      "R290-2"
+    ],
+    "brief_rationale": "The received design record establishes lottery assignment independent of both potential outcomes, full compliance, positivity, consistency, and no interference. Thus the causal risk difference equals the population contrast: 1/10 \u2212 20/40 = \u22120.4."
+  },
+  "final_decision": {
+    "task_id": "f6f3fc3111d2dbd7",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": -0.4,
+    "evidence_ids": [
+      "R290-1",
+      "R290-2"
+    ],
+    "brief_rationale": "The received design record establishes lottery assignment independent of both potential outcomes, full compliance, positivity, consistency, and no interference. Thus the causal risk difference equals the population contrast: 1/10 \u2212 20/40 = \u22120.4."
+  },
+  "archive_requested": false,
+  "initial_has_design": true,
+  "final_has_design": true,
+  "initial_input_sha256": "f4d7141d9664706ca913fb126025e83511d883a8e4fead983494aff866812425",
+  "final_input_sha256": "f4d7141d9664706ca913fb126025e83511d883a8e4fead983494aff866812425",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:34:04.344379+00:00"
+}

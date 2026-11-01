@@ -1,0 +1,32 @@
+{
+  "case_id": "ad01585cb33d5e75",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_drop_reminder",
+  "initial_decision": {
+    "task_id": "ad01585cb33d5e75",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [
+      "population_table"
+    ],
+    "brief_rationale": "The population table establishes an observed risk difference of -0.10, but supplies no causal identification assumptions. Request the archived design record R293-2 to assess whether the causal risk difference is identified."
+  },
+  "final_decision": {
+    "task_id": "ad01585cb33d5e75",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R293-2"
+    ],
+    "brief_rationale": "The design record supplies consistency and no interference but no condition identifying the causal effect from observed training access. The descriptive risk difference is -0.10; the requested average causal risk difference is not uniquely determined."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "768bd07614ecdeaf30945c2484c3f9141603ea9be408660a7269c1ed81968b3c",
+  "final_input_sha256": "b62b120f3169a2347b97bafc1212b3526fb458af99d72bbf708579893c571a4b",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:41:29.380697+00:00"
+}

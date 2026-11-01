@@ -1,0 +1,32 @@
+{
+  "case_id": "8c15e62c5c7af4fb",
+  "model": "gpt-6-astra",
+  "route": "delegated_selected",
+  "initial_decision": {
+    "task_id": "8c15e62c5c7af4fb",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": 0.14,
+    "evidence_ids": [
+      "R217-2"
+    ],
+    "brief_rationale": "R217-2 establishes conditional exchangeability, consistency, no interference, and positivity. Standardizing over the population distribution of Z identifies the causal risk difference: (100/250)(0.4\u22120.5) + (150/250)(0.9\u22120.6) = 0.14."
+  },
+  "final_decision": {
+    "task_id": "8c15e62c5c7af4fb",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": 0.14,
+    "evidence_ids": [
+      "R217-2"
+    ],
+    "brief_rationale": "R217-2 establishes conditional exchangeability, consistency, no interference, and positivity. Standardizing over the population distribution of Z identifies the causal risk difference: (100/250)(0.4\u22120.5) + (150/250)(0.9\u22120.6) = 0.14."
+  },
+  "archive_requested": false,
+  "initial_has_design": true,
+  "final_has_design": true,
+  "initial_input_sha256": "8ec825b0151f3bc7f2b9bb695ad02a53fae66f19ca5947a8430f224e909d0b03",
+  "final_input_sha256": "8ec825b0151f3bc7f2b9bb695ad02a53fae66f19ca5947a8430f224e909d0b03",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:38:10.660513+00:00"
+}

@@ -1,0 +1,1 @@
+{"task_id":"d4bc9da58fbddf09","verdict":"pass","replacement_code":null,"check_summary":"The program correctly computes the population-weighted within-Z contrast: (250/350)(-1/5) + (100/350)(1/5) = -3/35. The reported execution matches. This arithmetic check does not establish causal identification."}

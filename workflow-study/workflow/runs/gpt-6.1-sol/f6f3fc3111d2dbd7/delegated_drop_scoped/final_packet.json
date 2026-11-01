@@ -1,0 +1,66 @@
+{
+  "task_id": "f6f3fc3111d2dbd7",
+  "commission": "Assess process adoption (X) and project completion (Y) in this synthetic organizational population. The requested quantity is the average causal risk difference E[Y(1)] minus E[Y(0)], if identified by the supplied evidence. If the requested causal effect is not uniquely identified, report not_identified without a point estimate. Positive values mean higher probability of Y under X=1.",
+  "population_table": [
+    {
+      "x": 0,
+      "y": 0,
+      "weight": 20
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "weight": 20
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "weight": 9
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "weight": 1
+    }
+  ],
+  "table_meaning": "Exact population probability weights, not a finite sample. Divide weights by their sum to obtain the joint population distribution. There is no sampling-error or confidence-interval question.",
+  "analysis_artifact": {
+    "task_id": "f6f3fc3111d2dbd7",
+    "analysis_label": "observed_difference",
+    "estimate": -0.4,
+    "proposed_answer_type": "causal_effect",
+    "population_table_sha256": "f9da5ff90b680b6646a206682ec95d832dadb4bb007ccf4ce71081377e43b1a9"
+  },
+  "verification_record": {
+    "status": "PASS",
+    "artifact_sha256": "507914c063002d4c522d508ea2e10d013b21f748da9502018f1cc2a0f4d4e7dd",
+    "completed_checks": [
+      "unique_cells",
+      "positive_integer_weights",
+      "nonzero_exposure_denominators",
+      "program output agrees with stated arithmetic contrast"
+    ],
+    "failed_checks": [],
+    "peer_review_verdict": "pass"
+  },
+  "received_supporting_records": {
+    "R290-2": {
+      "kind": "design_record",
+      "text": "Training/exposure access X was assigned by lottery independently of both potential outcomes, with full compliance, both exposure levels possible, consistency and no interference. The displayed weights describe the exact population law."
+    }
+  },
+  "archive": {
+    "available_action": "request_design_record",
+    "record_id": "R290-2",
+    "retrieval_budget": 1
+  },
+  "verification_message": "ALL NUMERICAL CHECKS PASSED. A correct computed contrast alone does not establish a causal effect. Use the received design evidence, or request the archived design record when needed.",
+  "archive_retrieval": {
+    "record_id": "R290-2",
+    "record": {
+      "kind": "design_record",
+      "text": "Training/exposure access X was assigned by lottery independently of both potential outcomes, with full compliance, both exposure levels possible, consistency and no interference. The displayed weights describe the exact population law."
+    },
+    "new_fact": "The source record was retrieved verbatim; no answer key or evaluator output was returned."
+  }
+}

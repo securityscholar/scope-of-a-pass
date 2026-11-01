@@ -1,0 +1,30 @@
+{
+  "case_id": "ef605b3f2d289714",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_drop_scoped",
+  "initial_decision": {
+    "task_id": "ef605b3f2d289714",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [],
+    "brief_rationale": "The table establishes an observed risk difference of 0.10, but supplies no causal identification assumptions. Request the archived design record to determine whether the average causal risk difference is identified."
+  },
+  "final_decision": {
+    "task_id": "ef605b3f2d289714",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R214-1"
+    ],
+    "brief_rationale": "X was observational, and no identifying assignment mechanism or causal restriction is supplied. Consistency and no interference alone do not identify the average causal risk difference. The observed risk difference of 0.1 is descriptive."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "72e3f9d1d444cdf0f66f0c5e49376b00e68e2421c845f1cde319e27755da9e4a",
+  "final_input_sha256": "012e269837d87f235faea4f7d4ae25a98e0f1b54ca20975fa75595ab66fac67a",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:40:03.295853+00:00"
+}

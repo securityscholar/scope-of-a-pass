@@ -1,0 +1,2 @@
+2026-10-28T20:45:45.950102Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell
+2026-10-28T20:45:47.159890Z  WARN sqlx::query: slow statement: execution time exceeded alert threshold summary="PRAGMA wal_checkpoint(PASSIVE)" db.statement="" rows_affected=0 rows_returned=1 elapsed=1.4005496s elapsed_secs=1.4005496 slow_threshold=1s

@@ -1,0 +1,1 @@
+{"task_id":"8c15e62c5c7af4fb","verdict":"pass","replacement_code":null,"check_summary":"The program correctly computes standardized_difference: Z weights are 2/5 and 3/5, with within-Z risk differences −1/10 and 3/10. Their weighted sum is 7/50 (0.14), matching execution. The code satisfies the arithmetic restrictions; this check does not certify causal identification."}

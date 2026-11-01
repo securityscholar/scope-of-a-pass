@@ -1,0 +1,30 @@
+{
+  "case_id": "3c96db62c801108c",
+  "model": "gpt-6-astra",
+  "route": "delegated_drop_general",
+  "initial_decision": {
+    "task_id": "3c96db62c801108c",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [],
+    "brief_rationale": "The observed risk difference is 24/30 \u2212 72/120 = 0.20. Arithmetic verification does not establish causal identification. Request archived design record R132-1 to assess whether the causal risk difference is identified."
+  },
+  "final_decision": {
+    "task_id": "3c96db62c801108c",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": 0.2,
+    "evidence_ids": [
+      "R132-1"
+    ],
+    "brief_rationale": "R132-1 establishes assignment independent of both potential outcomes, full compliance, positivity, consistency, and no interference. Therefore the causal risk difference equals the exact population contrast: 24/30 \u2212 72/120 = 0.20."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "26a3a3cf8f7ab8f5239807a18a18ea092f0c4e17e500aa26e5c0259c51752c11",
+  "final_input_sha256": "a471c79a7596023a5eb723884634db243d74752e839e0f89035638b60b302c2b",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:42:49.161140+00:00"
+}

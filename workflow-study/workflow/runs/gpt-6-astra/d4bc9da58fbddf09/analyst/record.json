@@ -1,0 +1,39 @@
+{
+  "logical_id": "d4bc9da58fbddf09/analyst",
+  "requested_model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "input_sha256": "cddfc84577ca5e416dbbc3da63f07f1e4abba085073c9270f8b33d21c7876de0",
+  "started_utc": "2026-10-28T20:46:15.305472+00:00",
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_utc": "2026-10-28T20:46:15.305472+00:00",
+      "exit_code": 0,
+      "tool_events": [],
+      "usage": [
+        {
+          "input_tokens": 19198,
+          "cached_input_tokens": 12544,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 368,
+          "reasoning_output_tokens": 124
+        }
+      ],
+      "output_text": "{\n  \"task_id\": \"d4bc9da58fbddf09\",\n  \"analysis_label\": \"standardized_difference\",\n  \"python_code\": \"total = sum(r['weight'] for r in rows)\\nzs = sorted(set(r['z'] for r in rows))\\nestimate = sum(Fraction(sum(r['weight'] for r in rows if r['z'] == z), total) * (Fraction(sum(r['weight'] * r['y'] for r in rows if r['z'] == z and r['x'] == 1), sum(r['weight'] for r in rows if r['z'] == z and r['x'] == 1)) - Fraction(sum(r['weight'] * r['y'] for r in rows if r['z'] == z and r['x'] == 0), sum(r['weight'] for r in rows if r['z'] == z and r['x'] == 0))) for z in zs)\",\n  \"proposed_answer_type\": \"causal_effect\",\n  \"handoff_record_ids\": [\"R296-3\"]\n}",
+      "events_reported_errors": [],
+      "elapsed_seconds": 13.344
+    }
+  ],
+  "answer": {
+    "task_id": "d4bc9da58fbddf09",
+    "analysis_label": "standardized_difference",
+    "python_code": "total = sum(r['weight'] for r in rows)\nzs = sorted(set(r['z'] for r in rows))\nestimate = sum(Fraction(sum(r['weight'] for r in rows if r['z'] == z), total) * (Fraction(sum(r['weight'] * r['y'] for r in rows if r['z'] == z and r['x'] == 1), sum(r['weight'] for r in rows if r['z'] == z and r['x'] == 1)) - Fraction(sum(r['weight'] * r['y'] for r in rows if r['z'] == z and r['x'] == 0), sum(r['weight'] for r in rows if r['z'] == z and r['x'] == 0))) for z in zs)",
+    "proposed_answer_type": "causal_effect",
+    "handoff_record_ids": [
+      "R296-3"
+    ]
+  },
+  "elapsed_seconds": 13.344,
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:46:28.649644+00:00"
+}

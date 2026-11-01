@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"ANON_SESSION_0046"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"task_id\":\"8c15e62c5c7af4fb\",\"analysis_label\":\"standardized_difference\",\"python_code\":\"total = sum(r['weight'] for r in rows)\\nzs = sorted(set(r['z'] for r in rows))\\npz = {z: Fraction(sum(r['weight'] for r in rows if r['z'] == z), total) for z in zs}\\nrisk = {(x, z): Fraction(sum(r['weight'] * r['y'] for r in rows if r['x'] == x and r['z'] == z), sum(r['weight'] for r in rows if r['x'] == x and r['z'] == z)) for x in [0, 1] for z in zs}\\nestimate = sum(pz[z] * (risk[1, z] - risk[0, z]) for z in zs)\",\"proposed_answer_type\":\"causal_effect\",\"handoff_record_ids\":[\"R217-2\"]}"}}
+{"type":"turn.completed","usage":{"input_tokens":17663,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":300,"reasoning_output_tokens":78}}

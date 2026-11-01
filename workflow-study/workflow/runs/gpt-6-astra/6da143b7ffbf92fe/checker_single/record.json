@@ -1,0 +1,36 @@
+{
+  "logical_id": "6da143b7ffbf92fe/checker_single",
+  "requested_model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "input_sha256": "143b1bca6c71612dc6b365c7c2e0f61780b829c7d2fceeebc0de7c99f74bad9a",
+  "started_utc": "2026-10-28T20:31:16.725625+00:00",
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_utc": "2026-10-28T20:31:16.725625+00:00",
+      "exit_code": 0,
+      "tool_events": [],
+      "usage": [
+        {
+          "input_tokens": 18633,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 123,
+          "reasoning_output_tokens": 28
+        }
+      ],
+      "output_text": "{\"task_id\":\"6da143b7ffbf92fe\",\"verdict\":\"pass\",\"replacement_code\":null,\"check_summary\":\"The program correctly computes standardized_difference. Both strata have population weight 1/2; their within-stratum risk differences are 0 and -1/5, yielding estimate = -1/10. The code satisfies the arithmetic restrictions. This check does not certify causal identification.\"}",
+      "events_reported_errors": [],
+      "elapsed_seconds": 7.578
+    }
+  ],
+  "answer": {
+    "task_id": "6da143b7ffbf92fe",
+    "verdict": "pass",
+    "replacement_code": null,
+    "check_summary": "The program correctly computes standardized_difference. Both strata have population weight 1/2; their within-stratum risk differences are 0 and -1/5, yielding estimate = -1/10. The code satisfies the arithmetic restrictions. This check does not certify causal identification."
+  },
+  "elapsed_seconds": 7.578,
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:31:24.310756+00:00"
+}

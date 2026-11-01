@@ -1,0 +1,42 @@
+{
+  "logical_id": "1623507b6d672ebf/single_shared/initial",
+  "requested_model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "input_sha256": "aa2772e9d912ee7afaca40b4bb5c530a483009654acfb49bc86041f17c67cfc0",
+  "started_utc": "2026-10-28T20:36:37.498081+00:00",
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_utc": "2026-10-28T20:36:37.498081+00:00",
+      "exit_code": 0,
+      "tool_events": [],
+      "usage": [
+        {
+          "input_tokens": 18849,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 125,
+          "reasoning_output_tokens": 0
+        }
+      ],
+      "output_text": "{\"task_id\":\"1623507b6d672ebf\",\"action\":\"finalize\",\"answer_type\":\"association\",\"value\":-0.2,\"evidence_ids\":[\"R208-1\",\"R208-2\",\"R208-3\"],\"brief_rationale\":\"The requested descriptive difference is 7/10 \u2212 36/40 = \u22121/5 = \u22120.2. High retention is 20 percentage points less probable among eligible units. The supplied design record does not identify a causal effect, but causal identification is unnecessary for this descriptive quantity.\"}",
+      "events_reported_errors": [],
+      "elapsed_seconds": 6.969
+    }
+  ],
+  "answer": {
+    "task_id": "1623507b6d672ebf",
+    "action": "finalize",
+    "answer_type": "association",
+    "value": -0.2,
+    "evidence_ids": [
+      "R208-1",
+      "R208-2",
+      "R208-3"
+    ],
+    "brief_rationale": "The requested descriptive difference is 7/10 \u2212 36/40 = \u22121/5 = \u22120.2. High retention is 20 percentage points less probable among eligible units. The supplied design record does not identify a causal effect, but causal identification is unnecessary for this descriptive quantity."
+  },
+  "elapsed_seconds": 6.969,
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:36:44.463847+00:00"
+}

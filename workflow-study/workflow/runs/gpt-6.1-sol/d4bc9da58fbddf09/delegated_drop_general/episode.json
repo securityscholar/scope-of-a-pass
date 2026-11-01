@@ -1,0 +1,30 @@
+{
+  "case_id": "d4bc9da58fbddf09",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_drop_general",
+  "initial_decision": {
+    "task_id": "d4bc9da58fbddf09",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [],
+    "brief_rationale": "The supplied checks verify arithmetic but do not establish causal identification. Request archived design record R296-3 to assess whether standardizing over Z identifies the requested average causal risk difference."
+  },
+  "final_decision": {
+    "task_id": "d4bc9da58fbddf09",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": -0.08571428571428572,
+    "evidence_ids": [
+      "R296-3"
+    ],
+    "brief_rationale": "R296-3 establishes conditional exchangeability, consistency, no interference, and positivity. Stratum-specific risk differences are \u22120.20 for Z=0 and +0.20 for Z=1. Standardizing to population weights 250/350 and 100/350 identifies the average causal risk difference as \u22120.08571428571428572."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "50a2ec79f376231f72fbf0ad0fa73b0dd5cd419dc3bc7c0bd435293534ae5de2",
+  "final_input_sha256": "51553e33f6ad7c0ccf7691fa6c3f383d1c34af29c880cd01bdae786db7eddc9e",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:47:41.020356+00:00"
+}

@@ -1,0 +1,21 @@
+test_bad_numbers_and_bools_rejected (test_workflow.Arithmetic.test_bad_numbers_and_bools_rejected) ... ok
+test_checker_cannot_pass_incorrect_arithmetic_by_assertion (test_workflow.Arithmetic.test_checker_cannot_pass_incorrect_arithmetic_by_assertion) ... ok
+test_checker_repairs_are_executed_not_just_described (test_workflow.Arithmetic.test_checker_repairs_are_executed_not_just_described) ... ok
+test_generated_programs_agree_with_separate_public_calculator (test_workflow.Arithmetic.test_generated_programs_agree_with_separate_public_calculator) ... ok
+test_io_attributes_imports_and_statement_loops_are_rejected (test_workflow.Arithmetic.test_io_attributes_imports_and_statement_loops_are_rejected) ... ok
+test_correct_source_value_is_unsupported_without_design (test_workflow.InformationAccounting.test_correct_source_value_is_unsupported_without_design) ... ok
+test_missing_design_does_not_block_descriptive_answer (test_workflow.InformationAccounting.test_missing_design_does_not_block_descriptive_answer) ... ok
+test_model_inputs_do_not_contain_latent_worlds_or_answer_key (test_workflow.InformationAccounting.test_model_inputs_do_not_contain_latent_worlds_or_answer_key) ... ok
+test_natural_selection_transfers_record_verbatim (test_workflow.InformationAccounting.test_natural_selection_transfers_record_verbatim) ... ok
+test_retrieval_does_not_manufacture_identification (test_workflow.InformationAccounting.test_retrieval_does_not_manufacture_identification) ... ok
+test_retrieval_restores_premise_but_returns_no_key (test_workflow.InformationAccounting.test_retrieval_restores_premise_but_returns_no_key) ... ok
+test_safe_incomplete_answer_is_not_called_unsupported (test_workflow.InformationAccounting.test_safe_incomplete_answer_is_not_called_unsupported) ... ok
+test_scoped_and_separate_reminder_share_exact_guidance (test_workflow.InformationAccounting.test_scoped_and_separate_reminder_share_exact_guidance) ... ok
+test_shared_transcript_keeps_source (test_workflow.InformationAccounting.test_shared_transcript_keeps_source) ... ok
+test_stress_removes_only_design_not_table_or_receipt (test_workflow.InformationAccounting.test_stress_removes_only_design_not_table_or_receipt) ... ok
+test_unsupported_evidence_reference_is_not_silently_accepted (test_workflow.InformationAccounting.test_unsupported_evidence_reference_is_not_silently_accepted) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 3.084s
+
+OK

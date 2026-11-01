@@ -1,0 +1,34 @@
+{
+  "case_id": "d4bc9da58fbddf09",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_full",
+  "initial_decision": {
+    "task_id": "d4bc9da58fbddf09",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": -0.08571428571428572,
+    "evidence_ids": [
+      "R296-3",
+      "R296-1"
+    ],
+    "brief_rationale": "R296-3 establishes conditional exchangeability, consistency, no interference, and positivity. Standardizing the stratum-specific risk differences over the population distribution of Z identifies the causal effect: (250/350)(0.4\u22120.6) + (100/350)(0.8\u22120.6) = \u22120.08571428571428572."
+  },
+  "final_decision": {
+    "task_id": "d4bc9da58fbddf09",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": -0.08571428571428572,
+    "evidence_ids": [
+      "R296-3",
+      "R296-1"
+    ],
+    "brief_rationale": "R296-3 establishes conditional exchangeability, consistency, no interference, and positivity. Standardizing the stratum-specific risk differences over the population distribution of Z identifies the causal effect: (250/350)(0.4\u22120.6) + (100/350)(0.8\u22120.6) = \u22120.08571428571428572."
+  },
+  "archive_requested": false,
+  "initial_has_design": true,
+  "final_has_design": true,
+  "initial_input_sha256": "c166a6af855d3b4d34ae84d51a3580d4b1c9e9cb0ca3760ec3f3b1b8b29f6369",
+  "final_input_sha256": "c166a6af855d3b4d34ae84d51a3580d4b1c9e9cb0ca3760ec3f3b1b8b29f6369",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:48:24.410396+00:00"
+}

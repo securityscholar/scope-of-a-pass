@@ -1,0 +1,32 @@
+{
+  "case_id": "ad01585cb33d5e75",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_selected",
+  "initial_decision": {
+    "task_id": "ad01585cb33d5e75",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R293-2"
+    ],
+    "brief_rationale": "The observed risk difference is 0.70 \u2212 0.80 = \u22120.10. R293-2 supplies consistency and no interference but no condition identifying the causal effect. Thus the average causal risk difference is not uniquely determined."
+  },
+  "final_decision": {
+    "task_id": "ad01585cb33d5e75",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R293-2"
+    ],
+    "brief_rationale": "The observed risk difference is 0.70 \u2212 0.80 = \u22120.10. R293-2 supplies consistency and no interference but no condition identifying the causal effect. Thus the average causal risk difference is not uniquely determined."
+  },
+  "archive_requested": false,
+  "initial_has_design": true,
+  "final_has_design": true,
+  "initial_input_sha256": "4f680ec2dd218b05ed977facd602da4517a13fee972b555ad0ea3adf0c0215c2",
+  "final_input_sha256": "4f680ec2dd218b05ed977facd602da4517a13fee972b555ad0ea3adf0c0215c2",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:40:52.173993+00:00"
+}

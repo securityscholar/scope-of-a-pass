@@ -1,0 +1,30 @@
+{
+  "case_id": "8c15e62c5c7af4fb",
+  "model": "gpt-6-astra",
+  "route": "delegated_drop_scoped",
+  "initial_decision": {
+    "task_id": "8c15e62c5c7af4fb",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [],
+    "brief_rationale": "The standardized difference of 0.14 is arithmetically correct, but the received evidence does not establish that adjusting for Z identifies the causal effect. Request archived design record R217-2 to assess identification."
+  },
+  "final_decision": {
+    "task_id": "8c15e62c5c7af4fb",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": 0.14,
+    "evidence_ids": [
+      "R217-2"
+    ],
+    "brief_rationale": "R217-2 establishes conditional exchangeability, consistency, no interference, and positivity, identifying the causal effect by population standardization over Z. The risk difference is (100/250)(32/80\u221210/20)+(150/250)(81/90\u221236/60)=0.14."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "b2113e171d7ea59764e59c52a36b4f6eeed0b0faa96ed6aaca505871f9ffdd18",
+  "final_input_sha256": "692496d38c9ca3ad0881854bd07a9a642fa74a88901bfc02ff1a9cd03b8f362a",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:38:31.014263+00:00"
+}

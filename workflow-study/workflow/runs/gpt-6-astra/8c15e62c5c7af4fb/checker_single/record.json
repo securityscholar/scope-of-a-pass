@@ -1,0 +1,36 @@
+{
+  "logical_id": "8c15e62c5c7af4fb/checker_single",
+  "requested_model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "input_sha256": "8da5972ffe8b00d550ffbeffce202e5a5c4353a7c7069e40881fe91198504c48",
+  "started_utc": "2026-10-28T20:37:17.366101+00:00",
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_utc": "2026-10-28T20:37:17.366101+00:00",
+      "exit_code": 0,
+      "tool_events": [],
+      "usage": [
+        {
+          "input_tokens": 18645,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 136,
+          "reasoning_output_tokens": 27
+        }
+      ],
+      "output_text": "{\"task_id\":\"8c15e62c5c7af4fb\",\"verdict\":\"pass\",\"replacement_code\":null,\"check_summary\":\"The program correctly computes standardized_difference: Z weights are 2/5 and 3/5, with within-Z risk differences \u22121/10 and 3/10. Their weighted sum is 7/50 (0.14), matching execution. The code satisfies the arithmetic restrictions; this check does not certify causal identification.\"}",
+      "events_reported_errors": [],
+      "elapsed_seconds": 8.344
+    }
+  ],
+  "answer": {
+    "task_id": "8c15e62c5c7af4fb",
+    "verdict": "pass",
+    "replacement_code": null,
+    "check_summary": "The program correctly computes standardized_difference: Z weights are 2/5 and 3/5, with within-Z risk differences \u22121/10 and 3/10. Their weighted sum is 7/50 (0.14), matching execution. The code satisfies the arithmetic restrictions; this check does not certify causal identification."
+  },
+  "elapsed_seconds": 8.344,
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:37:25.706356+00:00"
+}

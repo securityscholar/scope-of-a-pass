@@ -1,0 +1,34 @@
+{
+  "case_id": "6f70c5b3a418942b",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_full",
+  "initial_decision": {
+    "task_id": "6f70c5b3a418942b",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R135-2",
+      "R135-1"
+    ],
+    "brief_rationale": "Both observed promotion risks equal 0.8, yielding a descriptive difference of zero. R135-2 supplies consistency and no interference but no condition identifying the counterfactual risks. Thus, the average causal risk difference is not uniquely determined."
+  },
+  "final_decision": {
+    "task_id": "6f70c5b3a418942b",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R135-2",
+      "R135-1"
+    ],
+    "brief_rationale": "Both observed promotion risks equal 0.8, yielding a descriptive difference of zero. R135-2 supplies consistency and no interference but no condition identifying the counterfactual risks. Thus, the average causal risk difference is not uniquely determined."
+  },
+  "archive_requested": false,
+  "initial_has_design": true,
+  "final_has_design": true,
+  "initial_input_sha256": "181143c1d1b3e3edac8bf9cfd6dd038478377d8a03148b4ab86f516f47466cf8",
+  "final_input_sha256": "181143c1d1b3e3edac8bf9cfd6dd038478377d8a03148b4ab86f516f47466cf8",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:49:13.614514+00:00"
+}

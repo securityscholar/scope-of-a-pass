@@ -1,0 +1,1 @@
+{"task_id":"8c15e62c5c7af4fb","verdict":"pass","replacement_code":null,"check_summary":"The program correctly computes standardized_difference: (2/5)(-1/10) + (3/5)(3/10) = 7/50 = 0.14. It satisfies the arithmetic restrictions. This check verifies numerical execution only, not causal identification."}

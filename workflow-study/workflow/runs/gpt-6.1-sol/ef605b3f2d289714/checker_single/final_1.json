@@ -1,0 +1,1 @@
+{"task_id":"ef605b3f2d289714","verdict":"pass","replacement_code":null,"check_summary":"The program correctly computes observed_difference: 24/60 − 27/90 = 1/10. It uses permitted arithmetic and comprehensions. This verifies the empirical contrast only; it does not establish causal identification."}

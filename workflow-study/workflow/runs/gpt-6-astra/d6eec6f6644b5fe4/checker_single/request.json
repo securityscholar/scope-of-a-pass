@@ -1,0 +1,37 @@
+{
+  "requested_model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "prompt": "This is a controlled synthetic research workflow. Use only the text and arithmetic environment described in this message. Do not call native tools, inspect files, browse, or access any other data. Return only the requested JSON object.\n\nContinue as the same researcher reviewing your previous calculation, with the shared transcript retained. Check whether the submitted program faithfully computes its stated analysis_label from the table. Your remit is numerical execution and arithmetic; this check does not certify that the causal effect is identified. If the code is invalid or numerically incorrect, return revise and a replacement program under the same arithmetic restrictions; otherwise return pass and null replacement_code. Keep check_summary under 50 words.\n\nWrite a short Python arithmetic program assigning the numeric result to estimate. rows is already a list of dictionaries with x, y, weight, and z when present. Weights are exact population probabilities up to a common normalizer, not a finite sample. The environment supplies Fraction, sum, len, sorted, set, abs, min, max, float and int. Use assignments and comprehensions; no imports, attributes, named functions, statement loops, I/O, comments or outside tools. Use exact fractions where possible. The program computes the empirical contrast, even if the requested causal interpretation is unidentified. Choose observed_difference for the marginal risk difference or standardized_difference for the population-weighted within-Z contrast. A computed contrast does not itself establish identification.\n\n{\n  \"task_id\": \"d6eec6f6644b5fe4\",\n  \"population_table\": [\n    {\n      \"x\": 0,\n      \"y\": 0,\n      \"weight\": 15\n    },\n    {\n      \"x\": 0,\n      \"y\": 1,\n      \"weight\": 15\n    },\n    {\n      \"x\": 1,\n      \"y\": 0,\n      \"weight\": 10\n    },\n    {\n      \"x\": 1,\n      \"y\": 1,\n      \"weight\": 10\n    }\n  ],\n  \"analysis_plan\": {\n    \"task_id\": \"d6eec6f6644b5fe4\",\n    \"analysis_label\": \"observed_difference\",\n    \"python_code\": \"risk1 = Fraction(sum(r['weight'] * r['y'] for r in rows if r['x'] == 1), sum(r['weight'] for r in rows if r['x'] == 1))\\nrisk0 = Fraction(sum(r['weight'] * r['y'] for r in rows if r['x'] == 0), sum(r['weight'] for r in rows if r['x'] == 0))\\nestimate = risk1 - risk0\",\n    \"proposed_answer_type\": \"association\",\n    \"handoff_record_ids\": [\n      \"R129-2\"\n    ]\n  },\n  \"execution\": {\n    \"ok\": true,\n    \"value\": 0.0,\n    \"exact_fraction\": \"0\",\n    \"canonical_code\": \"risk1 = Fraction(sum((r['weight'] * r['y'] for r in rows if r['x'] == 1)), sum((r['weight'] for r in rows if r['x'] == 1)))\\nrisk0 = Fraction(sum((r['weight'] * r['y'] for r in rows if r['x'] == 0)), sum((r['weight'] for r in rows if r['x'] == 0)))\\nestimate = risk1 - risk0\",\n    \"code_sha256\": \"c4ce19d339c5a03ed3b8a3a9cbfad0b44de6df17f0ca55a4bf1e16b049537be1\"\n  },\n  \"shared_transcript\": {\n    \"original_source\": {\n      \"task_id\": \"d6eec6f6644b5fe4\",\n      \"commission\": \"Assess training access (X) and high productivity (Y) in this synthetic organizational population. The requested quantity is the exact descriptive difference P(Y=1|X=1) minus P(Y=1|X=0). If the requested causal effect is not uniquely identified, report not_identified without a point estimate. Positive values mean higher probability of Y under X=1.\",\n      \"population_table\": [\n        {\n          \"x\": 0,\n          \"y\": 0,\n          \"weight\": 15\n        },\n        {\n          \"x\": 0,\n          \"y\": 1,\n          \"weight\": 15\n        },\n        {\n          \"x\": 1,\n          \"y\": 0,\n          \"weight\": 10\n        },\n        {\n          \"x\": 1,\n          \"y\": 1,\n          \"weight\": 10\n        }\n      ],\n      \"table_meaning\": \"Exact population probability weights, not a finite sample. Divide weights by their sum to obtain the joint population distribution. There is no sampling-error or confidence-interval question.\",\n      \"supporting_records\": {\n        \"R129-1\": {\n          \"kind\": \"data_quality_record\",\n          \"text\": \"Every displayed binary cell has positive integer probability weight. There are no duplicate displayed cells. The population table is complete for the displayed variables.\"\n        },\n        \"R129-3\": {\n          \"kind\": \"organizational_context\",\n          \"text\": \"The binary exposure and outcome definitions refer to the same organizational population and period. The data are constructed, not observations about any actual organization.\"\n        },\n        \"R129-2\": {\n          \"kind\": \"design_record\",\n          \"text\": \"X was observed in ordinary operations. Consistency and no interference hold. No random assignment, conditional exchangeability, instrumental-variable restriction or other condition identifying a causal effect is supplied. The table nevertheless identifies a descriptive conditional-risk difference.\"\n        }\n      }\n    },\n    \"prior_analyst_output\": {\n      \"task_id\": \"d6eec6f6644b5fe4\",\n      \"analysis_label\": \"observed_difference\",\n      \"python_code\": \"risk1 = Fraction(sum(r['weight'] * r['y'] for r in rows if r['x'] == 1), sum(r['weight'] for r in rows if r['x'] == 1))\\nrisk0 = Fraction(sum(r['weight'] * r['y'] for r in rows if r['x'] == 0), sum(r['weight'] for r in rows if r['x'] == 0))\\nestimate = risk1 - risk0\",\n      \"proposed_answer_type\": \"association\",\n      \"handoff_record_ids\": [\n        \"R129-2\"\n      ]\n    }\n  }\n}",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "task_id": {
+        "type": "string"
+      },
+      "verdict": {
+        "type": "string",
+        "enum": [
+          "pass",
+          "revise"
+        ]
+      },
+      "replacement_code": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "check_summary": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "task_id",
+      "verdict",
+      "replacement_code",
+      "check_summary"
+    ],
+    "additionalProperties": false
+  },
+  "input_sha256": "f88808baac4146da5fe970e49d40515b63f80407f4ea34fd5969de2c0d83b2d8"
+}

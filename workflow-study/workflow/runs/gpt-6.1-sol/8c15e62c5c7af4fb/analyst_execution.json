@@ -1,0 +1,7 @@
+{
+  "ok": true,
+  "value": 0.14,
+  "exact_fraction": "7/50",
+  "canonical_code": "levels = sorted(set((r['z'] for r in rows)))\ntotal = sum((r['weight'] for r in rows))\nmass = {(z, x): sum((r['weight'] for r in rows if r['z'] == z and r['x'] == x)) for z in levels for x in (0, 1)}\nrisk = {(z, x): Fraction(sum((r['weight'] * r['y'] for r in rows if r['z'] == z and r['x'] == x)), mass[z, x]) for z in levels for x in (0, 1)}\nestimate = sum((Fraction(mass[z, 0] + mass[z, 1], total) * (risk[z, 1] - risk[z, 0]) for z in levels))",
+  "code_sha256": "756bdca48ff4b5990e128cf3e9142c68700a2b02c2260f1fc5d250c296a96896"
+}

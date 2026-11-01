@@ -1,0 +1,36 @@
+{
+  "logical_id": "ef605b3f2d289714/checker_delegated",
+  "requested_model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "input_sha256": "8338888a18166bb3a0f2739301fb5c74bfc96a991648aec78141e39d53ccd887",
+  "started_utc": "2026-10-28T20:39:01.510785+00:00",
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_utc": "2026-10-28T20:39:01.510785+00:00",
+      "exit_code": 0,
+      "tool_events": [],
+      "usage": [
+        {
+          "input_tokens": 17511,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 112,
+          "reasoning_output_tokens": 21
+        }
+      ],
+      "output_text": "{\"task_id\":\"ef605b3f2d289714\",\"verdict\":\"pass\",\"replacement_code\":null,\"check_summary\":\"The program correctly computes observed_difference: 24/60 \u2212 27/90 = 2/5 \u2212 3/10 = 1/10. It satisfies the arithmetic restrictions and matches the reported execution. This check does not establish causal identification.\"}",
+      "events_reported_errors": [],
+      "elapsed_seconds": 6.5
+    }
+  ],
+  "answer": {
+    "task_id": "ef605b3f2d289714",
+    "verdict": "pass",
+    "replacement_code": null,
+    "check_summary": "The program correctly computes observed_difference: 24/60 \u2212 27/90 = 2/5 \u2212 3/10 = 1/10. It satisfies the arithmetic restrictions and matches the reported execution. This check does not establish causal identification."
+  },
+  "elapsed_seconds": 6.5,
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:39:08.012505+00:00"
+}

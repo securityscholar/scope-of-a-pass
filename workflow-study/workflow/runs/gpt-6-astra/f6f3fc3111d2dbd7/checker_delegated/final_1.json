@@ -1,0 +1,1 @@
+{"task_id":"f6f3fc3111d2dbd7","verdict":"pass","replacement_code":null,"check_summary":"The program correctly computes observed_difference: risk1 = 1/10, risk0 = 20/40 = 1/2, and estimate = -2/5 (-0.4). It complies with the arithmetic restrictions. This verifies the empirical contrast, not causal identification."}

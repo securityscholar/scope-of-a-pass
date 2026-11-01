@@ -1,0 +1,30 @@
+{
+  "case_id": "3c96db62c801108c",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_drop_reminder",
+  "initial_decision": {
+    "task_id": "3c96db62c801108c",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [],
+    "brief_rationale": "The observed risk difference is 0.20, but arithmetic verification does not establish causal identification. Request archived design record R132-1 to assess whether the average causal risk difference is identified."
+  },
+  "final_decision": {
+    "task_id": "3c96db62c801108c",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": 0.2,
+    "evidence_ids": [
+      "R132-1"
+    ],
+    "brief_rationale": "Lottery assignment independent of both potential outcomes, full compliance, positivity, consistency, and no interference identify the causal risk difference. The exact population risks are 24/30 = 0.8 and 72/120 = 0.6, yielding 0.2."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "96afbe5835000c13730e56e01a64fe687d61cbdd3f446d26ff2e4fd24cc8c4f7",
+  "final_input_sha256": "8b69143995fa387f6301a2ad4e70b4a24301e1fa8fb3e8e9a5d6090d85a6e03e",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:43:03.132900+00:00"
+}

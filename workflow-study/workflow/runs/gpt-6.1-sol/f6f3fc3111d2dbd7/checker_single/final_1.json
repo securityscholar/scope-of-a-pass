@@ -1,0 +1,1 @@
+{"task_id":"f6f3fc3111d2dbd7","verdict":"pass","replacement_code":null,"check_summary":"The program correctly computes observed_difference: P(Y=1|X=1)=1/10 and P(Y=1|X=0)=1/2, yielding estimate=-2/5 (-0.4). It satisfies the arithmetic restrictions. This check does not certify causal identification."}

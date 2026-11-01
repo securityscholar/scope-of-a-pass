@@ -1,0 +1,33 @@
+{
+  "case_id": "98cb806cc892f8e5",
+  "model": "gpt-6.1-sol",
+  "route": "delegated_drop_scoped",
+  "initial_decision": {
+    "task_id": "98cb806cc892f8e5",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [
+      "population_table",
+      "verification_record"
+    ],
+    "brief_rationale": "The observed promotion risk difference is -0.10, but the supplied arithmetic checks do not establish causal identification. Request archived design record R211-1 to assess whether the average causal risk difference is identified."
+  },
+  "final_decision": {
+    "task_id": "98cb806cc892f8e5",
+    "action": "finalize",
+    "answer_type": "causal_effect",
+    "value": -0.1,
+    "evidence_ids": [
+      "R211-1"
+    ],
+    "brief_rationale": "Lottery assignment independent of both potential outcomes, full compliance, positivity, consistency, and no interference identify the causal risk difference. The exact population risks are 8/80 = 0.10 under X=1 and 24/120 = 0.20 under X=0, yielding -0.10."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "a296d0cf9fd41b85b7fb54426aa810d9e2e1c9f9e5668eb07a28e2cafc72c467",
+  "final_input_sha256": "1dd34bfed7ee93264a465f5a273ddc5306a560ce2a83014b823a624435362a70",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:44:33.841050+00:00"
+}

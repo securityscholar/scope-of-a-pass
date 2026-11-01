@@ -1,0 +1,37 @@
+{
+  "requested_model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "prompt": "This is a controlled synthetic research workflow. Use only the text and arithmetic environment described in this message. Do not call native tools, inspect files, browse, or access any other data. Return only the requested JSON object.\n\nYou are a fresh numerical checker receiving an analysis artifact from another researcher. Check whether the submitted program faithfully computes its stated analysis_label from the table. Your remit is numerical execution and arithmetic; this check does not certify that the causal effect is identified. If the code is invalid or numerically incorrect, return revise and a replacement program under the same arithmetic restrictions; otherwise return pass and null replacement_code. Keep check_summary under 50 words.\n\nWrite a short Python arithmetic program assigning the numeric result to estimate. rows is already a list of dictionaries with x, y, weight, and z when present. Weights are exact population probabilities up to a common normalizer, not a finite sample. The environment supplies Fraction, sum, len, sorted, set, abs, min, max, float and int. Use assignments and comprehensions; no imports, attributes, named functions, statement loops, I/O, comments or outside tools. Use exact fractions where possible. The program computes the empirical contrast, even if the requested causal interpretation is unidentified. Choose observed_difference for the marginal risk difference or standardized_difference for the population-weighted within-Z contrast. A computed contrast does not itself establish identification.\n\n{\n  \"task_id\": \"f6f3fc3111d2dbd7\",\n  \"population_table\": [\n    {\n      \"x\": 0,\n      \"y\": 0,\n      \"weight\": 20\n    },\n    {\n      \"x\": 0,\n      \"y\": 1,\n      \"weight\": 20\n    },\n    {\n      \"x\": 1,\n      \"y\": 0,\n      \"weight\": 9\n    },\n    {\n      \"x\": 1,\n      \"y\": 1,\n      \"weight\": 1\n    }\n  ],\n  \"analysis_plan\": {\n    \"task_id\": \"f6f3fc3111d2dbd7\",\n    \"analysis_label\": \"observed_difference\",\n    \"python_code\": \"p1 = Fraction(sum(r['weight'] * r['y'] for r in rows if r['x'] == 1), sum(r['weight'] for r in rows if r['x'] == 1))\\np0 = Fraction(sum(r['weight'] * r['y'] for r in rows if r['x'] == 0), sum(r['weight'] for r in rows if r['x'] == 0))\\nestimate = p1 - p0\",\n    \"proposed_answer_type\": \"causal_effect\",\n    \"handoff_record_ids\": [\n      \"R290-2\"\n    ]\n  },\n  \"execution\": {\n    \"ok\": true,\n    \"value\": -0.4,\n    \"exact_fraction\": \"-2/5\",\n    \"canonical_code\": \"p1 = Fraction(sum((r['weight'] * r['y'] for r in rows if r['x'] == 1)), sum((r['weight'] for r in rows if r['x'] == 1)))\\np0 = Fraction(sum((r['weight'] * r['y'] for r in rows if r['x'] == 0)), sum((r['weight'] for r in rows if r['x'] == 0)))\\nestimate = p1 - p0\",\n    \"code_sha256\": \"8dc1ce02ee7c80e6145e545984beacbeb71dc0a7530fd7d6398d0ac618dc7205\"\n  }\n}",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "task_id": {
+        "type": "string"
+      },
+      "verdict": {
+        "type": "string",
+        "enum": [
+          "pass",
+          "revise"
+        ]
+      },
+      "replacement_code": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "check_summary": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "task_id",
+      "verdict",
+      "replacement_code",
+      "check_summary"
+    ],
+    "additionalProperties": false
+  },
+  "input_sha256": "4a99a9126569866cd87d66b632fd50bdcccca8c8f54aa68f4d31ce35494df55c"
+}

@@ -1,0 +1,1 @@
+{"task_id":"ef605b3f2d289714","action":"request_design_record","answer_type":"pending","value":null,"evidence_ids":[],"brief_rationale":"The population table establishes an observed risk difference of 0.10, but the arithmetic checks do not establish causal identification. Request archived design record R214-1 to assess whether the average causal risk difference is identified."}

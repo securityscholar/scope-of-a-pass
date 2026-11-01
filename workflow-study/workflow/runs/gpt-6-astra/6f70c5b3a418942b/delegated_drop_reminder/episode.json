@@ -1,0 +1,30 @@
+{
+  "case_id": "6f70c5b3a418942b",
+  "model": "gpt-6-astra",
+  "route": "delegated_drop_reminder",
+  "initial_decision": {
+    "task_id": "6f70c5b3a418942b",
+    "action": "request_design_record",
+    "answer_type": "pending",
+    "value": null,
+    "evidence_ids": [],
+    "brief_rationale": "The observed promotion risk is 0.8 in both mentoring groups, but this equality does not identify the causal risk difference. Request archived design record R135-2 to assess whether its design evidence identifies the requested effect."
+  },
+  "final_decision": {
+    "task_id": "6f70c5b3a418942b",
+    "action": "finalize",
+    "answer_type": "not_identified",
+    "value": null,
+    "evidence_ids": [
+      "R135-2"
+    ],
+    "brief_rationale": "Both observed promotion risks equal 0.8, giving a descriptive difference of zero. R135-2 supplies consistency and no interference but no condition identifying the causal effect. Therefore, the average causal risk difference is not uniquely determined."
+  },
+  "archive_requested": true,
+  "initial_has_design": false,
+  "final_has_design": true,
+  "initial_input_sha256": "47662f6b017c320ec2d61b8cdbaad918c081056aaecb5860a711a454f55ce6d7",
+  "final_input_sha256": "e2474bb0ea43d7d605c5a3a6b50f1d73fc8f3a7fb7fca6b139a07ef2b457c012",
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:49:15.987767+00:00"
+}

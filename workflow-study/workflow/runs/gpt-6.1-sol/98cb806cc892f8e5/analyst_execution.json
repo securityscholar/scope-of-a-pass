@@ -1,0 +1,7 @@
+{
+  "ok": true,
+  "value": -0.1,
+  "exact_fraction": "-1/10",
+  "canonical_code": "estimate = Fraction(sum((r['weight'] * r['y'] for r in rows if r['x'] == 1)), sum((r['weight'] for r in rows if r['x'] == 1))) - Fraction(sum((r['weight'] * r['y'] for r in rows if r['x'] == 0)), sum((r['weight'] for r in rows if r['x'] == 0)))",
+  "code_sha256": "caef7689858e7416dea2a475e6428c799551a08a52acfed8f13364220eca2aeb"
+}

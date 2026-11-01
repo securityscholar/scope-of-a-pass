@@ -1,0 +1,37 @@
+{
+  "requested_model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "prompt": "This is a controlled synthetic research workflow. Use only the text and arithmetic environment described in this message. Do not call native tools, inspect files, browse, or access any other data. Return only the requested JSON object.\n\nYou are a fresh numerical checker receiving an analysis artifact from another researcher. Check whether the submitted program faithfully computes its stated analysis_label from the table. Your remit is numerical execution and arithmetic; this check does not certify that the causal effect is identified. If the code is invalid or numerically incorrect, return revise and a replacement program under the same arithmetic restrictions; otherwise return pass and null replacement_code. Keep check_summary under 50 words.\n\nWrite a short Python arithmetic program assigning the numeric result to estimate. rows is already a list of dictionaries with x, y, weight, and z when present. Weights are exact population probabilities up to a common normalizer, not a finite sample. The environment supplies Fraction, sum, len, sorted, set, abs, min, max, float and int. Use assignments and comprehensions; no imports, attributes, named functions, statement loops, I/O, comments or outside tools. Use exact fractions where possible. The program computes the empirical contrast, even if the requested causal interpretation is unidentified. Choose observed_difference for the marginal risk difference or standardized_difference for the population-weighted within-Z contrast. A computed contrast does not itself establish identification.\n\n{\n  \"task_id\": \"8c15e62c5c7af4fb\",\n  \"population_table\": [\n    {\n      \"x\": 0,\n      \"y\": 0,\n      \"weight\": 10,\n      \"z\": 0\n    },\n    {\n      \"x\": 0,\n      \"y\": 1,\n      \"weight\": 10,\n      \"z\": 0\n    },\n    {\n      \"x\": 1,\n      \"y\": 0,\n      \"weight\": 48,\n      \"z\": 0\n    },\n    {\n      \"x\": 1,\n      \"y\": 1,\n      \"weight\": 32,\n      \"z\": 0\n    },\n    {\n      \"x\": 0,\n      \"y\": 0,\n      \"weight\": 24,\n      \"z\": 1\n    },\n    {\n      \"x\": 0,\n      \"y\": 1,\n      \"weight\": 36,\n      \"z\": 1\n    },\n    {\n      \"x\": 1,\n      \"y\": 0,\n      \"weight\": 9,\n      \"z\": 1\n    },\n    {\n      \"x\": 1,\n      \"y\": 1,\n      \"weight\": 81,\n      \"z\": 1\n    }\n  ],\n  \"analysis_plan\": {\n    \"task_id\": \"8c15e62c5c7af4fb\",\n    \"analysis_label\": \"standardized_difference\",\n    \"python_code\": \"levels = sorted(set(r['z'] for r in rows))\\ntotal = sum(r['weight'] for r in rows)\\nmass = {(z, x): sum(r['weight'] for r in rows if r['z'] == z and r['x'] == x) for z in levels for x in (0, 1)}\\nrisk = {(z, x): Fraction(sum(r['weight'] * r['y'] for r in rows if r['z'] == z and r['x'] == x), mass[z, x]) for z in levels for x in (0, 1)}\\nestimate = sum(Fraction(mass[z, 0] + mass[z, 1], total) * (risk[z, 1] - risk[z, 0]) for z in levels)\",\n    \"proposed_answer_type\": \"causal_effect\",\n    \"handoff_record_ids\": [\n      \"R217-2\"\n    ]\n  },\n  \"execution\": {\n    \"ok\": true,\n    \"value\": 0.14,\n    \"exact_fraction\": \"7/50\",\n    \"canonical_code\": \"levels = sorted(set((r['z'] for r in rows)))\\ntotal = sum((r['weight'] for r in rows))\\nmass = {(z, x): sum((r['weight'] for r in rows if r['z'] == z and r['x'] == x)) for z in levels for x in (0, 1)}\\nrisk = {(z, x): Fraction(sum((r['weight'] * r['y'] for r in rows if r['z'] == z and r['x'] == x)), mass[z, x]) for z in levels for x in (0, 1)}\\nestimate = sum((Fraction(mass[z, 0] + mass[z, 1], total) * (risk[z, 1] - risk[z, 0]) for z in levels))\",\n    \"code_sha256\": \"756bdca48ff4b5990e128cf3e9142c68700a2b02c2260f1fc5d250c296a96896\"\n  }\n}",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "task_id": {
+        "type": "string"
+      },
+      "verdict": {
+        "type": "string",
+        "enum": [
+          "pass",
+          "revise"
+        ]
+      },
+      "replacement_code": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "check_summary": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "task_id",
+      "verdict",
+      "replacement_code",
+      "check_summary"
+    ],
+    "additionalProperties": false
+  },
+  "input_sha256": "9fc9daba79dd1eb2f3f6aa73e56cb4c5e62f4c7c613f25c603b61fa185c328d1"
+}

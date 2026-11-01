@@ -1,0 +1,84 @@
+{
+  "analyst": {
+    "task_id": "1623507b6d672ebf",
+    "analysis_label": "observed_difference",
+    "python_code": "risk1 = Fraction(sum(r['weight'] for r in rows if r['x'] == 1 and r['y'] == 1), sum(r['weight'] for r in rows if r['x'] == 1))\nrisk0 = Fraction(sum(r['weight'] for r in rows if r['x'] == 0 and r['y'] == 1), sum(r['weight'] for r in rows if r['x'] == 0))\nestimate = risk1 - risk0",
+    "proposed_answer_type": "association",
+    "handoff_record_ids": [
+      "R208-3",
+      "R208-1"
+    ]
+  },
+  "delegated_review": {
+    "task_id": "1623507b6d672ebf",
+    "verdict": "pass",
+    "replacement_code": null,
+    "check_summary": "The program correctly computes the observed_difference: 7/10 \u2212 36/40 = \u22121/5 (\u22120.2). It satisfies the arithmetic restrictions. This numerical check does not establish causal identification."
+  },
+  "single_review": {
+    "task_id": "1623507b6d672ebf",
+    "verdict": "pass",
+    "replacement_code": null,
+    "check_summary": "The program correctly computes observed_difference: 7/10 \u2212 36/40 = \u22121/5 (\u22120.2). It follows the arithmetic restrictions and assigns the result to estimate. This verifies the descriptive contrast, not causal identification."
+  },
+  "delegated_artifact": {
+    "artifact": {
+      "task_id": "1623507b6d672ebf",
+      "analysis_label": "observed_difference",
+      "estimate": -0.2,
+      "proposed_answer_type": "association",
+      "population_table_sha256": "c0df8e686aadc6226b6089a84b26f25934c7683af85edae24117bf1060a506f1"
+    },
+    "receipt": {
+      "status": "PASS",
+      "artifact_sha256": "f86897f167a41cf8c218a62626671d15a8130b0f99ee5c1fbf3f4ec048dbc739",
+      "completed_checks": [
+        "unique_cells",
+        "positive_integer_weights",
+        "nonzero_exposure_denominators",
+        "program output agrees with stated arithmetic contrast"
+      ],
+      "failed_checks": [],
+      "peer_review_verdict": "pass"
+    },
+    "program_execution": {
+      "ok": true,
+      "value": -0.2,
+      "exact_fraction": "-1/5",
+      "canonical_code": "risk1 = Fraction(sum((r['weight'] for r in rows if r['x'] == 1 and r['y'] == 1)), sum((r['weight'] for r in rows if r['x'] == 1)))\nrisk0 = Fraction(sum((r['weight'] for r in rows if r['x'] == 0 and r['y'] == 1)), sum((r['weight'] for r in rows if r['x'] == 0)))\nestimate = risk1 - risk0",
+      "code_sha256": "4c1c5968c01e02ca024c82d386985ba8080ce497f73aa008244bdf8aa99cd045"
+    },
+    "arithmetic_pass": true,
+    "code_revised": false
+  },
+  "single_artifact": {
+    "artifact": {
+      "task_id": "1623507b6d672ebf",
+      "analysis_label": "observed_difference",
+      "estimate": -0.2,
+      "proposed_answer_type": "association",
+      "population_table_sha256": "c0df8e686aadc6226b6089a84b26f25934c7683af85edae24117bf1060a506f1"
+    },
+    "receipt": {
+      "status": "PASS",
+      "artifact_sha256": "f86897f167a41cf8c218a62626671d15a8130b0f99ee5c1fbf3f4ec048dbc739",
+      "completed_checks": [
+        "unique_cells",
+        "positive_integer_weights",
+        "nonzero_exposure_denominators",
+        "program output agrees with stated arithmetic contrast"
+      ],
+      "failed_checks": [],
+      "peer_review_verdict": "pass"
+    },
+    "program_execution": {
+      "ok": true,
+      "value": -0.2,
+      "exact_fraction": "-1/5",
+      "canonical_code": "risk1 = Fraction(sum((r['weight'] for r in rows if r['x'] == 1 and r['y'] == 1)), sum((r['weight'] for r in rows if r['x'] == 1)))\nrisk0 = Fraction(sum((r['weight'] for r in rows if r['x'] == 0 and r['y'] == 1)), sum((r['weight'] for r in rows if r['x'] == 0)))\nestimate = risk1 - risk0",
+      "code_sha256": "4c1c5968c01e02ca024c82d386985ba8080ce497f73aa008244bdf8aa99cd045"
+    },
+    "arithmetic_pass": true,
+    "code_revised": false
+  }
+}

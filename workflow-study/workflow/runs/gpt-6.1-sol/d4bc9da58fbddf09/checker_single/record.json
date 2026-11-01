@@ -1,0 +1,36 @@
+{
+  "logical_id": "d4bc9da58fbddf09/checker_single",
+  "requested_model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "input_sha256": "3a833badfc897c98663f01efd5b5a330f860910bc686989926a66afe9e7ccb12",
+  "started_utc": "2026-10-28T20:46:57.043979+00:00",
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_utc": "2026-10-28T20:46:57.043979+00:00",
+      "exit_code": 0,
+      "tool_events": [],
+      "usage": [
+        {
+          "input_tokens": 20203,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 183,
+          "reasoning_output_tokens": 90
+        }
+      ],
+      "output_text": "{\"task_id\":\"d4bc9da58fbddf09\",\"verdict\":\"pass\",\"replacement_code\":null,\"check_summary\":\"The program correctly computes the population-weighted within-Z contrast: (5/7)(-1/5) + (2/7)(1/5) = -3/35. It satisfies the arithmetic restrictions. This check does not certify causal identification.\"}",
+      "events_reported_errors": [],
+      "elapsed_seconds": 7.781
+    }
+  ],
+  "answer": {
+    "task_id": "d4bc9da58fbddf09",
+    "verdict": "pass",
+    "replacement_code": null,
+    "check_summary": "The program correctly computes the population-weighted within-Z contrast: (5/7)(-1/5) + (2/7)(1/5) = -3/35. It satisfies the arithmetic restrictions. This check does not certify causal identification."
+  },
+  "elapsed_seconds": 7.781,
+  "tool_violation": false,
+  "completed_utc": "2026-10-28T20:47:04.819482+00:00"
+}
